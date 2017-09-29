@@ -37,19 +37,19 @@
 <div id="icon_container">
 	<div>
 		<img src="images/sikkerhet.svg" alt="ICON" class="icon">
-		<h4>SIKKERHET</h4> 
+		<span class="icon_heading">SIKKERHET</span> 
 		<p>Textte xtt extet extetex tTex tt exttex te textetex tTextt extt extet extetext</p>
 		<a href="">View collection</a>
 	</div>
 	<div>
 		<img src="images/alarm_icon.svg" alt="ICON" class="icon">
-		<h4>KRISEFORSIKRING</h4>
+		<span class="icon_heading">KRISEFORSIKRING</span>
 		<p>Text Text text tex tetext etext Texttextte xtetexte textText te xtte xtetex tetext</p>
 		<a href="">View collection</a>
 	</div>
 	<div>
 		<img src="images/arbeidsmiljo_icon.svg" alt="ICON" class="icon">
-		<h4>ARIBEIDSMILJØ</h4>
+		<span class="icon_heading">ARIBEIDSMILJØ</span>
 		<p>Pass på </p>
 		<a href="">View collection</a>
 	</div>

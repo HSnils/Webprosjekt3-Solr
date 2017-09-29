@@ -90,9 +90,10 @@ h2{
 	font-family: font61288;
 }
 
-h4{
+.icon_heading{
 	font-family: font61287;
 	color: #3788ae;
+	font-size: 1.7em;
 }
 
 #aktuelt_container{
