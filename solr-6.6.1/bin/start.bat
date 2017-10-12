@@ -1,1 +1,1 @@
-cmd /k
+cmd

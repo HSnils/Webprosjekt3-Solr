@@ -4,14 +4,84 @@
 	$output = curl_exec($curl);
 	$data = json_decode($output, true);
 	echo "Ping Status: ";
-	print_r($data['status'].PHP_EOL);
+	if (empty($data['status'])) {
+		echo "No response";
+	} else {
+		print_r($data['status'].PHP_EOL);
+	}
 ?>
+
+<?php
+
+require(__DIR__.'/solarium/init.php');
+htmlHeader();
+
+// check solarium version available
+echo 'Solarium library version: ' . Solarium\Client::VERSION . ' - ';
+
+// create a client instance
+$client = new Solarium\Client($config);
+
+// create a ping query
+$ping = $client->createPing();
+
+// execute the ping query
+try {
+    $result = $client->ping($ping);
+    echo 'Ping query successful';
+    echo '<br/><pre>';
+    var_dump($result->getData());
+    echo '</pre>';
+} catch (Solarium\Exception $e) {
+    echo 'Ping query failed';
+}
+
+htmlFooter();
+?>
+
+<?php
+htmlHeader();
+
+// create a client instance
+$client = new Solarium\Client($config);
+
+// get a select query instance
+$query = $client->createQuery($client::QUERY_SELECT);
+
+// this executes the query and returns the result
+$resultset = $client->execute($query);
+
+// display the total number of documents found by solr
+echo 'NumFound: '.$resultset->getNumFound();
+
+// show documents using the resultset iterator
+foreach ($resultset as $document) {
+
+    echo '<hr/><table>';
+
+    // the documents are also iterable, to get all fields
+    foreach ($document as $field => $value) {
+        // this converts multivalue fields to a comma-separated string
+        if (is_array($value)) {
+            $value = implode(', ', $value);
+        }
+
+        echo '<tr><th>' . $field . '</th><td>' . $value . '</td></tr>';
+    }
+
+    echo '</table>';
+}
+
+htmlFooter();
+?>
+
 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 
+	<title>Webproject 3</title>
 
 	<!--Jquery and UI-->
     <script src="jquery-ui/external/jquery/jquery.js"></script>
