@@ -11,8 +11,9 @@
 	}
 ?>
 
-<?php
 
+<!-- Starts Solarium and checks the connection to Solr -->
+<?php
 require(__DIR__.'/solarium/init.php');
 htmlHeader();
 
@@ -39,6 +40,8 @@ try {
 htmlFooter();
 ?>
 
+
+<!-- Query builder example. Searching for documents from the year 2015. -->
 <?php
 htmlHeader();
 
@@ -46,10 +49,16 @@ htmlHeader();
 $client = new Solarium\Client($config);
 
 // get a select query instance
-$query = $client->createQuery($client::QUERY_SELECT);
+$query = $client->createSelect();
+
+// set a query (all prices starting from 12)
+$query->setQuery('Year:2015');
+
+// set start and rows param (comparable to SQL limit) using fluent interface
+$query->setStart(0)->setRows(20);
 
 // this executes the query and returns the result
-$resultset = $client->execute($query);
+$resultset = $client->select($query);
 
 // display the total number of documents found by solr
 echo 'NumFound: '.$resultset->getNumFound();
