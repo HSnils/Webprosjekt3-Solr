@@ -1,0 +1,72 @@
+2017-10-12 14:13:53.441 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-10-12 14:13:53.898 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
+2017-10-12 14:13:53.898 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-10-12 14:13:53.898 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\xampp\htdocs\Webprosjekt3\solr-6.6.1
+2017-10-12 14:13:53.914 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-10-12T14:13:53.899Z
+2017-10-12 14:13:53.916 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-10-12 14:13:53.932 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-10-12 14:13:53.937 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
+2017-10-12 14:13:54.286 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-10-12 14:13:58.952 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-10-12 14:13:58.954 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
+2017-10-12 14:13:59.007 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/D:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /D:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /D:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /D:/xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
+2017-10-12 14:13:59.164 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-10-12 14:13:59.172 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
+2017-10-12 14:13:59.283 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
+2017-10-12 14:13:59.317 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-10-12 14:13:59.385 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
+2017-10-12 14:13:59.389 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
+2017-10-12 14:13:59.425 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-10-12 14:13:59.429 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
+2017-10-12 14:13:59.472 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-10-12 14:13:59.584 INFO  (main) [   ] o.e.j.s.Server Started @6860ms
+2017-10-12 14:14:00.676 INFO  (qtp581374081-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=65
+2017-10-12 14:14:04.222 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-10-12 14:14:04.222 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-10-12 14:14:04.235 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-10-12 14:14:04.235 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-10-12 14:14:04.339 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@55159892[safety] main]
+2017-10-12 14:14:04.348 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf
+2017-10-12 14:14:04.366 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-10-12 14:14:04.374 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-10-12 14:14:04.380 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-10-12 14:14:04.382 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-10-12 14:14:04.398 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-10-12 14:14:04.399 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@68e77cd, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2017-10-12 14:14:04.399 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\elevate.xml
+2017-10-12 14:14:04.406 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-10-12 14:14:04.436 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@55159892[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
+2017-10-12 14:14:04.453 ERROR (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1328)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:455)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:241)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:444)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:61)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:970)
+	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:564)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:141)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.core.QuerySenderListener.newSearcher(QuerySenderListener.java:74)
+	at org.apache.solr.core.SolrCore.lambda$getSearcher$15(SolrCore.java:2249)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2017-10-12 14:14:04.453 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.S.Request [safety]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=15
+2017-10-12 14:14:04.454 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-10-12 14:14:04.454 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-10-12 14:14:04.454 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-10-12 14:14:04.454 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2017-10-12 14:14:04.454 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2017-10-12 14:14:04.473 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@55159892[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}

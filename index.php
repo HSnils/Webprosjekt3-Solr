@@ -1,9 +1,17 @@
+<?php
+	$curl = curl_init("http://localhost:8983/solr/safety/admin/ping?wt=json");
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+	$output = curl_exec($curl);
+	$data = json_decode($output, true);
+	echo "Ping Status: ";
+	print_r($data['status'].PHP_EOL);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 
-	<title>Webproj3</title>
 
 	<!--Jquery and UI-->
     <script src="jquery-ui/external/jquery/jquery.js"></script>
@@ -15,8 +23,6 @@
 	<!--Css-->
 	<link rel="stylesheet" href="css/main.css?<?php echo time(); ?>">
 
-	<!--Fonts--><link href="https://www.fontify.me/wf/2bd0da8fe5c1eee7a3b5be10f66dfeb5" rel="stylesheet" type="text/css"> <!-- font-family: font61287; -->
-	<link href="https://www.fontify.me/wf/4519bfe5fe1dc94c1e673d55c638d0a7" rel="stylesheet" type="text/css"> <!--font-family: font61288; BOLD -->
 </head>
 <body>
 <nav>
@@ -61,14 +67,6 @@
 
 
 <br>
-<?php
-	$curl = curl_init("http://localhost:8983/solr/collection1/admin/ping/
-	?wt=json");
-	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-	$output = curl_exec($curl);
-	$data = json_decode($output, true);
-	echo "Ping Status : ".$data["status"].PHP_EOL;
-?>
 
 </body>
 </html>
