@@ -33,10 +33,18 @@ if (!empty($_GET["search"])) {
     $query = $client->createSelect();
 
     // set a query (all prices starting from 12)
-    $query->setQuery('Document:' . $_GET["search"]);
+    $query->setQuery($_GET["search"]);
 
-    // set start and rows param (comparable to SQL limit) using fluent interface
-    $query->setStart(0)->setRows(20);
+    // Initiate a DisMax query (Query multiple fields)
+    $dismax = $query->getDisMax();
+
+    // Select the fields we wish to use the search for
+    $dismax->setQueryFields('Document Summary Year Responsible');
+
+    /*
+    // Example of how you can weigh each field differently.
+    $dismax->setQueryFields('title^3 cast^2 synopsis^1');
+    */
 
     // this executes the query and returns the result
     $resultset = $client->select($query);
