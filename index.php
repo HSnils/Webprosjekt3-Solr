@@ -1,3 +1,23 @@
+<?php
+	$curl = curl_init("http://localhost:8983/solr/safety/admin/ping?wt=json");
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+	$output = curl_exec($curl);
+	$data = json_decode($output, true);
+	/*echo "Ping Status: ";
+	if (empty($data['status'])) {
+		echo "No response";
+	} else {
+		print_r($data['status'].PHP_EOL);
+	}*/
+
+	if(isset($_POST['submit'])){
+		$search = $_POST['search'];
+		$url = 'pages/search.php?search='.$search;
+		header('Location: ' . $url);
+
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +29,10 @@
     <script src="jquery-ui/external/jquery/jquery.js"></script>
     <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.min.css">|
     <script src="jquery-ui/jquery-ui.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 	<!--Css-->
 	<link rel="stylesheet" href="css/main.css?<?php echo time(); ?>">
@@ -18,7 +40,7 @@
 </head>
 <body>
 <nav>
-	<div id="logo" class="navitem">LOGO</div>
+	<div  class="navitem"><img id="logo" src="images/logo.png"></div>
 	<div id="navbuttons" class="navitem">
 		<b>
 			<a href="">COOKIES OG PERSONVERN</a>
@@ -29,7 +51,11 @@
 
 <div id="search_container">
 	<h2>FINN RAPPORTENE DU LETER ETTER</h2>
-	<input type="search" name="searchfield" id="searchfield">
+	<form id="searchfieldform" method="post">
+		<input type="search" name="search" id="searchfield">
+		<input type="submit" name="submit" value="Search" id="searchSubmit">
+	</form>
+
 </div>
 
 <div id="icon_container">
