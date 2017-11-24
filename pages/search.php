@@ -111,7 +111,7 @@
 		            echo '<tr><th>' . $field . '</th><td>' . $value . '</td></tr>';
 		        }
 
-		        echo '</table>';
+		        echo '</table><br><hr><br>';
 		    }
 	    } else{
 	    	echo '<div class="treffbox">

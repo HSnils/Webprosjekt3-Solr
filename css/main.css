@@ -64,8 +64,13 @@ nav{
 }
 
 #searchSubmit{
-	width:9%;
+	width:10%;
 	height: 3em;
+	background-color: #56a2aa;
+	border: 0;
+	color: white;
+	float: right;
+	font-weight: bold;
 }
 
 

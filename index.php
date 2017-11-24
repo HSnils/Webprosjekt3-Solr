@@ -10,12 +10,15 @@
 		print_r($data['status'].PHP_EOL);
 	}*/
 
-	if(isset($_POST['submit'])){
+	if(isset($_POST['submit']) && $_POST['search'] != ''){
+
 		$search = $_POST['search'];
 		$url = 'pages/search.php?search='.$search;
 		header('Location: ' . $url);
 
-	}
+	} /*else if(isset($_POST['submit'])){
+		echo '<script type="text/javascript">alert("Fyll inn søkefeltet");</script>';
+	}*/
 ?>
 
 <!DOCTYPE html>
