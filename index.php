@@ -55,7 +55,7 @@
 <div id="search_container">
 	<h2>FINN RAPPORTENE DU LETER ETTER</h2>
 	<form id="searchfieldform" method="post">
-		<input type="search" name="search" id="searchfield">
+		<input type="text" name="search" id="searchfield">
 		<input type="submit" name="submit" value="Search" id="searchSubmit">
 	</form>
 

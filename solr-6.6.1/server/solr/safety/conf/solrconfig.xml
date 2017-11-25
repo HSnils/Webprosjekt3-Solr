@@ -851,9 +851,10 @@
       <str name="uprefix">ignored_</str>
 
       <!-- capture link hrefs but ignore div attributes -->
-      <str name="captureAttr">true</str>
       <str name="fmap.a">links</str>
       <str name="fmap.div">ignored_</str>
+      <str name="fmap.content">text</str>
+      <str name="captureAttr">false</str>
     </lst>
   </requestHandler>
   <!-- Search Components

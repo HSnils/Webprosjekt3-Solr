@@ -3,12 +3,25 @@
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 	$output = curl_exec($curl);
 	$data = json_decode($output, true);
-	/*echo "Ping Status: ";
+	echo "Ping Status: ";
 	if (empty($data['status'])) {
 		echo "No response";
 	} else {
 		print_r($data['status'].PHP_EOL);
-	}*/
+	}
+
+	if (!empty($_POST['upload'])) {
+		echo "yeeeshellow";
+		/*$ch = curl_init('http://localhost:8010/solr/update/extract?literal.id=1&literal.name=Name&commit=true');
+		curl_setopt ($ch, CURLOPT_POST, 1);
+		curl_setopt ($ch, CURLOPT_POSTFIELDS, array('myfile'=>'@'.$post->filepath));
+		$result= curl_exec ($ch);*/
+
+	} else {
+		echo "lolno";
+		var_dump($_FILES);
+		unset($_FILES['userFile']);
+	}
 ?>
 
 <!DOCTYPE html>
@@ -42,13 +55,10 @@
 	</div>
 </nav>
 
-<div id="search_container">
-	<form id="searchfieldform" method="get">
-		<input type="text" name="search" id="searchfield">
-		<input type="submit" value="Search" id="searchSubmit">
-	</form>
-
-</div>
+<form id="uploadform" action="upload_handler.php" method="POST" enctype="multipart/form-data">
+    <input type="file" name="userFile"><br>
+    <input type="submit" name="upload_btn" value="upload">
+</form>
 
 
 <br>
@@ -78,7 +88,7 @@
 	    $dismax = $query->getDisMax();
 
 	    // Select the fields we wish to use the search for
-	    $dismax->setQueryFields('Document Summary Year Responsible id');
+	    $dismax->setQueryFields('Document Summary Year Responsible');
 
 	    /*
 	    // Example of how you can weigh each field differently.

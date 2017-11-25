@@ -38,4 +38,5 @@
 			<filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
 		</analyzer>
 	</fieldType>
+	<dynamicField name="ignored_*" type="text_en" indexed="true" stored="true"/>
 </schema>

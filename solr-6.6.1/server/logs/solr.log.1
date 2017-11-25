@@ -1,42 +1,41 @@
-2017-10-24 19:46:13.075 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
-2017-10-24 19:46:13.645 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
-2017-10-24 19:46:13.646 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-10-24 19:46:13.646 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\xampp\htdocs\Webprosjekt3\solr-6.6.1
-2017-10-24 19:46:13.663 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-10-24T19:46:13.647Z
-2017-10-24 19:46:13.664 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-10-24 19:46:13.725 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-10-24 19:46:13.744 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
-2017-10-24 19:46:14.295 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
-2017-10-24 19:46:19.003 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-10-24 19:46:19.006 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
-2017-10-24 19:46:19.119 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/D:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /D:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /D:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /D:/xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
-2017-10-24 19:46:19.573 INFO  (main) [   ] o.e.j.s.Server Started @7616ms
-2017-10-24 19:46:20.477 INFO  (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=502
-2017-10-24 19:46:20.709 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2017-10-24 19:46:20.716 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
-2017-10-24 19:46:20.900 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
-2017-10-24 19:46:20.962 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
-2017-10-24 19:46:20.983 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
-2017-10-24 19:46:20.985 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
-2017-10-24 19:46:21.107 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-10-24 19:46:21.124 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
-2017-10-24 19:46:21.195 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-10-24 19:46:26.060 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-10-24 19:46:26.061 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-10-24 19:46:26.082 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-10-24 19:46:26.082 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-10-24 19:46:26.210 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@368593a0[safety] main]
-2017-10-24 19:46:26.239 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf
-2017-10-24 19:46:26.255 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-10-24 19:46:26.260 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-10-24 19:46:26.265 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2017-10-24 19:46:26.267 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-10-24 19:46:26.277 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-10-24 19:46:26.278 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@d01de5f, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
-2017-10-24 19:46:26.279 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\elevate.xml
-2017-10-24 19:46:26.287 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
-2017-10-24 19:46:26.362 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@368593a0[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
-2017-10-24 19:46:26.401 ERROR (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
+2017-11-25 23:35:21.272 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-11-25 23:35:22.073 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
+2017-11-25 23:35:22.074 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-11-25 23:35:22.074 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1
+2017-11-25 23:35:22.100 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-25T23:35:22.076Z
+2017-11-25 23:35:22.101 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-11-25 23:35:22.130 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-11-25 23:35:22.139 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
+2017-11-25 23:35:22.522 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-11-25 23:35:22.835 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-11-25 23:35:22.840 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
+2017-11-25 23:35:22.966 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
+2017-11-25 23:35:23.244 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-11-25 23:35:23.254 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
+2017-11-25 23:35:23.537 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
+2017-11-25 23:35:23.561 INFO  (main) [   ] o.e.j.s.Server Started @3742ms
+2017-11-25 23:35:23.597 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-11-25 23:35:23.630 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
+2017-11-25 23:35:23.632 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
+2017-11-25 23:35:23.698 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-11-25 23:35:23.733 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
+2017-11-25 23:35:23.798 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-11-25 23:35:24.167 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-11-25 23:35:24.167 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-11-25 23:35:24.190 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-11-25 23:35:24.190 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-11-25 23:35:24.347 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c64e7c5[safety] main]
+2017-11-25 23:35:24.367 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf
+2017-11-25 23:35:24.396 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-11-25 23:35:24.407 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-11-25 23:35:24.416 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-11-25 23:35:24.420 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-11-25 23:35:24.442 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-11-25 23:35:24.444 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@1abd782d, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2017-11-25 23:35:24.445 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\elevate.xml
+2017-11-25 23:35:24.460 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-11-25 23:35:24.530 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1c64e7c5[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
+2017-11-25 23:35:24.595 ERROR (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
 	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1328)
 	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:455)
 	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
@@ -63,698 +62,69 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 
-2017-10-24 19:46:26.401 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.S.Request [safety]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=21
-2017-10-24 19:46:26.402 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-10-24 19:46:26.402 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-10-24 19:46:26.402 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2017-10-24 19:46:26.402 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
-2017-10-24 19:46:26.402 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
-2017-10-24 19:46:26.423 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@368593a0[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
-2017-10-24 19:46:54.390 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=74
-2017-10-24 19:46:54.390 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=74
-2017-10-24 19:46:54.644 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 19:46:54.644 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 19:46:54.743 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=41
-2017-10-24 19:57:13.281 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 19:57:13.281 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 19:57:13.293 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 19:57:13.293 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 19:57:13.298 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:11:40.901 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:11:40.902 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:12:05.039 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:12:05.039 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:12:05.058 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:12:05.058 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:12:21.971 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:12:21.972 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:12:21.991 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:12:21.991 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:12:21.997 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:13:11.557 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:13:11.557 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:13:11.567 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:13:11.567 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:13:11.572 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:17:42.646 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:17:42.647 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:17:42.665 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:17:42.665 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:17:42.671 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:18:25.244 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:18:25.244 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:18:25.263 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:18:25.263 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:18:25.269 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:18:31.452 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:18:31.452 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:18:31.464 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:18:31.464 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:18:31.469 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:21:16.704 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:21:16.704 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:21:16.722 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:21:16.723 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:21:16.728 ERROR (qtp581374081-20) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1328)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:455)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:241)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:444)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:61)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:970)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:697)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:420)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-10-24 20:21:16.729 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=qwr&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=10&wt=json} status=400 QTime=1
-2017-10-24 20:22:19.866 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:22:19.866 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:22:19.885 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:22:19.885 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:22:19.892 ERROR (qtp581374081-19) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1328)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:455)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:241)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:444)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:61)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:970)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:697)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:420)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-10-24 20:22:19.892 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=qwr&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} status=400 QTime=1
-2017-10-24 20:22:20.835 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:22:20.835 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:22:20.852 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:22:20.852 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:22:20.857 ERROR (qtp581374081-19) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1328)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:455)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:241)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:444)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:61)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:970)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:697)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:420)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:277)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:161)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-10-24 20:22:20.857 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=qwr&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} status=400 QTime=0
-2017-10-24 20:23:08.994 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:08.994 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:23:09.013 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:09.013 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:23:09.019 ERROR (qtp581374081-19) [   x:safety] o.a.s.h.RequestHandlerBase java.lang.NumberFormatException: For input string: "qwr"
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at org.apache.solr.schema.IntPointField.getExactQuery(IntPointField.java:106)
-	at org.apache.solr.schema.PointField.getFieldQuery(PointField.java:125)
-	at org.apache.solr.parser.SolrQueryParserBase.rawToNormal(SolrQueryParserBase.java:906)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:234)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-10-24 20:23:09.019 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:qwr&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} status=500 QTime=1
-2017-10-24 20:23:09.020 ERROR (qtp581374081-19) [   x:safety] o.a.s.s.HttpSolrCall null:java.lang.NumberFormatException: For input string: "qwr"
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at org.apache.solr.schema.IntPointField.getExactQuery(IntPointField.java:106)
-	at org.apache.solr.schema.PointField.getFieldQuery(PointField.java:125)
-	at org.apache.solr.parser.SolrQueryParserBase.rawToNormal(SolrQueryParserBase.java:906)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:234)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-10-24 20:23:16.269 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:16.269 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:23:16.286 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:16.286 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:23:19.076 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:19.076 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:23:19.086 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:19.086 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:23:19.092 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:1970&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=1
-2017-10-24 20:23:22.812 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:22.812 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-10-24 20:23:22.822 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:22.823 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:23:22.828 ERROR (qtp581374081-16) [   x:safety] o.a.s.h.RequestHandlerBase java.lang.NumberFormatException: For input string: "wet"
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at org.apache.solr.schema.IntPointField.getExactQuery(IntPointField.java:106)
-	at org.apache.solr.schema.PointField.getFieldQuery(PointField.java:125)
-	at org.apache.solr.parser.SolrQueryParserBase.rawToNormal(SolrQueryParserBase.java:906)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:234)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-10-24 20:23:22.828 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:wet&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} status=500 QTime=0
-2017-10-24 20:23:22.829 ERROR (qtp581374081-16) [   x:safety] o.a.s.s.HttpSolrCall null:java.lang.NumberFormatException: For input string: "wet"
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at org.apache.solr.schema.IntPointField.getExactQuery(IntPointField.java:106)
-	at org.apache.solr.schema.PointField.getFieldQuery(PointField.java:125)
-	at org.apache.solr.parser.SolrQueryParserBase.rawToNormal(SolrQueryParserBase.java:906)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:234)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-10-24 20:23:25.126 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:25.126 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:23:25.143 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:25.144 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:23:25.148 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:124&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:23:32.692 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:32.692 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:23:32.709 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:32.709 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:23:32.714 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:23:37.158 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:37.158 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:23:37.175 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:37.175 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:23:39.198 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:39.198 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:23:39.207 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:39.207 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:23:39.211 ERROR (qtp581374081-15) [   x:safety] o.a.s.h.RequestHandlerBase java.lang.NumberFormatException: For input string: "lol"
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at org.apache.solr.schema.IntPointField.getExactQuery(IntPointField.java:106)
-	at org.apache.solr.schema.PointField.getFieldQuery(PointField.java:125)
-	at org.apache.solr.parser.SolrQueryParserBase.rawToNormal(SolrQueryParserBase.java:906)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:234)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-10-24 20:23:39.211 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:lol&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} status=500 QTime=0
-2017-10-24 20:23:39.212 ERROR (qtp581374081-15) [   x:safety] o.a.s.s.HttpSolrCall null:java.lang.NumberFormatException: For input string: "lol"
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at org.apache.solr.schema.IntPointField.getExactQuery(IntPointField.java:106)
-	at org.apache.solr.schema.PointField.getFieldQuery(PointField.java:125)
-	at org.apache.solr.parser.SolrQueryParserBase.rawToNormal(SolrQueryParserBase.java:906)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:234)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-
-2017-10-24 20:23:58.928 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:58.929 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:23:58.945 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:23:58.945 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:23:58.950 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:24:11.503 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:11.503 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:11.520 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:11.520 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:11.570 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=45
-2017-10-24 20:24:13.323 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:13.323 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:13.332 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:13.332 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:13.338 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:qwr&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=1
-2017-10-24 20:24:16.542 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:16.542 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:16.551 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:16.551 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:16.556 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:Wilma&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:24:19.422 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:19.423 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:19.440 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:19.440 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:19.444 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:24:28.125 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:28.126 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:28.142 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:28.143 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:28.147 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Year:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:24:39.136 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:39.136 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:39.145 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:39.146 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:39.152 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:festival&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=1
-2017-10-24 20:24:41.636 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:41.636 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:41.645 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:41.645 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:41.650 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:fest&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:24:43.576 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:43.576 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:43.585 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:43.585 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:43.589 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:festi&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:24:45.565 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:45.566 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:45.582 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:45.582 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:45.587 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:festival&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:24:50.776 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:50.776 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:50.785 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:50.785 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:50.790 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:festiva&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:24:53.837 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:53.837 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:24:53.855 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:24:53.855 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:24:53.860 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:festivals&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:26:45.613 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:26:45.614 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:26:45.633 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:26:45.633 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:26:45.638 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:festivals&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:26:47.324 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:26:47.324 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:26:47.333 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:26:47.333 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:26:47.339 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:2015&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:26:56.891 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:26:56.892 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:26:56.908 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:26:56.909 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:26:56.913 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:festival&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:26:59.609 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:26:59.610 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:26:59.626 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:26:59.626 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:26:59.632 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:really&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=1
-2017-10-24 20:27:01.841 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:01.841 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:27:01.850 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:01.850 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:27:01.855 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:dirty&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:27:06.300 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:06.300 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:27:06.317 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=1
-2017-10-24 20:27:06.318 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=1
-2017-10-24 20:27:06.323 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:nasty&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:27:08.441 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:08.441 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:27:08.458 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:08.458 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:27:08.462 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:really&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:27:10.555 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:10.555 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:27:10.571 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:10.571 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:27:10.576 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:dirty&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:27:13.495 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:13.495 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:27:13.504 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:13.504 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:27:13.509 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:rather&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:27:15.661 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:15.661 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:27:15.678 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:15.678 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:27:15.683 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:forest&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:27:21.200 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:21.200 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:27:21.210 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:21.210 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:27:21.215 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:portapotties&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:27:23.253 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:23.253 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:27:23.269 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:23.269 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:27:23.274 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:porta&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:27:26.070 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:26.071 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:27:26.088 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:26.088 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:27:26.092 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:portapot&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:27:29.244 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:29.244 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:27:29.261 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:27:29.261 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
-2017-10-24 20:27:29.266 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:portapottie&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:28:50.870 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:28:50.871 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:28:50.882 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:portapottie&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:28:56.138 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:28:56.138 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:28:56.149 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:festival&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:28:58.822 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:28:58.822 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:28:58.832 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:festiva&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=0 status=0 QTime=0
-2017-10-24 20:29:08.115 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:29:08.115 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:29:08.133 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:portapottie&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
-2017-10-24 20:29:59.158 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:29:59.158 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:30:03.180 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-10-24 20:30:03.180 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-10-24 20:30:03.197 INFO  (qtp581374081-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Document:festival&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=20&wt=json} hits=1 status=0 QTime=0
+2017-11-25 23:35:24.597 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.S.Request [safety]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=63
+2017-11-25 23:35:24.597 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-25 23:35:24.597 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-11-25 23:35:24.597 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-11-25 23:35:24.597 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2017-11-25 23:35:24.598 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2017-11-25 23:35:24.654 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@1c64e7c5[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
+2017-11-25 23:35:28.430 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=31
+2017-11-25 23:35:31.198 INFO  (qtp581374081-20) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-11-25 23:35:31.676 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=2
+2017-11-25 23:35:31.698 INFO  (qtp581374081-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1511652931502} status=0 QTime=7
+2017-11-25 23:35:31.729 INFO  (qtp581374081-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=53
+2017-11-25 23:35:31.759 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:35:31.771 INFO  (qtp581374081-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1511652931502} status=0 QTime=6
+2017-11-25 23:35:31.791 INFO  (qtp581374081-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=30
+2017-11-25 23:35:34.131 INFO  (qtp581374081-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:35:34.140 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1511652934120} status=0 QTime=3
+2017-11-25 23:35:34.142 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/replication params={wt=json&command=details&_=1511652934120} status=0 QTime=3
+2017-11-25 23:35:34.152 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1511652931504&ts=1511652931504} status=503 QTime=1
+2017-11-25 23:35:34.190 INFO  (qtp581374081-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=56
+2017-11-25 23:35:34.190 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/system params={wt=json&_=1511652934120} status=0 QTime=43
+2017-11-25 23:35:35.388 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:35:35.444 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/config params={wt=json&_=1511652935354} status=0 QTime=32
+2017-11-25 23:35:35.450 INFO  (qtp581374081-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=54
+2017-11-25 23:35:35.464 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511652934120} status=0 QTime=31
+2017-11-25 23:35:35.520 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511652934120} status=0 QTime=42
+2017-11-25 23:37:17.197 INFO  (qtp581374081-18) [   x:safety] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema
+2017-11-25 23:37:17.236 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/schema params={wt=json&_=1511652935354} status=0 QTime=156
+2017-11-25 23:37:18.747 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511652934120} status=0 QTime=1
+2017-11-25 23:37:18.755 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/config params={wt=json&_=1511652935354} status=0 QTime=0
+2017-11-25 23:37:18.768 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511652934120} status=0 QTime=1
+2017-11-25 23:37:25.194 INFO  (qtp581374081-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:37:25.222 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511652934120} status=0 QTime=3
+2017-11-25 23:37:25.230 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/config params={wt=json&_=1511652935354} status=0 QTime=0
+2017-11-25 23:37:25.265 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511652934120} status=0 QTime=1
+2017-11-25 23:37:25.276 INFO  (qtp581374081-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=77
+2017-11-25 23:37:50.705 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=16
+2017-11-25 23:37:50.705 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=16
+2017-11-25 23:37:56.805 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /update/extract,class = solr.extraction.ExtractingRequestHandler,attributes = {startup=lazy, name=/update/extract, class=solr.extraction.ExtractingRequestHandler},args = {defaults={lowernames=true,uprefix=ignored_,fmap.a=links,fmap.div=ignored_,fmap.content=text,captureAttr=false,df=text}}} 
+2017-11-25 23:37:57.556 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-11-25 23:37:57.556 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@31c00319
+2017-11-25 23:37:57.902 INFO  (qtp581374081-14) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@26f3a6df[safety] main]
+2017-11-25 23:37:57.904 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-11-25 23:37:57.914 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@26f3a6df[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_1(6.6.1):C1)))}
+2017-11-25 23:37:57.914 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-25 23:37:57.914 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@26f3a6df[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_1(6.6.1):C1)))}
+2017-11-25 23:37:57.915 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={literal.id=1&commit=true}{add=[1 (1585083137303511040)],commit=} 0 1110
+2017-11-25 23:38:11.115 INFO  (qtp581374081-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:38:11.152 INFO  (qtp581374081-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=31
+2017-11-25 23:38:12.170 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1511653091066} hits=3 status=0 QTime=0
+2017-11-25 23:40:07.713 INFO  (qtp581374081-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:40:07.725 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/config params={wt=json&_=1511652935354} status=0 QTime=1
+2017-11-25 23:40:07.733 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511652934120} status=0 QTime=10
+2017-11-25 23:40:07.739 INFO  (qtp581374081-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=26
+2017-11-25 23:40:07.785 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511652934120} status=0 QTime=13
+2017-11-25 23:40:10.822 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:40:10.833 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511652934120} status=0 QTime=0
+2017-11-25 23:40:10.841 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/config params={wt=json&_=1511652935354} status=0 QTime=1
+2017-11-25 23:40:10.853 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=28
+2017-11-25 23:40:10.873 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511652934120} status=0 QTime=3
+2017-11-25 23:40:17.334 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1354003114
+2017-11-25 23:40:17.335 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2017-11-25 23:40:17.335 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2017-11-25 23:40:17.335 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2017-11-25 23:40:17.337 INFO  (coreCloseExecutor-12-thread-1) [   x:safety] o.a.s.c.SolrCore [safety]  CLOSING SolrCore org.apache.solr.core.SolrCore@1abd782d
+2017-11-25 23:40:17.361 INFO  (coreCloseExecutor-12-thread-1) [   x:safety] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.safety
