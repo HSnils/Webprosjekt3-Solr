@@ -1,6 +1,6 @@
 <?php
 	
-	if (!empty($_FILES['userFile'])) {
+	if (!empty($_FILES['userFile']) && $_FILES['userFile']['type'] == 'application/pdf') {
 /*		$filepath = 'webproj3/documents/';
 		$filename = $_FILES['userFile']['name'];
 		$ch = curl_init('http://localhost:8983/solr/safety/update/extract?literal.id=1&literal.name=Name&uprefix=attr_&fmap.content=attr_content&defaultField=text&commit=true');
@@ -15,14 +15,15 @@
 		//echo $filepath . $filename;
 		//echo $_FILES['userFile']['tmp_name'];
 
+		var_dump($_FILES['userFile']);
+
 		$uploads_dir = '../solr-6.6.1/uploads';
         $tmp_name = $_FILES["userFile"]["tmp_name"];
         $name = basename($_FILES["userFile"]["name"]);
         move_uploaded_file($tmp_name, "$uploads_dir/$name");
-		
-		
 
-		$target_url = "http://localhost:8983/solr/safety/update/extract?literal.id=1&commit=true";
+
+		$target_url = "http://localhost:8983/solr/safety/update/extract?commit=true";
 		$file_path = "C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/webproj3/documents/assignment.pdf";
 
 		$post = array (
@@ -48,8 +49,7 @@
 		echo $result;
 
 	} else {
-		echo "lolno";
-		var_dump($_FILES);
+		echo "This is not a valid pdf file.";
 		unset($_FILES['userFile']);
 
 		header("Location: upload.php");
