@@ -1,4 +1,15 @@
 <?php
+	require_once 'connect.php';
+
+
+	if($user->is_loggedin()){
+		//gets username from the session
+		$userID = $_SESSION['username'];
+
+		//changes the username to allways appear in uppercase when printed (and using th e variable)
+		$printableUsername = strtoupper($userID);
+	}
+
 	$curl = curl_init("http://localhost:8983/solr/safety/admin/ping?wt=json");
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 	$output = curl_exec($curl);
@@ -50,7 +61,14 @@
 	<div id="navbuttons" class="navitem">
 		<b>
 			<a href="">COOKIES OG PERSONVERN</a>
-			<a href="">LOGG INN</a>
+			<?php 
+				if($user->is_loggedin()){
+					echo "<a href='logout.php?logout=true'>LOGG UT</a>";
+				}else{
+					echo "<a href='login.php'>LOGG INN</a>";
+				}
+
+			?>
 		</b>
 	</div>
 </nav>

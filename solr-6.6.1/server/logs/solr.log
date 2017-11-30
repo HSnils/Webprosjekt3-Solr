@@ -1,83 +1,41 @@
-<<<<<<< HEAD
-2017-11-24 01:49:46.412 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
-2017-11-24 01:49:47.306 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
-2017-11-24 01:49:47.306 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-11-24 01:49:47.306 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1
-2017-11-24 01:49:47.326 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-24T01:49:47.307Z
-2017-11-24 01:49:47.327 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-11-24 01:49:47.429 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-11-24 01:49:47.451 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
-2017-11-24 01:49:47.855 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
-2017-11-24 01:49:47.997 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-11-24 01:49:47.999 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
-2017-11-24 01:49:48.065 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
-2017-11-24 01:49:48.356 INFO  (main) [   ] o.e.j.s.Server Started @2980ms
-2017-11-24 01:49:49.229 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2017-11-24 01:49:49.240 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
-2017-11-24 01:49:49.368 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
-2017-11-24 01:49:49.451 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
-2017-11-24 01:49:49.494 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
-2017-11-24 01:49:49.496 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
-2017-11-24 01:49:49.602 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-11-24 01:49:49.627 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
-2017-11-24 01:49:49.678 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-11-24 01:49:50.055 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-11-24 01:49:50.056 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-11-24 01:49:50.073 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-11-24 01:49:50.073 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-11-24 01:49:50.278 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@10a3f746[safety] main]
-2017-11-24 01:49:50.326 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf
-2017-11-24 01:49:50.351 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-11-24 01:49:50.356 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-11-24 01:49:50.364 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2017-11-24 01:49:50.366 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-11-24 01:49:50.380 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-11-24 01:49:50.381 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@42fc7bdf, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
-2017-11-24 01:49:50.382 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\elevate.xml
-2017-11-24 01:49:50.407 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
-2017-11-24 01:49:50.498 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@10a3f746[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
-2017-11-24 01:49:50.570 ERROR (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
-=======
-2017-11-30 14:35:34.296 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
-2017-11-30 14:35:35.427 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
-2017-11-30 14:35:35.427 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-11-30 14:35:35.427 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1
-2017-11-30 14:35:35.490 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-30T14:35:35.429Z
-2017-11-30 14:35:35.491 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-11-30 14:35:35.597 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-11-30 14:35:35.626 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
-2017-11-30 14:35:36.541 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
-2017-11-30 14:35:39.624 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-11-30 14:35:39.640 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
-2017-11-30 14:35:40.064 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
-2017-11-30 14:35:41.813 INFO  (main) [   ] o.e.j.s.Server Started @12172ms
-2017-11-30 14:35:43.984 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2017-11-30 14:35:44.028 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
-2017-11-30 14:35:44.134 INFO  (qtp581374081-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=193
-2017-11-30 14:35:44.354 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
-2017-11-30 14:35:44.531 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
-2017-11-30 14:35:44.643 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
-2017-11-30 14:35:44.646 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
-2017-11-30 14:35:44.854 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-11-30 14:35:44.894 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
-2017-11-30 14:35:45.160 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-11-30 14:35:45.847 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-11-30 14:35:45.848 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-11-30 14:35:46.061 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-11-30 14:35:46.061 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-11-30 14:35:46.875 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@30bd1a61[safety] main]
-2017-11-30 14:35:46.919 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf
-2017-11-30 14:35:46.964 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-11-30 14:35:46.990 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-11-30 14:35:46.998 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2017-11-30 14:35:47.001 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-11-30 14:35:47.043 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-11-30 14:35:47.044 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@71b709ca, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
-2017-11-30 14:35:47.065 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\elevate.xml
-2017-11-30 14:35:47.096 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
-2017-11-30 14:35:47.233 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@30bd1a61[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_4(6.6.1):C1)))}
-2017-11-30 14:35:47.318 ERROR (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
->>>>>>> origin/master
+2017-11-30 15:50:45.068 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-11-30 15:50:46.107 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
+2017-11-30 15:50:46.108 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-11-30 15:50:46.108 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1
+2017-11-30 15:50:46.127 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-30T15:50:46.109Z
+2017-11-30 15:50:46.128 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-11-30 15:50:46.197 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-11-30 15:50:46.218 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
+2017-11-30 15:50:46.664 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-11-30 15:50:46.951 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-11-30 15:50:46.953 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
+2017-11-30 15:50:47.017 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
+2017-11-30 15:50:47.373 INFO  (main) [   ] o.e.j.s.Server Started @3495ms
+2017-11-30 15:50:48.258 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-11-30 15:50:48.269 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
+2017-11-30 15:50:48.414 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
+2017-11-30 15:50:48.473 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-11-30 15:50:48.545 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
+2017-11-30 15:50:48.548 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
+2017-11-30 15:50:48.653 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-11-30 15:50:48.679 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
+2017-11-30 15:50:48.754 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-11-30 15:50:49.152 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-11-30 15:50:49.153 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-11-30 15:50:49.179 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-11-30 15:50:49.179 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-11-30 15:50:49.378 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@72e4cb7a[safety] main]
+2017-11-30 15:50:49.419 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf
+2017-11-30 15:50:49.452 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-11-30 15:50:49.458 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-11-30 15:50:49.465 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-11-30 15:50:49.467 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-11-30 15:50:49.485 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-11-30 15:50:49.486 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@3d4b9cf0, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2017-11-30 15:50:49.487 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\elevate.xml
+2017-11-30 15:50:49.509 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-11-30 15:50:49.608 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@72e4cb7a[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
+2017-11-30 15:50:49.696 ERROR (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
 	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1328)
 	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:455)
 	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
@@ -104,611 +62,64 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 
-<<<<<<< HEAD
-2017-11-24 01:49:50.571 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.S.Request [safety]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=70
-2017-11-24 01:49:50.572 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-24 01:49:50.572 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-11-24 01:49:50.572 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2017-11-24 01:49:50.572 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
-2017-11-24 01:49:50.572 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
-2017-11-24 01:49:50.606 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@10a3f746[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
-2017-11-24 01:49:53.393 INFO  (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=24
-2017-11-24 01:50:09.510 INFO  (qtp959447386-17) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2017-11-24 01:50:10.629 INFO  (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511488210351} status=0 QTime=2
-2017-11-24 01:50:10.683 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511488210352} status=0 QTime=55
-2017-11-24 01:50:10.740 INFO  (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511488210352} status=0 QTime=52
-2017-11-24 01:50:18.035 INFO  (qtp959447386-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511488210351} status=0 QTime=0
-2017-11-24 01:50:18.046 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1511488218029} status=0 QTime=10
-2017-11-24 01:50:18.088 INFO  (qtp959447386-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511488210352} status=0 QTime=52
-2017-11-24 01:50:23.147 INFO  (qtp959447386-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511488223031} status=0 QTime=0
-2017-11-24 01:50:23.203 INFO  (qtp959447386-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511488223032} status=0 QTime=55
-2017-11-24 01:50:23.236 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511488223032} status=0 QTime=29
-2017-11-24 01:54:01.094 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=69
-2017-11-24 01:54:01.094 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=69
-2017-11-24 01:54:05.764 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 01:54:05.764 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 01:54:06.129 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Test&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=71
-2017-11-24 01:54:10.497 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 01:54:10.497 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 01:54:10.550 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Hei&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=28
-2017-11-24 01:56:23.048 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 01:56:23.048 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 01:56:23.091 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=h&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 01:56:25.199 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 01:56:25.199 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 01:56:25.227 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=g&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 01:56:28.630 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 01:56:28.630 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 01:56:28.689 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=reds&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=41
-2017-11-24 01:58:58.263 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 01:58:58.263 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 01:58:58.299 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Test&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 01:59:26.849 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 01:59:26.849 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 01:59:26.885 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Test&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 02:04:16.003 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:04:16.003 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:04:18.937 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:04:18.937 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:04:22.239 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:04:22.239 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:04:23.802 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:04:23.802 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:04:25.672 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:04:25.672 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:04:54.578 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:04:54.578 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:04:56.625 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:04:56.625 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:04:56.659 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:08:56.942 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=1
-2017-11-24 02:08:56.942 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-24 02:08:56.983 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:08:58.685 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:08:58.685 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:08:58.703 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:08:58.873 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:08:58.873 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:08:58.893 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:08:59.048 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:08:59.048 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:08:59.089 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:09:02.039 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:09:02.039 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:09:02.066 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:12:06.286 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:12:06.287 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-24 02:12:06.314 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:12:16.738 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:12:16.739 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:12:16.773 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:12:31.015 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:12:31.015 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-24 02:12:31.042 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:12:42.869 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:12:42.870 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:12:42.888 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:12:47.171 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:12:47.171 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:12:47.190 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:16:04.823 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:16:04.823 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:16:45.764 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:16:45.765 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:17:04.809 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:17:04.809 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:17:32.205 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:17:32.206 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:17:32.238 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:18:10.249 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:18:10.249 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:18:10.286 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:21:08.232 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:21:08.232 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:21:08.269 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=2
-2017-11-24 02:22:16.929 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:22:16.929 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:22:16.964 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:23:20.777 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:23:20.777 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-24 02:23:20.819 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:23:22.743 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:23:22.743 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:23:22.770 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:23:23.600 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:23:23.601 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:23:23.632 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:23:25.132 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:23:25.132 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:23:25.167 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:23:26.310 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:23:26.311 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:23:26.338 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:23:38.884 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:23:38.885 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:23:38.904 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:23:39.639 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:23:39.639 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:23:39.659 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:23:40.459 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:23:40.460 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:23:40.487 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:23:42.280 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:23:42.280 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:23:42.314 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:23:43.138 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:23:43.138 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-24 02:23:43.166 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:24:00.065 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:24:00.066 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-24 02:24:00.094 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:24:01.563 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:24:01.564 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:24:01.591 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:24:13.388 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:24:13.388 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:24:13.406 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:24:14.075 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:24:14.075 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:24:14.096 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:24:14.327 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:24:14.327 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:24:14.347 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:24:19.900 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:24:19.900 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:24:19.937 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:24:30.644 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:24:30.644 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:24:30.676 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:24:48.907 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:24:48.907 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:24:48.933 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:24:55.078 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:24:55.078 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:24:55.108 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:25:34.125 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:25:34.126 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:25:34.144 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:26:04.039 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:26:04.040 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:26:04.066 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:29:07.600 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:29:07.601 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-24 02:29:07.628 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:29:08.932 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:29:08.933 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:29:08.951 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:29:14.529 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:29:14.530 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:29:14.548 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:29:35.936 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:29:35.936 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:29:35.961 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:29:50.855 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:29:50.855 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:29:50.882 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:30:37.639 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:30:37.640 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:30:37.674 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:30:39.217 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:30:39.217 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:33:24.846 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:33:24.846 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:33:28.586 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=1
-2017-11-24 02:33:28.587 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-24 02:33:32.703 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:33:32.704 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:33:57.118 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:33:57.118 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:34:00.321 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:34:00.321 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:34:02.585 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:34:02.585 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:35:56.197 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:35:56.197 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:35:56.208 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:35:56.209 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:36:36.885 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:36:36.885 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:36:36.931 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:36:57.454 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:36:57.454 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:36:57.494 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+blue&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=5
-2017-11-24 02:37:27.064 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:27.064 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:29.970 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:29.970 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:29.999 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:29.999 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:30.025 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:37:32.975 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:32.975 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:36.180 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:36.180 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:36.193 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:36.193 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:36.219 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+and+blue&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:37:45.029 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:45.029 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:50.120 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:50.121 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:50.141 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:50.141 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:50.163 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=oooh+gardener&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 02:37:51.971 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:51.972 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:55.933 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:55.933 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:55.961 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:55.961 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:37:55.980 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=gardener&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 02:37:57.764 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:37:57.764 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:00.967 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:00.968 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:00.990 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:00.990 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:01.017 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=ooohhhhh+red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:38:04.371 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:04.372 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:10.643 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:10.643 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:10.671 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:10.671 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:10.707 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=ooohhhhh+red+bee&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=2
-2017-11-24 02:38:16.190 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:16.190 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:28.414 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:28.414 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:28.443 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:28.443 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:28.474 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=redddd&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 02:38:29.341 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:29.342 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:33.603 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:33.604 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:33.625 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:33.625 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:38:33.650 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=whohoo&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 02:38:35.112 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:38:35.112 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:39:26.318 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:39:26.318 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:39:28.132 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:39:28.132 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:39:28.152 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:39:28.152 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:39:28.181 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:40:30.830 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:40:30.831 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:40:30.865 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 02:40:33.439 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:40:33.439 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:40:33.476 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 02:40:50.054 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:40:50.054 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:40:50.082 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=0
-2017-11-24 02:41:06.580 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:41:06.580 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:41:06.606 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=0
-2017-11-24 02:41:13.024 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:41:13.024 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:41:13.051 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=0
-2017-11-24 02:41:40.471 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:41:40.471 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:41:40.499 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=0
-2017-11-24 02:41:52.968 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=1
-2017-11-24 02:41:52.969 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=2
-2017-11-24 02:41:53.015 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 02:41:54.427 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:41:54.428 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:41:54.456 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=0
-2017-11-24 02:42:00.599 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:42:00.599 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:42:00.630 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=0
-2017-11-24 02:42:05.329 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:42:05.330 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:42:05.357 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=0
-2017-11-24 02:42:08.757 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:42:08.757 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:42:08.777 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=0
-2017-11-24 02:42:45.679 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:42:45.679 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:42:45.709 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=r&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=0
-2017-11-24 02:52:12.923 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=5
-2017-11-24 02:52:12.924 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=6
-2017-11-24 02:52:17.713 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:52:17.713 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:52:17.735 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:52:17.735 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:52:17.768 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
-2017-11-24 02:53:53.331 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:53:53.331 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:53:55.969 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:53:55.969 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:53:55.998 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:53:55.998 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:53:57.036 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:53:57.037 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:53:58.067 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:53:58.068 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:53:58.093 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:53:58.093 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:53:59.114 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:53:59.115 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:00.086 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:00.086 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:00.097 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:00.098 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:00.980 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:00.981 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:01.867 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:01.867 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:01.896 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:01.896 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:04.168 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:04.168 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:06.078 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:06.078 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:06.096 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:06.096 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:11.056 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:11.057 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:12.596 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:12.596 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:12.625 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:12.626 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:54:14.274 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:54:14.274 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:55:22.260 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:55:22.260 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:55:23.583 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:55:23.583 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:55:24.329 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:55:24.329 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:55:25.319 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:55:25.319 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:55:25.330 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:55:25.330 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:55:25.364 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=a&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 02:55:33.608 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:55:33.608 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:59:04.369 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:59:04.369 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:59:13.325 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:59:13.325 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:59:30.663 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:59:30.663 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:59:33.963 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:59:33.963 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:59:33.974 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:59:33.974 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:59:34.018 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=uyhy&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-11-24 02:59:58.456 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:59:58.456 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:59:58.486 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 02:59:58.486 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 02:59:58.531 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=4
-2017-11-24 03:00:22.510 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:00:22.511 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:00:22.539 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:00:31.409 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:00:31.409 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:00:31.435 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:00:35.724 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:00:35.724 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:00:35.751 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:00:45.638 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:00:45.638 INFO  (qtp959447386-35) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:00:45.665 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:00:54.526 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:00:54.526 INFO  (qtp959447386-37) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:00:54.544 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:00:56.263 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:00:56.264 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:00:56.283 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:01:58.355 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:01:58.356 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:01:58.374 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:02:07.422 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:02:07.423 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:02:07.460 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:02:14.879 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:02:14.879 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:02:14.913 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:02:24.043 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:02:24.043 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:02:24.070 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:02:34.675 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:02:34.675 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:02:34.703 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:02:41.113 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:02:41.115 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-24 03:02:41.141 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:02:46.918 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:02:46.918 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:02:46.945 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=1
-2017-11-24 03:02:53.538 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:02:53.538 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:02:53.567 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:03:05.791 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:03:05.791 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:03:05.818 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:03:11.304 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:03:11.305 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:03:11.331 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:03:17.135 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:03:17.136 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:03:17.154 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red+dirty&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:03:25.986 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:03:25.986 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:03:40.051 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:03:40.051 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:07:19.653 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:07:19.653 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:07:19.667 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:07:19.667 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:07:25.508 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:07:25.508 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:07:25.551 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 03:08:27.682 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:08:27.682 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:09:06.460 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:09:06.460 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:09:06.474 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-24 03:09:06.474 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-24 03:09:06.503 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
-2017-11-24 03:10:54.072 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=825658265
-2017-11-24 03:10:54.073 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
-2017-11-24 03:10:54.073 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
-2017-11-24 03:10:54.073 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
-2017-11-24 03:10:54.076 INFO  (coreCloseExecutor-12-thread-1) [   x:safety] o.a.s.c.SolrCore [safety]  CLOSING SolrCore org.apache.solr.core.SolrCore@42fc7bdf
-2017-11-24 03:10:54.096 INFO  (coreCloseExecutor-12-thread-1) [   x:safety] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.safety
-=======
-2017-11-30 14:35:47.319 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.S.Request [safety]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=84
-2017-11-30 14:35:47.319 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-30 14:35:47.319 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-11-30 14:35:47.319 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2017-11-30 14:35:47.320 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
-2017-11-30 14:35:47.320 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
-2017-11-30 14:35:47.387 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@30bd1a61[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_4(6.6.1):C1)))}
-2017-11-30 14:36:17.373 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=259
-2017-11-30 14:36:17.373 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=259
-2017-11-30 14:36:53.129 INFO  (qtp581374081-15) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2017-11-30 14:36:55.833 INFO  (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512052615347} status=0 QTime=2
-2017-11-30 14:36:55.871 INFO  (qtp581374081-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512052615349} status=0 QTime=34
-2017-11-30 14:36:55.881 INFO  (qtp581374081-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512052615349} status=0 QTime=35
-2017-11-30 14:37:00.238 INFO  (qtp581374081-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512052615347} status=0 QTime=0
-2017-11-30 14:37:00.255 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512052615349} status=0 QTime=16
-2017-11-30 14:37:00.334 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/replication params={wt=json&command=details&_=1512052620157} status=0 QTime=12
-2017-11-30 14:37:00.340 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/system params={wt=json&_=1512052620157} status=0 QTime=16
-2017-11-30 14:37:00.340 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1512052615349&ts=1512052615349} status=503 QTime=0
-2017-11-30 14:37:00.341 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1512052620157} status=0 QTime=18
-2017-11-30 14:37:05.070 INFO  (qtp581374081-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512052615347} status=0 QTime=0
-2017-11-30 14:37:05.101 INFO  (qtp581374081-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512052615349} status=0 QTime=27
-2017-11-30 14:37:06.764 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1512052625021} hits=3 status=0 QTime=1
-2017-11-30 14:37:26.594 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=0
-2017-11-30 14:37:26.594 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 14:37:28.615 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=0
-2017-11-30 14:37:28.615 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 14:37:28.799 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=0
-2017-11-30 14:37:28.821 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=22
-2017-11-30 14:37:31.682 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=1&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible+id&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=201
-2017-11-30 14:37:38.477 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=0
-2017-11-30 14:37:38.477 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 14:38:13.468 INFO  (qtp581374081-17) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@2444fb92[safety] realtime]
-2017-11-30 14:38:13.470 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-11-30 14:38:13.470 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@714de28a
-2017-11-30 14:38:13.529 INFO  (qtp581374081-17) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@1bb62f1[safety] main]
-2017-11-30 14:38:13.531 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-11-30 14:38:13.544 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1bb62f1[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
-2017-11-30 14:38:13.544 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-30 14:38:13.545 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@1bb62f1[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
-2017-11-30 14:38:13.554 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update params={stream.body=<delete><query>id:1</query></delete>&commit=true}{deleteByQuery=id:1 (-1585502165044035584),commit=} 0 298
-2017-11-30 14:38:17.783 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512052697579} status=0 QTime=0
-2017-11-30 14:38:17.802 INFO  (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512052697581} status=0 QTime=18
-2017-11-30 14:38:19.954 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1512052697734} hits=2 status=0 QTime=6
-2017-11-30 14:43:29.056 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-30 14:43:29.056 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-30 14:43:29.067 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-30 14:43:29.068 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 14:43:29.131 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=1&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible+id&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=2
-2017-11-30 14:43:33.414 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-30 14:43:33.414 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 14:43:44.426 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-30 14:43:44.426 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 14:44:02.750 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /update/extract,class = solr.extraction.ExtractingRequestHandler,attributes = {startup=lazy, name=/update/extract, class=solr.extraction.ExtractingRequestHandler},args = {defaults={lowernames=true,uprefix=ignored_,fmap.a=links,fmap.div=ignored_,fmap.content=text,captureAttr=false,df=text}}} 
-2017-11-30 14:44:03.858 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-11-30 14:44:03.858 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@714de28a
-2017-11-30 14:44:04.235 INFO  (qtp581374081-17) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@25d0a663[safety] main]
-2017-11-30 14:44:04.236 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-11-30 14:44:04.237 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@25d0a663[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_5(6.6.1):C1)))}
-2017-11-30 14:44:04.237 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-30 14:44:04.237 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@25d0a663[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_5(6.6.1):C1)))}
-2017-11-30 14:44:04.238 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={literal.id=1&commit=true}{add=[1 (1585502532403200000)],commit=} 0 1488
-2017-11-30 14:44:15.927 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=1
-2017-11-30 14:44:15.928 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-30 14:44:20.622 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=1
-2017-11-30 14:44:20.622 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-30 14:44:20.652 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=1
-2017-11-30 14:44:20.653 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-30 14:44:20.688 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=1&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible+id&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=2
-2017-11-30 15:02:36.855 INFO  (qtp581374081-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512054156558} status=0 QTime=0
-2017-11-30 15:02:36.886 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512054156560} status=0 QTime=30
-2017-11-30 15:02:41.471 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=0
-2017-11-30 15:02:41.471 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 15:02:50.978 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=0
-2017-11-30 15:02:50.978 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
-2017-11-30 15:03:00.172 INFO  (qtp581374081-16) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-11-30 15:03:00.172 INFO  (qtp581374081-16) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@714de28a
-2017-11-30 15:03:00.488 INFO  (qtp581374081-16) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@527ea09[safety] main]
-2017-11-30 15:03:00.489 INFO  (qtp581374081-16) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-11-30 15:03:00.489 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@527ea09[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_6(6.6.1):C1)))}
-2017-11-30 15:03:00.489 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-30 15:03:00.489 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@527ea09[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_6(6.6.1):C1)))}
-2017-11-30 15:03:00.498 INFO  (qtp581374081-16) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={literal.id=1&commit=true}{add=[1 (1585503724018597888)],commit=} 0 350
-2017-11-30 15:04:17.055 INFO  (qtp581374081-19) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-11-30 15:04:17.055 INFO  (qtp581374081-19) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@714de28a
-2017-11-30 15:04:17.430 INFO  (qtp581374081-19) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@e4d87a0[safety] main]
-2017-11-30 15:04:17.431 INFO  (qtp581374081-19) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-11-30 15:04:17.432 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@e4d87a0[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_7(6.6.1):C1)))}
-2017-11-30 15:04:17.432 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-30 15:04:17.432 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@e4d87a0[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_7(6.6.1):C1)))}
-2017-11-30 15:04:17.442 INFO  (qtp581374081-19) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={literal.id=1&commit=true}{add=[1 (1585503804629975040)],commit=} 0 418
-2017-11-30 15:05:04.596 INFO  (qtp581374081-15) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-11-30 15:05:04.596 INFO  (qtp581374081-15) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@714de28a
-2017-11-30 15:05:05.089 INFO  (qtp581374081-15) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@41aaf078[safety] main]
-2017-11-30 15:05:05.090 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@41aaf078[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_8(6.6.1):C1)))}
-2017-11-30 15:05:05.091 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-30 15:05:05.091 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@41aaf078[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_8(6.6.1):C1)))}
-2017-11-30 15:05:05.095 INFO  (qtp581374081-15) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-11-30 15:05:05.100 INFO  (qtp581374081-15) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={literal.id=1&commit=true}{add=[1 (1585503854485569536)],commit=} 0 528
-2017-11-30 15:05:11.166 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=3 status=0 QTime=0
-2017-11-30 15:05:11.166 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 15:07:42.659 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1512054156798} hits=3 status=0 QTime=0
-2017-11-30 15:07:53.891 INFO  (qtp581374081-22) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@76362f3b[safety] realtime]
-2017-11-30 15:07:53.891 INFO  (qtp581374081-22) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-11-30 15:07:53.891 INFO  (qtp581374081-22) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@714de28a
-2017-11-30 15:07:53.978 INFO  (qtp581374081-22) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@7599265c[safety] main]
-2017-11-30 15:07:53.979 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7599265c[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
-2017-11-30 15:07:53.979 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-30 15:07:53.979 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@7599265c[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
-2017-11-30 15:07:53.984 INFO  (qtp581374081-22) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-11-30 15:07:53.991 INFO  (qtp581374081-22) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update params={stream.body=<delete><query>id:1</query></delete>&commit=true}{deleteByQuery=id:1 (-1585504032008437760),commit=} 0 107
-2017-11-30 15:07:57.702 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512054477510} status=0 QTime=0
-2017-11-30 15:07:57.749 INFO  (qtp581374081-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512054477511} status=0 QTime=46
-2017-11-30 15:08:00.214 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1512054477656} hits=2 status=0 QTime=0
-2017-11-30 15:08:11.452 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-30 15:08:11.453 INFO  (qtp581374081-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 15:08:40.569 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-30 15:08:40.569 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 15:09:06.174 INFO  (qtp581374081-19) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-11-30 15:09:06.174 INFO  (qtp581374081-19) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@714de28a
-2017-11-30 15:09:06.494 INFO  (qtp581374081-19) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@ba7f6ef[safety] main]
-2017-11-30 15:09:06.495 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@ba7f6ef[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_9(6.6.1):C1)))}
-2017-11-30 15:09:06.495 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-30 15:09:06.495 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@ba7f6ef[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_9(6.6.1):C1)))}
-2017-11-30 15:09:06.497 INFO  (qtp581374081-19) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-11-30 15:09:06.497 INFO  (qtp581374081-19) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={literal.id=1&commit=true}{add=[1 (1585504107798462464)],commit=} 0 345
-2017-11-30 15:09:15.830 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1512054477656} hits=3 status=0 QTime=0
-2017-11-30 15:15:50.875 INFO  (qtp581374081-15) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@677623b4[safety] realtime]
-2017-11-30 15:15:50.875 INFO  (qtp581374081-15) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-11-30 15:15:50.876 INFO  (qtp581374081-15) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@714de28a
-2017-11-30 15:15:50.938 INFO  (qtp581374081-15) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@1a75d153[safety] main]
-2017-11-30 15:15:50.939 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1a75d153[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
-2017-11-30 15:15:50.939 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-11-30 15:15:50.939 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@1a75d153[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
-2017-11-30 15:15:50.942 INFO  (qtp581374081-15) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-11-30 15:15:50.952 INFO  (qtp581374081-15) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update params={stream.body=<delete><query>id:1</query></delete>&commit=true}{deleteByQuery=id:1 (-1585504532155072512),commit=} 0 90
-2017-11-30 15:15:55.656 INFO  (qtp581374081-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512054955432} status=0 QTime=0
-2017-11-30 15:15:55.684 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512054955434} status=0 QTime=27
-2017-11-30 15:15:57.410 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1512054955605} hits=2 status=0 QTime=0
-2017-11-30 15:20:17.017 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
-2017-11-30 15:20:17.017 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-11-30 15:25:45.614 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1354003114
-2017-11-30 15:25:45.614 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
-2017-11-30 15:25:45.614 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
-2017-11-30 15:25:45.614 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
-2017-11-30 15:25:45.618 INFO  (coreCloseExecutor-12-thread-1) [   x:safety] o.a.s.c.SolrCore [safety]  CLOSING SolrCore org.apache.solr.core.SolrCore@71b709ca
-2017-11-30 15:25:45.633 INFO  (coreCloseExecutor-12-thread-1) [   x:safety] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.safety
->>>>>>> origin/master
+2017-11-30 15:50:49.697 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.S.Request [safety]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=85
+2017-11-30 15:50:49.697 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-30 15:50:49.697 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-11-30 15:50:49.697 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-11-30 15:50:49.697 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2017-11-30 15:50:49.698 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2017-11-30 15:50:49.783 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@72e4cb7a[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
+2017-11-30 15:50:52.068 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=22
+2017-11-30 15:54:32.226 INFO  (qtp959447386-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=47
+2017-11-30 15:54:32.227 INFO  (qtp959447386-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=48
+2017-11-30 15:54:48.331 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 15:54:48.331 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 15:58:34.909 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 15:58:34.909 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 15:58:34.929 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 15:58:34.929 INFO  (qtp959447386-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 15:58:35.389 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible+id&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=95
+2017-11-30 16:00:19.696 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:00:19.696 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:00:19.722 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible+id&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
+2017-11-30 16:00:22.911 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:00:22.911 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:00:22.935 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible+id&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
+2017-11-30 16:00:23.896 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:00:23.896 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:00:23.912 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible+id&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=0
+2017-11-30 16:00:25.743 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:00:25.743 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:00:33.847 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:00:33.848 INFO  (qtp959447386-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:00:45.803 INFO  (qtp959447386-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:00:45.803 INFO  (qtp959447386-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:00:49.545 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:00:49.545 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:00:56.566 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:00:56.567 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:01:15.583 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:01:15.584 INFO  (qtp959447386-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:01:16.602 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:01:16.602 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:01:16.736 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:01:16.736 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
+2017-11-30 16:01:16.895 INFO  (qtp959447386-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:01:16.896 INFO  (qtp959447386-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:01:38.520 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:01:38.520 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:01:41.890 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:01:41.890 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:01:41.906 INFO  (qtp959447386-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:01:41.906 INFO  (qtp959447386-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:01:41.940 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=red&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible+id&fl=*,score&start=0&rows=10&wt=json} hits=1 status=0 QTime=1
+2017-11-30 16:01:59.889 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:01:59.889 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:45:08.783 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=9
+2017-11-30 16:45:08.786 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=12
+2017-11-30 16:45:18.492 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=1
+2017-11-30 16:45:18.492 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
+2017-11-30 16:45:27.665 INFO  (qtp959447386-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:45:27.665 INFO  (qtp959447386-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
+2017-11-30 16:45:34.523 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-30 16:45:34.523 INFO  (qtp959447386-21) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0

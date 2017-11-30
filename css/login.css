@@ -1,0 +1,56 @@
+body{
+	background-color: #f3f3f3;
+	margin: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+h1{
+	text-align: center;
+}
+#main{
+	margin-top: 5%;
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 40%;
+	padding-right: 40%;
+
+}
+.container{
+	box-sizing: border-box;
+	width: 100%;
+	color: black;
+	border: 2px solid #56a2aa;
+	padding: 5%;
+}
+
+.container input:nth-child(1n+2) {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 1% 0 1% 0;
+	padding: 4%;
+	border-radius: 5px;
+	border: 0;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.buttonclass{
+	width: 100%;
+	padding: 3%;
+	margin-top: 10%;
+	border: 0;
+	background-color: #56a2aa;
+	font-weight: bold;
+	color: white;
+
+}
+.right{
+ float:right;
+}
+
+.left{
+	float:left;
+}
+
+#usernameError,#passError{
+	color: red;
+}

@@ -59,7 +59,7 @@ nav{
 }
 
 #searchfield{
-	width: 90%;
+	width: 88%;
 	height: 3em;
 }
 
@@ -69,7 +69,7 @@ nav{
 	background-color: #56a2aa;
 	border: 0;
 	color: white;
-	float: right;
+	/*float: right;*/
 	font-weight: bold;
 }
 
