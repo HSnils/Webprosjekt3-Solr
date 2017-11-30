@@ -1,679 +1,130 @@
-2017-11-25 23:32:25.067 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
-2017-11-25 23:32:26.121 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
-2017-11-25 23:32:26.122 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-11-25 23:32:26.122 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1
-2017-11-25 23:32:26.143 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-25T23:32:26.123Z
-2017-11-25 23:32:26.144 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-11-25 23:32:26.169 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-11-25 23:32:26.176 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
-2017-11-25 23:32:26.613 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
-2017-11-25 23:32:27.047 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-11-25 23:32:27.051 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
-2017-11-25 23:32:27.168 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
-2017-11-25 23:32:27.718 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2017-11-25 23:32:27.732 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
-2017-11-25 23:32:28.009 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
-2017-11-25 23:32:28.029 INFO  (main) [   ] o.e.j.s.Server Started @4681ms
-2017-11-25 23:32:28.066 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
-2017-11-25 23:32:28.081 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
-java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [safety]
-	at java.util.concurrent.FutureTask.report(Unknown Source)
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at org.apache.solr.core.CoreContainer.lambda$load$6(CoreContainer.java:592)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:176)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+2017-11-25 23:35:21.272 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-11-25 23:35:22.073 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
+2017-11-25 23:35:22.074 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-11-25 23:35:22.074 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1
+2017-11-25 23:35:22.100 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-25T23:35:22.076Z
+2017-11-25 23:35:22.101 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-11-25 23:35:22.130 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-11-25 23:35:22.139 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
+2017-11-25 23:35:22.522 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-11-25 23:35:22.835 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-11-25 23:35:22.840 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
+2017-11-25 23:35:22.966 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
+2017-11-25 23:35:23.244 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-11-25 23:35:23.254 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
+2017-11-25 23:35:23.537 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
+2017-11-25 23:35:23.561 INFO  (main) [   ] o.e.j.s.Server Started @3742ms
+2017-11-25 23:35:23.597 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-11-25 23:35:23.630 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
+2017-11-25 23:35:23.632 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
+2017-11-25 23:35:23.698 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-11-25 23:35:23.733 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
+2017-11-25 23:35:23.798 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-11-25 23:35:24.167 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-11-25 23:35:24.167 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-11-25 23:35:24.190 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-11-25 23:35:24.190 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-11-25 23:35:24.347 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c64e7c5[safety] main]
+2017-11-25 23:35:24.367 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf
+2017-11-25 23:35:24.396 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-11-25 23:35:24.407 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-11-25 23:35:24.416 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-11-25 23:35:24.420 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-11-25 23:35:24.442 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-11-25 23:35:24.444 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@1abd782d, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2017-11-25 23:35:24.445 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\elevate.xml
+2017-11-25 23:35:24.460 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-11-25 23:35:24.530 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1c64e7c5[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
+2017-11-25 23:35:24.595 ERROR (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1328)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:455)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:241)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:444)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:61)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:970)
+	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:564)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:141)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.core.QuerySenderListener.newSearcher(QuerySenderListener.java:74)
+	at org.apache.solr.core.SolrCore.lambda$getSearcher$15(SolrCore.java:2249)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Unable to create core [safety]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:938)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	... 5 more
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	... 7 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
-2017-11-25 23:32:32.651 INFO  (qtp581374081-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=82
-2017-11-25 23:32:40.737 INFO  (qtp581374081-13) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2017-11-25 23:32:40.740 ERROR (qtp581374081-13) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
 
-2017-11-25 23:32:41.954 ERROR (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
-
-2017-11-25 23:32:42.586 ERROR (qtp581374081-21) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
-
-2017-11-25 23:32:47.533 ERROR (qtp581374081-17) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
-
-2017-11-25 23:32:47.535 INFO  (qtp581374081-17) [   ] o.a.s.s.SolrDispatchFilter Could not consume full client request
-java.io.IOException: Committed before 100 Continues
-	at org.eclipse.jetty.server.HttpChannelOverHttp.continue100(HttpChannelOverHttp.java:210)
-	at org.eclipse.jetty.server.Request.getInputStream(Request.java:830)
-	at org.apache.solr.servlet.SolrDispatchFilter.consumeInputFully(SolrDispatchFilter.java:387)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:378)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-2017-11-25 23:32:50.820 ERROR (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
-
-2017-11-25 23:32:51.502 ERROR (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
-
-2017-11-25 23:34:53.132 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511651440745} status=0 QTime=2
-2017-11-25 23:34:53.155 ERROR (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
-
-2017-11-25 23:34:53.169 INFO  (qtp581374081-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511651440746} status=0 QTime=29
-2017-11-25 23:34:53.176 ERROR (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
-
-2017-11-25 23:35:06.008 INFO  (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652905733} status=0 QTime=0
-2017-11-25 23:35:06.015 ERROR (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
-
-2017-11-25 23:35:06.019 ERROR (qtp581374081-21) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:608)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
-	... 8 more
-Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'ignored' specified on field *
-	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:676)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:497)
-	... 15 more
-
-2017-11-25 23:35:06.048 INFO  (qtp581374081-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652905735} status=0 QTime=38
-2017-11-25 23:35:07.235 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652905733} status=0 QTime=0
-2017-11-25 23:35:07.246 INFO  (qtp581374081-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1511652905733} status=0 QTime=0
-2017-11-25 23:35:07.264 INFO  (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652905735} status=0 QTime=28
-2017-11-25 23:35:12.576 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1354003114
-2017-11-25 23:35:12.577 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
-2017-11-25 23:35:12.577 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
-2017-11-25 23:35:12.577 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2017-11-25 23:35:24.597 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.S.Request [safety]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=63
+2017-11-25 23:35:24.597 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-25 23:35:24.597 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-11-25 23:35:24.597 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-11-25 23:35:24.597 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2017-11-25 23:35:24.598 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2017-11-25 23:35:24.654 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@1c64e7c5[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
+2017-11-25 23:35:28.430 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=31
+2017-11-25 23:35:31.198 INFO  (qtp581374081-20) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-11-25 23:35:31.676 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=2
+2017-11-25 23:35:31.698 INFO  (qtp581374081-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1511652931502} status=0 QTime=7
+2017-11-25 23:35:31.729 INFO  (qtp581374081-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=53
+2017-11-25 23:35:31.759 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:35:31.771 INFO  (qtp581374081-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1511652931502} status=0 QTime=6
+2017-11-25 23:35:31.791 INFO  (qtp581374081-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=30
+2017-11-25 23:35:34.131 INFO  (qtp581374081-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:35:34.140 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1511652934120} status=0 QTime=3
+2017-11-25 23:35:34.142 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/replication params={wt=json&command=details&_=1511652934120} status=0 QTime=3
+2017-11-25 23:35:34.152 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1511652931504&ts=1511652931504} status=503 QTime=1
+2017-11-25 23:35:34.190 INFO  (qtp581374081-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=56
+2017-11-25 23:35:34.190 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/system params={wt=json&_=1511652934120} status=0 QTime=43
+2017-11-25 23:35:35.388 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:35:35.444 INFO  (qtp581374081-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/config params={wt=json&_=1511652935354} status=0 QTime=32
+2017-11-25 23:35:35.450 INFO  (qtp581374081-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=54
+2017-11-25 23:35:35.464 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511652934120} status=0 QTime=31
+2017-11-25 23:35:35.520 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511652934120} status=0 QTime=42
+2017-11-25 23:37:17.197 INFO  (qtp581374081-18) [   x:safety] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\managed-schema
+2017-11-25 23:37:17.236 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/schema params={wt=json&_=1511652935354} status=0 QTime=156
+2017-11-25 23:37:18.747 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511652934120} status=0 QTime=1
+2017-11-25 23:37:18.755 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/config params={wt=json&_=1511652935354} status=0 QTime=0
+2017-11-25 23:37:18.768 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511652934120} status=0 QTime=1
+2017-11-25 23:37:25.194 INFO  (qtp581374081-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:37:25.222 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511652934120} status=0 QTime=3
+2017-11-25 23:37:25.230 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/config params={wt=json&_=1511652935354} status=0 QTime=0
+2017-11-25 23:37:25.265 INFO  (qtp581374081-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511652934120} status=0 QTime=1
+2017-11-25 23:37:25.276 INFO  (qtp581374081-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=77
+2017-11-25 23:37:50.705 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=16
+2017-11-25 23:37:50.705 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=16
+2017-11-25 23:37:56.805 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /update/extract,class = solr.extraction.ExtractingRequestHandler,attributes = {startup=lazy, name=/update/extract, class=solr.extraction.ExtractingRequestHandler},args = {defaults={lowernames=true,uprefix=ignored_,fmap.a=links,fmap.div=ignored_,fmap.content=text,captureAttr=false,df=text}}} 
+2017-11-25 23:37:57.556 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-11-25 23:37:57.556 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@31c00319
+2017-11-25 23:37:57.902 INFO  (qtp581374081-14) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@26f3a6df[safety] main]
+2017-11-25 23:37:57.904 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-11-25 23:37:57.914 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@26f3a6df[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_1(6.6.1):C1)))}
+2017-11-25 23:37:57.914 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-25 23:37:57.914 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@26f3a6df[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2) Uninverting(_1(6.6.1):C1)))}
+2017-11-25 23:37:57.915 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={literal.id=1&commit=true}{add=[1 (1585083137303511040)],commit=} 0 1110
+2017-11-25 23:38:11.115 INFO  (qtp581374081-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:38:11.152 INFO  (qtp581374081-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=31
+2017-11-25 23:38:12.170 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1511653091066} hits=3 status=0 QTime=0
+2017-11-25 23:40:07.713 INFO  (qtp581374081-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:40:07.725 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/config params={wt=json&_=1511652935354} status=0 QTime=1
+2017-11-25 23:40:07.733 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511652934120} status=0 QTime=10
+2017-11-25 23:40:07.739 INFO  (qtp581374081-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=26
+2017-11-25 23:40:07.785 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511652934120} status=0 QTime=13
+2017-11-25 23:40:10.822 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511652931502} status=0 QTime=0
+2017-11-25 23:40:10.833 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1511652934120} status=0 QTime=0
+2017-11-25 23:40:10.841 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/config params={wt=json&_=1511652935354} status=0 QTime=1
+2017-11-25 23:40:10.853 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511652931503} status=0 QTime=28
+2017-11-25 23:40:10.873 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1511652934120} status=0 QTime=3
+2017-11-25 23:40:17.334 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1354003114
+2017-11-25 23:40:17.335 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2017-11-25 23:40:17.335 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2017-11-25 23:40:17.335 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2017-11-25 23:40:17.337 INFO  (coreCloseExecutor-12-thread-1) [   x:safety] o.a.s.c.SolrCore [safety]  CLOSING SolrCore org.apache.solr.core.SolrCore@1abd782d
+2017-11-25 23:40:17.361 INFO  (coreCloseExecutor-12-thread-1) [   x:safety] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.safety

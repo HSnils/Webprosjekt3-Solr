@@ -1,57 +1,113 @@
-2017-11-25 23:04:52.368 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
-2017-11-25 23:04:53.259 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
-2017-11-25 23:04:53.260 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-11-25 23:04:53.260 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1
-2017-11-25 23:04:53.286 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-25T23:04:53.262Z
-2017-11-25 23:04:53.287 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-11-25 23:04:53.315 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-11-25 23:04:53.329 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
-2017-11-25 23:04:53.697 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
-2017-11-25 23:04:54.031 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-11-25 23:04:54.034 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
-2017-11-25 23:04:54.154 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
-java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [safety]
-	at java.util.concurrent.FutureTask.report(Unknown Source)
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at org.apache.solr.core.CoreContainer.lambda$load$6(CoreContainer.java:592)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:176)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+2017-11-25 23:06:23.042 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-11-25 23:06:24.108 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
+2017-11-25 23:06:24.108 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-11-25 23:06:24.109 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1
+2017-11-25 23:06:24.134 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-11-25T23:06:24.110Z
+2017-11-25 23:06:24.135 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-11-25 23:06:24.162 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-11-25 23:06:24.170 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
+2017-11-25 23:06:24.636 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-11-25 23:06:25.011 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-11-25 23:06:25.018 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
+2017-11-25 23:06:25.277 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
+2017-11-25 23:06:25.623 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-11-25 23:06:25.634 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
+2017-11-25 23:06:25.917 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
+2017-11-25 23:06:26.009 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-11-25 23:06:26.056 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
+2017-11-25 23:06:26.057 INFO  (main) [   ] o.e.j.s.Server Started @4568ms
+2017-11-25 23:06:26.061 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
+2017-11-25 23:06:26.138 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-11-25 23:06:26.174 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
+2017-11-25 23:06:26.252 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-11-25 23:06:26.959 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-11-25 23:06:26.960 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-11-25 23:06:27.001 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-11-25 23:06:27.002 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-11-25 23:06:27.265 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@77f41189[safety] main]
+2017-11-25 23:06:27.289 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf
+2017-11-25 23:06:27.320 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-11-25 23:06:27.334 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-11-25 23:06:27.348 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-11-25 23:06:27.353 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-11-25 23:06:27.379 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-11-25 23:06:27.381 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@196398c0, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2017-11-25 23:06:27.382 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\elevate.xml
+2017-11-25 23:06:27.403 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-11-25 23:06:27.536 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@77f41189[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
+2017-11-25 23:06:27.614 ERROR (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1328)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:455)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:241)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:444)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:61)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:970)
+	at org.apache.solr.parser.QueryParser.MultiTerm(QueryParser.java:564)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:141)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:130)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:211)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:53)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:168)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:270)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.core.QuerySenderListener.newSearcher(QuerySenderListener.java:74)
+	at org.apache.solr.core.SolrCore.lambda$getSearcher$15(SolrCore.java:2249)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Unable to create core [safety]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:938)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	... 5 more
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Error loading solr config from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\solrconfig.xml
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	... 7 more
-Caused by: org.apache.solr.common.SolrException: Error loading solr config from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\solrconfig.xml
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:188)
-	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:109)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
-	... 8 more
-Caused by: java.lang.RuntimeException: Syntax error in property: ${solr.install.dir:../../../../contrib/extraction/lib
-	at org.apache.solr.util.PropertiesUtil.parsePropertyString(PropertiesUtil.java:116)
-	at org.apache.solr.util.PropertiesUtil.substituteProperty(PropertiesUtil.java:42)
-	at org.apache.solr.util.DOMUtil.substituteProperties(DOMUtil.java:309)
-	at org.apache.solr.util.DOMUtil.substituteProperties(DOMUtil.java:311)
-	at org.apache.solr.core.Config.<init>(Config.java:150)
-	at org.apache.solr.core.Config.<init>(Config.java:90)
-	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:203)
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:180)
-	... 10 more
-2017-11-25 23:04:54.497 INFO  (main) [   ] o.e.j.s.Server Started @3612ms
-2017-11-25 23:04:59.480 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=73
-2017-11-25 23:05:02.781 INFO  (qtp581374081-21) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2017-11-25 23:05:02.787 ERROR (qtp581374081-21) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Could not load conf for core safety: Error loading solr config from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\solrconfig.xml
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+
+2017-11-25 23:06:27.616 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.S.Request [safety]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=77
+2017-11-25 23:06:27.616 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-11-25 23:06:27.617 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-11-25 23:06:27.618 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-11-25 23:06:27.618 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2017-11-25 23:06:27.619 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2017-11-25 23:06:27.776 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@77f41189[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C2)))}
+2017-11-25 23:06:30.793 INFO  (qtp581374081-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=31
+2017-11-25 23:06:38.329 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=116
+2017-11-25 23:06:38.330 INFO  (qtp581374081-13) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=117
+2017-11-25 23:06:46.709 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /update/extract,class = solr.extraction.ExtractingRequestHandler,attributes = {startup=lazy, name=/update/extract, class=solr.extraction.ExtractingRequestHandler},args = {defaults={lowernames=true,uprefix=ignored_,captureAttr=true,fmap.a=links,fmap.div=ignored_,df=text}}} 
+2017-11-25 23:06:47.663 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-11-25 23:06:47.664 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2017-11-25 23:06:47.665 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-11-25 23:06:47.666 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={myFile=@C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/webproj3/documents/assignment.pdf&literal.id=1&commit=true}{commit=} 0 956
+2017-11-25 23:06:57.292 INFO  (qtp581374081-16) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-11-25 23:06:58.020 INFO  (qtp581374081-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511651217750} status=0 QTime=1
+2017-11-25 23:06:58.061 INFO  (qtp581374081-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511651217752} status=0 QTime=40
+2017-11-25 23:06:58.801 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1511651217944} hits=2 status=0 QTime=3
+2017-11-25 23:07:05.931 INFO  (qtp581374081-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511651225714} status=0 QTime=0
+2017-11-25 23:07:05.964 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511651225715} status=0 QTime=31
+2017-11-25 23:07:08.606 INFO  (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511651228023} status=0 QTime=0
+2017-11-25 23:07:08.650 INFO  (qtp581374081-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511651228023} status=0 QTime=41
+2017-11-25 23:07:09.623 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1511651228539} hits=2 status=0 QTime=0
+2017-11-25 23:10:25.310 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-25 23:10:25.310 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
+2017-11-25 23:10:30.864 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-11-25 23:10:30.864 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2017-11-25 23:10:30.865 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-11-25 23:10:30.866 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={myFile=@C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/webproj3/documents/assignment.pdf&literal.id=1&commit=true}{commit=} 0 10
+2017-11-25 23:10:34.022 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-25 23:10:34.022 INFO  (qtp581374081-19) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
+2017-11-25 23:10:38.904 INFO  (qtp581374081-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511651438629} status=0 QTime=0
+2017-11-25 23:10:38.932 INFO  (qtp581374081-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511651438630} status=0 QTime=27
+2017-11-25 23:10:39.516 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1511651438843} hits=2 status=0 QTime=0
+2017-11-25 23:10:40.915 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1511651440745} status=0 QTime=0
+2017-11-25 23:10:40.941 INFO  (qtp581374081-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1511651440746} status=0 QTime=24
+2017-11-25 23:10:41.502 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1511651440858} hits=2 status=0 QTime=0
+2017-11-25 23:13:12.832 INFO  (qtp581374081-19) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={literal.id=1&commit=true}{} 0 218
+2017-11-25 23:13:12.834 ERROR (qtp581374081-19) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.tika.exception.TikaException: XML parse error
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.load(ExtractingDocumentLoader.java:234)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
 	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
 	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
@@ -77,43 +133,45 @@ Caused by: java.lang.RuntimeException: Syntax error in property: ${solr.install.
 	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
 	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
 	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.execute(ExecuteProduceConsume.java:100)
-	at org.eclipse.jetty.io.ManagedSelector.run(ManagedSelector.java:147)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core safety: Error loading solr config from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\solrconfig.xml
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:918)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Error loading solr config from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\solrconfig.xml
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:188)
-	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:109)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
-	... 8 more
-Caused by: java.lang.RuntimeException: Syntax error in property: ${solr.install.dir:../../../../contrib/extraction/lib
-	at org.apache.solr.util.PropertiesUtil.parsePropertyString(PropertiesUtil.java:116)
-	at org.apache.solr.util.PropertiesUtil.substituteProperty(PropertiesUtil.java:42)
-	at org.apache.solr.util.DOMUtil.substituteProperties(DOMUtil.java:309)
-	at org.apache.solr.util.DOMUtil.substituteProperties(DOMUtil.java:311)
-	at org.apache.solr.core.Config.<init>(Config.java:150)
-	at org.apache.solr.core.Config.<init>(Config.java:90)
-	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:203)
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:180)
-	... 10 more
+Caused by: org.apache.tika.exception.TikaException: XML parse error
+	at org.apache.tika.parser.xml.XMLParser.parse(XMLParser.java:78)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:280)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:280)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:120)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.load(ExtractingDocumentLoader.java:228)
+	... 34 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at org.apache.tika.parser.xml.XMLParser.parse(XMLParser.java:72)
+	... 38 more
 
-2017-11-25 23:05:02.801 INFO  (qtp581374081-21) [   ] o.a.s.s.SolrDispatchFilter Could not consume full client request
-java.io.IOException: Committed before 100 Continues
-	at org.eclipse.jetty.server.HttpChannelOverHttp.continue100(HttpChannelOverHttp.java:210)
-	at org.eclipse.jetty.server.Request.getInputStream(Request.java:830)
-	at org.apache.solr.servlet.SolrDispatchFilter.consumeInputFully(SolrDispatchFilter.java:387)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:378)
+2017-11-25 23:13:12.836 ERROR (qtp581374081-19) [   x:safety] o.a.s.s.HttpSolrCall null:org.apache.solr.common.SolrException: org.apache.tika.exception.TikaException: XML parse error
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.load(ExtractingDocumentLoader.java:234)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
 	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
@@ -138,12 +196,211 @@ java.io.IOException: Committed before 100 Continues
 	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
 	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
 	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.execute(ExecuteProduceConsume.java:100)
-	at org.eclipse.jetty.io.ManagedSelector.run(ManagedSelector.java:147)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
 	at java.lang.Thread.run(Unknown Source)
-2017-11-25 23:06:00.032 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1354003114
-2017-11-25 23:06:00.033 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
-2017-11-25 23:06:00.033 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
-2017-11-25 23:06:00.033 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+Caused by: org.apache.tika.exception.TikaException: XML parse error
+	at org.apache.tika.parser.xml.XMLParser.parse(XMLParser.java:78)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:280)
+	at org.apache.tika.parser.CompositeParser.parse(CompositeParser.java:280)
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:120)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.load(ExtractingDocumentLoader.java:228)
+	... 34 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at org.apache.tika.parser.xml.XMLParser.parse(XMLParser.java:72)
+	... 38 more
+
+2017-11-25 23:13:36.155 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=1
+2017-11-25 23:13:36.155 INFO  (qtp581374081-22) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=2
+2017-11-25 23:13:42.905 INFO  (qtp581374081-14) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={literal.id=1&commit=true}{} 0 223
+2017-11-25 23:13:42.906 ERROR (qtp581374081-14) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=1] unknown field 'ignored_meta'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:246)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:102)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocument(DirectUpdateHandler2.java:922)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:913)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:302)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:239)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:194)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:67)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:979)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:1192)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:748)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:91)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.doAdd(ExtractingDocumentLoader.java:126)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.addDoc(ExtractingDocumentLoader.java:131)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.load(ExtractingDocumentLoader.java:237)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+
+2017-11-25 23:16:41.625 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-25 23:16:41.626 INFO  (qtp581374081-15) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
+2017-11-25 23:16:46.980 INFO  (qtp581374081-17) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={defaultField=text&literal.name=Name&literal.id=1&fmap.content=attr_content&commit=true&uprefix=attr_}{} 0 18
+2017-11-25 23:16:46.981 ERROR (qtp581374081-17) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=1] unknown field 'attr_meta'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:246)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:102)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocument(DirectUpdateHandler2.java:922)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:913)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:302)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:239)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:194)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:67)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:979)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:1192)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:748)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:91)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.doAdd(ExtractingDocumentLoader.java:126)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.addDoc(ExtractingDocumentLoader.java:131)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.load(ExtractingDocumentLoader.java:237)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+
+2017-11-25 23:18:14.300 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-11-25 23:18:14.300 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
+2017-11-25 23:18:20.201 INFO  (qtp581374081-13) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={literal.id=1&commit=true}{} 0 7
+2017-11-25 23:18:20.202 ERROR (qtp581374081-13) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=1] unknown field 'ignored_meta'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:246)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:102)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocument(DirectUpdateHandler2.java:922)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:913)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:302)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:239)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:194)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:67)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:979)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:1192)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:748)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:91)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.doAdd(ExtractingDocumentLoader.java:126)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.addDoc(ExtractingDocumentLoader.java:131)
+	at org.apache.solr.handler.extraction.ExtractingDocumentLoader.load(ExtractingDocumentLoader.java:237)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+
+2017-11-25 23:19:27.348 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1354003114
+2017-11-25 23:19:27.348 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2017-11-25 23:19:27.349 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2017-11-25 23:19:27.349 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2017-11-25 23:19:27.350 INFO  (coreCloseExecutor-12-thread-1) [   x:safety] o.a.s.c.SolrCore [safety]  CLOSING SolrCore org.apache.solr.core.SolrCore@196398c0
+2017-11-25 23:19:27.359 INFO  (coreCloseExecutor-12-thread-1) [   x:safety] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.safety

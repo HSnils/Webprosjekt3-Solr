@@ -15,11 +15,18 @@
 		//echo $filepath . $filename;
 		//echo $_FILES['userFile']['tmp_name'];
 
+		$uploads_dir = '../solr-6.6.1/uploads';
+        $tmp_name = $_FILES["userFile"]["tmp_name"];
+        $name = basename($_FILES["userFile"]["name"]);
+        move_uploaded_file($tmp_name, "$uploads_dir/$name");
+		
+		
+
 		$target_url = "http://localhost:8983/solr/safety/update/extract?literal.id=1&commit=true";
-		$file_name_with_full_path = "C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/webproj3/documents/assignment.pdf";
+		$file_path = "C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/webproj3/documents/assignment.pdf";
 
 		$post = array (
-		   'myFile' => '@' . $file_name_with_full_path 
+		   'myFile' => '@' . $uploads_dir . '/' . $name
 		);
 
 		$ch = curl_init ();
