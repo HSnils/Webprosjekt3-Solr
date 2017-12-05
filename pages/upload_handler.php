@@ -52,6 +52,6 @@
 		echo "This is not a valid pdf file.";
 		unset($_FILES['userFile']);
 
-		header("Location: upload.php");
+		header("Location: admin.php");
   		exit();
 	}

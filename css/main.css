@@ -8,7 +8,9 @@ h2 {
 	text-align: center;
 }
 
+
 /*Header / navbar*/
+
 nav{
 	position: relative;
 	box-sizing: border-box;
@@ -31,7 +33,7 @@ nav{
 #navbuttons{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	position: absolute;
-	bottom: 4em;
+	bottom: 3em;
 	right: 10%
 }
 
@@ -55,7 +57,10 @@ nav{
 
 
 #searchfieldform{
-	display: block;
+	display: flex;
+	width:100%;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 #searchfield{
@@ -65,12 +70,13 @@ nav{
 
 #searchSubmit{
 	width:10%;
-	height: 3em;
+	height: 3.4em;
 	background-color: #56a2aa;
 	border: 0;
 	color: white;
 	/*float: right;*/
 	font-weight: bold;
+	cursor: pointer;
 }
 
 
@@ -83,19 +89,15 @@ nav{
 
 	border-bottom: 1px solid #d6d6d6;
 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 #icon_container div{
-	display: inline-block;
+
 	width: 20%;
-}
-
-#icon_container div:nth-child(2){
-	margin-left: 20%;
-}
-
-#icon_container div:nth-child(3){
-	float: right;
 }
 
 #icon_container div a{
@@ -119,13 +121,50 @@ nav{
 	padding-right: 30%;
 }
 
+
+
+.contentbox{
+	box-sizing: border-box;
+	padding: 0 25%;
+
+}
+
+.contentbox hr,h4{
+	flex-basis:100%;
+}
+
 .treffbox{
 	font-weight: bold;
 	color: #56a2aa;
 	text-align: center;
+	flex-basis: 100%;
 }
 
-#searchresultsbox{
+.inputbuttons{
+	width:20%;
+	max-width: 20%;
+	background-color: #56a2aa;
+	border: 1px solid #56a2aa;
+	color: white;
+	padding: 15px;
+
+	/*float: right;*/
+	font-weight: bold;
+	cursor: pointer;
 	box-sizing: border-box;
-	padding: 0 20%;
+	flex-basis: 100%;
 }
+
+.inputbuttons:hover{
+		border: 1px solid black;
+}
+
+#uploadform{
+	width:100%;
+}
+
+.red{
+	color: #FE7E62;
+}
+
+

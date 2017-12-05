@@ -54,14 +54,18 @@
 
 </head>
 <body>
+
 <nav>
 	<div  class="navitem"><img id="logo" src="images/logo.png"></div>
-	<div id="navbuttons" class="navitem">
+	<div id="navbuttons" class="navitem" >
 		<b>
 			<a href="">COOKIES OG PERSONVERN</a>
 			<?php 
 				if($user->is_loggedin()){
-					echo "<a href='pages/logout.php?logout=true'>LOGG UT</a>";
+
+					echo "
+					<a href='pages/admin.php'>ADMIN DASHBOARD</a>
+					<a href='pages/logout.php?logout=true'>LOGG UT</a>";
 				}else{
 					echo "<a href='pages/login.php'>LOGG INN</a>";
 				}
@@ -75,7 +79,7 @@
 	<h2>FINN RAPPORTENE DU LETER ETTER</h2>
 	<form id="searchfieldform" method="post">
 		<input type="text" name="search" id="searchfield">
-		<input type="submit" name="submit" value="Search" id="searchSubmit">
+		<input type="submit" name="submit" value="Søk" id="searchSubmit">
 	</form>
 
 </div>
@@ -84,29 +88,29 @@
 	<div>
 		<img src="images/sikkerhet.svg" alt="ICON" class="icon">
 		<span class="icon_heading">SIKKERHET</span> 
-		<p>Textte xtt extet extetex tTex tt exttex te textetex tTextt extt extet extetext</p>
-		<a href="">View collection</a>
+		<p>Sikkerhet er alltids viktig for å opprettholde en trygg og sikker hverdag på jobben.</p>
+		<a href="pages/search.php?search=sikkerhet">View collection</a>
 	</div>
 	<div>
 		<img src="images/alarm_icon.svg" alt="ICON" class="icon">
 		<span class="icon_heading">KRISEFORSIKRING</span>
-		<p>Text Text text tex tetext etext Texttextte xtetexte textText te xtte xtetex tetext</p>
-		<a href="">View collection</a>
+		<p>Kriseforsikring hjelper alle når man havner i en krise.</p>
+		<a href="pages/search.php?search=kriseforsikring">View collection</a>
 	</div>
 	<div>
 		<img src="images/arbeidsmiljo_icon.svg" alt="ICON" class="icon">
 		<span class="icon_heading">ARIBEIDSMILJØ</span>
-		<p>Pass på </p>
-		<a href="">View collection</a>
+		<p>Venner, Kollegaer, Sikkerhet, Luft, Område alle disse og mer bidrar på skape gode arbeidsmiljø.</p>
+		<a href="pages/search.php?search=arbeidsmiljø">View collection</a>
 	</div>
 </div>
-
+<!--
 <div id="aktuelt_container">
 	<h2>AKTUELT</h2>
 </div>
 
 
 <br>
-
+-->
 </body>
 </html>

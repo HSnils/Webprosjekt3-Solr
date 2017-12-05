@@ -49,4 +49,4 @@ Temporary Items
 
 #ignore whole folder
 /solr-6.6.1/server/
-.log
+*.log

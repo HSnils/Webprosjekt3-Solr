@@ -43,27 +43,14 @@
 
 </head>
 <body>
-<nav>
-	<a href="../index.php" class="navitem"><img id="logo" src="../images/logo.png"></a>
-	<div id="navbuttons" class="navitem">
-		<b>
-			<a href="">COOKIES OG PERSONVERN</a>
-			<?php 
-				if($user->is_loggedin()){
-					echo "<a href='logout.php?logout=true'>LOGG UT</a>";
-				}else{
-					echo "<a href='login.php'>LOGG INN</a>";
-				}
 
-			?>
-		</b>
-	</div>
-</nav>
+<!--includes navigation-->
+<?php include('partials/nav.php') ?>
 
 <div id="search_container">
 	<form id="searchfieldform" method="get">
 		<input type="text" name="search" id="searchfield">
-		<input type="submit" value="Search" id="searchSubmit">
+		<input type="submit" value="Søk" id="searchSubmit">
 	</form>
 
 </div>
@@ -73,7 +60,7 @@
 
 
 
- <div id="searchresultsbox">
+ <div class="contentbox">
 
  	<?php 
 
