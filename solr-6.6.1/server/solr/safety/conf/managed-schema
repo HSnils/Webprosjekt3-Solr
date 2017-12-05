@@ -12,6 +12,7 @@
 	<field name="Responsible" type="string" indexed="true" stored="true" />
 	<field name="Summary" type="text_en" indexed="true" stored="true" multiValued="false" />
 	<field name="Document" type="text_en" indexed="true" stored="true" multiValued="false" />
+	<field name="Attr_content" type="text_en" indexed="true" stored="true" multiValued="false" />
 
 	<!-- default -->
 	<uniqueKey>id</uniqueKey>

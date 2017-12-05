@@ -853,7 +853,7 @@
       <!-- capture link hrefs but ignore div attributes -->
       <str name="fmap.a">links</str>
       <str name="fmap.div">ignored_</str>
-      <str name="fmap.content">text</str>
+      <str name="fmap.content">Attr_content</str>
       <str name="captureAttr">false</str>
     </lst>
   </requestHandler>
