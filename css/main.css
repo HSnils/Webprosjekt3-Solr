@@ -1,5 +1,16 @@
+:root{
+	--main-blue:  #56a2aa;
+	--light-blue: #3788ae;
+	--dark-blue:  #496081;
+
+	--bg: #f3f3f3;
+	--grey: #d6d6d6;
+
+	--logout-red: #FE7E62;
+}
+
 body{
-	background-color: #f3f3f3;
+	background-color: var(--bg);
 	margin: 0;
 	font-family: 'PT Sans', sans-serif;
 }
@@ -12,14 +23,14 @@ h2 {
 /*Header / navbar*/
 
 nav{
-	position: relative;
-	box-sizing: border-box;
-	padding: 0.5em 10% 0.5em 10%;
-
-	margin-right: 1em;
-	margin-left: 1em;
-
-	border-bottom: 1px solid #d6d6d6;
+	position     : relative;
+	box-sizing   : border-box;
+	padding      : 0.5em 10% 0.5em 10%;
+	
+	margin-right : 1em;
+	margin-left  : 1em;
+	
+	border-bottom: 1px solid var(--grey);
 }
 
 #logo{
@@ -32,9 +43,9 @@ nav{
 
 #navbuttons{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	position: absolute;
-	bottom: 3em;
-	right: 10%
+	position   : absolute;
+	bottom     : 3em;
+	right      : 10%;
 }
 
 #navbuttons a{
@@ -49,17 +60,17 @@ nav{
 
 /*main portion*/
 #search_container{
-	margin-top: 2em;
-	box-sizing: border-box;
-	padding-left: 25%;
+	margin-top   : 2em;
+	box-sizing   : border-box;
+	padding-left : 25%;
 	padding-right: 25%;
 }
 
 
 #searchfieldform{
-	display: flex;
-	width:100%;
-	flex-wrap: wrap;
+	display    : flex;
+	width      :100%;
+	flex-wrap  : wrap;
 	align-items: center;
 }
 
@@ -69,29 +80,29 @@ nav{
 }
 
 #searchSubmit{
-	width:10%;
-	height: 3.4em;
-	background-color: #56a2aa;
-	border: 0;
-	color: white;
-	/*float: right;*/
-	font-weight: bold;
-	cursor: pointer;
+	width           :10%;
+	height          : 3.4em;
+	background-color: var(--main-blue);
+	border          : 0;
+	color           : white;
+	/*float         : right;*/
+	font-weight     : bold;
+	cursor          : pointer;
 }
 
 
 #icon_container{
-	margin-top: 5em;
-
-	width: 100%;
-	box-sizing: border-box;
-	padding: 0 20% 2em 20%;
-
-	border-bottom: 1px solid #d6d6d6;
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	margin-top     : 5em;
+	
+	width          : 100%;
+	box-sizing     : border-box;
+	padding        : 0 20% 2em 20%;
+	
+	border-bottom  : 1px solid var(--grey);
+	
+	display        : flex;
+	flex-direction : row;
+	flex-wrap      : wrap;
 	justify-content: space-between;
 }
 
@@ -101,7 +112,7 @@ nav{
 }
 
 #icon_container div a{
-	color: #496081;
+	color: var(--dark-blue);
 }
 
 .icon{
@@ -110,7 +121,7 @@ nav{
 
 
 .icon_heading{
-	color: #3788ae;
+	color: var(--light-blue);
 	font-size: 1.7em;
 	text-align: center;
 }
@@ -135,36 +146,36 @@ nav{
 
 .treffbox{
 	font-weight: bold;
-	color: #56a2aa;
-	text-align: center;
-	flex-basis: 100%;
+	color      :  var(--main-blue);
+	text-align : center;
+	flex-basis : 100%;
 }
 
 .inputbuttons{
-	width:20%;
-	max-width: 20%;
-	background-color: #56a2aa;
-	border: 1px solid #56a2aa;
-	color: white;
-	padding: 15px;
-
-	/*float: right;*/
-	font-weight: bold;
-	cursor: pointer;
-	box-sizing: border-box;
-	flex-basis: 100%;
+	width           :20%;
+	max-width       : 20%;
+	background-color:  var(--main-blue);
+	border          : 1px solid  var(--main-blue);
+	color           : white;
+	padding         : 15px;
+	
+	/*float         : right;*/
+	font-weight     : bold;
+	cursor          : pointer;
+	box-sizing      : border-box;
+	flex-basis      : 100%;
 }
 
 .inputbuttons:hover{
-		border: 1px solid black;
+		border: 1px solid var(--dark-blue);
 }
 
 #uploadform{
-	width:100%;
+	width: 100%;
 }
 
 .red{
-	color: #FE7E62;
+	color: var(--logout-red);
 }
 
 

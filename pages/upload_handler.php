@@ -1,6 +1,7 @@
 <?php
 	
 	if (!empty($_FILES['userFile']) && $_FILES['userFile']['type'] == 'application/pdf') {
+
 /*		$filepath = 'webproj3/documents/';
 		$filename = $_FILES['userFile']['name'];
 		$ch = curl_init('http://localhost:8983/solr/safety/update/extract?literal.id=1&literal.name=Name&uprefix=attr_&fmap.content=attr_content&defaultField=text&commit=true');
@@ -55,3 +56,4 @@
 		header("Location: admin.php");
   		exit();
 	}
+	

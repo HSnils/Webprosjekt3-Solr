@@ -100,7 +100,7 @@
 	  
 	    if($antallTreff != 0) {
 	    	// display the total number of documents found by solr
-	   		 echo '<div class="treffbox"> Antall treff: '.$antallTreff.'</div>';
+	   		 echo '<div class="treffbox"> antall treff på <u>'.$_get['search'].'</u>: '.$antalltreff.'</div>';
 		    // show documents using the resultset iterator
 		    foreach ($resultset as $document) {
 
@@ -120,7 +120,7 @@
 		    }
 	    } else{
 	    	echo '<div class="treffbox">
-	    		Fant ingen treff! :(
+	    		fant ingen treff på <u>'.$_get['search'].'</u>!
 	    	</div>';
 	    }
 }?>

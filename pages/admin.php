@@ -74,7 +74,6 @@
 <?php include('partials/nav.php') ?>
 
 <h2>Admin dashboard</h2>
-
 <div class="contentbox">
 	
 	<h4>Last opp en .pdf-fil</h4>
@@ -135,7 +134,7 @@
 	  
 	    if($antallTreff != 0) {
 	    	// display the total number of documents found by solr
-	   		 echo '<div class="treffbox"> Antall treff: '.$antallTreff.'</div>';
+	   		 echo '<div class="treffbox"> Antall treff på <u>'.$_GET['search'].'</u>: '.$antallTreff.'</div>';
 		    // show documents using the resultset iterator
 		    foreach ($resultset as $document) {
 
@@ -155,10 +154,11 @@
 		    }
 	    } else{
 	    	echo '<div class="treffbox">
-	    		Fant ingen treff! :(
+	    		Fant ingen treff på <u>'.$_GET['search'].'</u>!
 	    	</div>';
 	    }
 }?>
+
 
  </div>
 </body>

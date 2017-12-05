@@ -47,6 +47,9 @@ Temporary Items
 .apdisk
 
 
+*.log
+.sublime-project
+.sublime-workspace
+
 #ignore whole folder
 /solr-6.6.1/server/
-*.log
