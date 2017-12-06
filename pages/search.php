@@ -88,6 +88,7 @@
 		$hl->setFields('Attr_content, Title, Author, Responsible, Operator');
 		$hl->setSimplePrefix('<element style=" padding: 2px; background-color: #56a2aa; color: #f3f3f3;"><b>');
 		$hl->setSimplePostfix('</b></element>');
+		
 
 	    // set a query (all prices starting from 12)
 	    $query->setQuery($_GET["search"]);
