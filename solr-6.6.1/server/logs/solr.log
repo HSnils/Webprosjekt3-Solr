@@ -1,0 +1,808 @@
+2017-12-06 15:33:44.923 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-12-06 15:33:45.667 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
+2017-12-06 15:33:45.667 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-12-06 15:33:45.668 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1
+2017-12-06 15:33:45.678 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-12-06T15:33:45.668Z
+2017-12-06 15:33:45.679 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-12-06 15:33:45.691 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-12-06 15:33:45.696 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
+2017-12-06 15:33:45.924 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-12-06 15:33:46.066 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-12-06 15:33:46.068 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
+2017-12-06 15:33:46.115 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
+2017-12-06 15:33:46.278 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-12-06 15:33:46.291 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
+2017-12-06 15:33:46.435 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
+2017-12-06 15:33:46.464 INFO  (main) [   ] o.e.j.s.Server Started @2143ms
+2017-12-06 15:33:46.516 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-12-06 15:33:46.541 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
+2017-12-06 15:33:46.543 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
+2017-12-06 15:33:46.577 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-12-06 15:33:46.583 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
+2017-12-06 15:33:46.628 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-12-06 15:33:46.857 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-12-06 15:33:46.857 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-12-06 15:33:46.865 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-12-06 15:33:46.865 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-12-06 15:33:46.887 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [safety]  CLOSING SolrCore org.apache.solr.core.SolrCore@6b6987cd
+2017-12-06 15:33:46.890 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.safety
+2017-12-06 15:33:46.892 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [safety]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.core.CoreContainer.lambda$load$6(CoreContainer.java:592)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:176)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [safety]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:938)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+2017-12-06 15:33:47.031 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=52
+2017-12-06 15:33:50.481 INFO  (qtp959447386-23) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-12-06 15:33:50.482 ERROR (qtp959447386-23) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:33:50.525 ERROR (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:33:51.543 ERROR (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:33:51.570 ERROR (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:33:51.747 ERROR (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:33:51.776 ERROR (qtp959447386-23) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:33:51.937 ERROR (qtp959447386-19) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:33:51.969 ERROR (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:34:06.113 ERROR (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:34:07.994 ERROR (Finalizer) [   ] o.a.s.u.SolrIndexWriter SolrIndexWriter was not closed prior to finalize(), indicates a bug -- POSSIBLE RESOURCE LEAK!!!
+2017-12-06 15:34:07.995 ERROR (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:34:07.995 ERROR (Finalizer) [   ] o.a.s.u.SolrIndexWriter Error closing IndexWriter
+java.lang.NullPointerException
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3414)
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3376)
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:1126)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1171)
+	at org.apache.solr.update.SolrIndexWriter.close(SolrIndexWriter.java:278)
+	at org.apache.solr.update.SolrIndexWriter.finalize(SolrIndexWriter.java:334)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:210)
+2017-12-06 15:34:08.012 ERROR (qtp959447386-19) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:34:08.041 ERROR (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'safety' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1328)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:268)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:483)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@70d584b6; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
+	... 12 more
+
+2017-12-06 15:34:37.886 INFO  (qtp959447386-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512574477694} status=0 QTime=1
+2017-12-06 15:34:37.939 INFO  (qtp959447386-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512574477694} status=0 QTime=54
+2017-12-06 15:34:37.991 INFO  (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512574477694} status=0 QTime=46
+2017-12-06 15:34:55.189 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512574477694} status=0 QTime=0
+2017-12-06 15:34:55.192 INFO  (qtp959447386-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=2
+2017-12-06 15:34:55.237 INFO  (qtp959447386-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512574477694} status=0 QTime=48
+2017-12-06 15:35:05.189 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:35:15.189 INFO  (qtp959447386-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:35:25.190 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:35:35.193 INFO  (qtp959447386-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:35:45.192 INFO  (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:35:55.193 INFO  (qtp959447386-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:36:05.197 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:36:15.196 INFO  (qtp959447386-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:36:25.196 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:36:35.198 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:36:45.198 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:36:55.198 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:37:05.203 INFO  (qtp959447386-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:37:15.204 INFO  (qtp959447386-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:37:25.203 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
