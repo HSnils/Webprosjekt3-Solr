@@ -96,7 +96,7 @@
 	    $dismax = $query->getDisMax();
 
 	    // Select the fields we wish to use the search for
-	    $dismax->setQueryFields('Document Summary Year Responsible id');
+	    $dismax->setQueryFields('Title Date Author Responsible Operator Attr_content');
 
 	    /*
 	    // Example of how you can weigh each field differently.
