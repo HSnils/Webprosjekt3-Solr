@@ -1,161 +1,66 @@
-2017-12-06 15:53:37.982 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
-2017-12-06 15:53:38.898 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
-2017-12-06 15:53:38.899 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-12-06 15:53:38.899 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1
-2017-12-06 15:53:38.912 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-12-06T15:53:38.900Z
-2017-12-06 15:53:38.913 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-12-06 15:53:38.926 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-12-06 15:53:38.932 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
-2017-12-06 15:53:39.144 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
-2017-12-06 15:53:39.281 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
-2017-12-06 15:53:39.282 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety]
-2017-12-06 15:53:39.334 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
-2017-12-06 15:53:39.477 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2017-12-06 15:53:39.482 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
-2017-12-06 15:53:39.612 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
-2017-12-06 15:53:39.639 INFO  (main) [   ] o.e.j.s.Server Started @2306ms
-2017-12-06 15:53:39.652 WARN  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
-2017-12-06 15:53:39.702 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
-2017-12-06 15:53:39.704 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
-2017-12-06 15:53:39.739 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-12-06 15:53:39.747 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
-2017-12-06 15:53:39.770 INFO  (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=14
-2017-12-06 15:53:39.770 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=14
-2017-12-06 15:53:39.770 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=14
-2017-12-06 15:53:39.770 INFO  (qtp959447386-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=14
-2017-12-06 15:53:39.770 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=14
-2017-12-06 15:53:39.770 INFO  (qtp959447386-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=14
-2017-12-06 15:53:39.788 INFO  (qtp959447386-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.788 INFO  (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.788 INFO  (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.788 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.789 INFO  (qtp959447386-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.790 INFO  (qtp959447386-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.794 INFO  (qtp959447386-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.794 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.799 INFO  (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.803 INFO  (qtp959447386-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.806 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:39.820 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-12-06 15:53:40.056 INFO  (qtp959447386-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=49
-2017-12-06 15:53:40.112 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-12-06 15:53:40.112 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-12-06 15:53:40.128 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-12-06 15:53:40.128 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-12-06 15:53:40.156 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [safety]  CLOSING SolrCore org.apache.solr.core.SolrCore@3f5aef2
-2017-12-06 15:53:40.158 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.safety
-2017-12-06 15:53:40.160 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
-java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [safety]
-	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
-	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
-	at org.apache.solr.core.CoreContainer.lambda$load$6(CoreContainer.java:592)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:176)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.apache.solr.common.SolrException: Unable to create core [safety]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:938)
-	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
-	... 5 more
-Caused by: org.apache.solr.common.SolrException: Error opening new searcher
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:977)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:922)
-	... 7 more
-Caused by: org.apache.solr.common.SolrException: Error opening new searcher
-	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2069)
-	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2189)
-	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1071)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:949)
-	... 9 more
-Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file found in LockValidatingDirectoryWrapper(NRTCachingDirectory(MMapDirectory@D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@33b3821f; maxCacheMB=48.0 maxMergeSizeMB=4.0)): files: [write.lock]
-	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:925)
-	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:118)
-	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:93)
-	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
-	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
-	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2030)
-	... 12 more
-2017-12-06 15:53:48.424 INFO  (qtp959447386-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:53:58.425 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:54:08.425 INFO  (qtp959447386-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:54:18.431 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:54:28.429 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:54:38.429 INFO  (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:54:48.430 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:54:58.430 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:55:08.430 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:55:18.433 INFO  (qtp959447386-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:55:28.435 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:55:38.434 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:55:48.437 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:55:58.438 INFO  (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:56:08.437 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:56:18.439 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:56:28.440 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:56:38.440 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:56:49.311 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:56:59.313 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:57:10.313 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:57:21.313 INFO  (qtp959447386-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:57:32.315 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:57:43.312 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:57:54.313 INFO  (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:58:04.314 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:58:07.385 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=27
-2017-12-06 15:58:07.428 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=24
-2017-12-06 15:58:07.435 INFO  (qtp959447386-20) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2017-12-06 15:58:07.435 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=safety&action=STATUS&wt=json} status=0 QTime=1
-2017-12-06 15:58:15.312 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:58:26.315 INFO  (qtp959447386-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:58:26.332 ERROR (Finalizer) [   ] o.a.s.u.SolrIndexWriter SolrIndexWriter was not closed prior to finalize(), indicates a bug -- POSSIBLE RESOURCE LEAK!!!
-2017-12-06 15:58:26.333 ERROR (Finalizer) [   ] o.a.s.u.SolrIndexWriter Error closing IndexWriter
-java.lang.NullPointerException
-	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3414)
-	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3376)
-	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:1126)
-	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1171)
-	at org.apache.solr.update.SolrIndexWriter.close(SolrIndexWriter.java:278)
-	at org.apache.solr.update.SolrIndexWriter.finalize(SolrIndexWriter.java:334)
-	at java.lang.System$2.invokeFinalize(System.java:1270)
-	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
-	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
-	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:210)
-2017-12-06 15:58:26.759 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=24
-2017-12-06 15:58:26.808 INFO  (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=26
-2017-12-06 15:58:26.814 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=wp3&action=STATUS&wt=json} status=0 QTime=0
-2017-12-06 15:58:26.833 INFO  (qtp959447386-34) [   ] o.a.s.h.a.CoreAdminOperation core create command name=wp3&action=CREATE&instanceDir=wp3&wt=json
-2017-12-06 15:58:26.861 INFO  (qtp959447386-34) [   x:wp3] o.a.s.c.SolrResourceLoader [wp3] Added 46 libs to classloader, from paths: [/D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
-2017-12-06 15:58:26.888 INFO  (qtp959447386-34) [   x:wp3] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2017-12-06 15:58:26.889 INFO  (qtp959447386-34) [   x:wp3] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
-2017-12-06 15:58:26.916 INFO  (qtp959447386-34) [   x:wp3] o.a.s.s.IndexSchema [wp3] Schema name=bir
-2017-12-06 15:58:26.924 INFO  (qtp959447386-34) [   x:wp3] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
-2017-12-06 15:58:26.926 INFO  (qtp959447386-34) [   x:wp3] o.a.s.c.CoreContainer Creating SolrCore 'wp3' using configuration from instancedir D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\wp3, trusted=true
-2017-12-06 15:58:26.926 INFO  (qtp959447386-34) [   x:wp3] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-12-06 15:58:26.927 INFO  (qtp959447386-34) [   x:wp3] o.a.s.c.SolrCore [[wp3] ] Opening new SolrCore at [D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\wp3], dataDir=[D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\wp3\data\]
-2017-12-06 15:58:26.991 INFO  (qtp959447386-34) [   x:wp3] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-12-06 15:58:27.028 INFO  (qtp959447386-34) [   x:wp3] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-12-06 15:58:27.028 INFO  (qtp959447386-34) [   x:wp3] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-12-06 15:58:27.029 INFO  (qtp959447386-34) [   x:wp3] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-12-06 15:58:27.030 INFO  (qtp959447386-34) [   x:wp3] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-12-06 15:58:27.043 INFO  (qtp959447386-34) [   x:wp3] o.a.s.s.SolrIndexSearcher Opening [Searcher@38910928[wp3] main]
-2017-12-06 15:58:27.052 INFO  (qtp959447386-34) [   x:wp3] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\wp3\conf
-2017-12-06 15:58:27.066 INFO  (qtp959447386-34) [   x:wp3] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-12-06 15:58:27.070 INFO  (qtp959447386-34) [   x:wp3] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-12-06 15:58:27.077 INFO  (qtp959447386-34) [   x:wp3] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2017-12-06 15:58:27.079 INFO  (qtp959447386-34) [   x:wp3] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-12-06 15:58:27.091 INFO  (qtp959447386-34) [   x:wp3] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-12-06 15:58:27.091 INFO  (qtp959447386-34) [   x:wp3] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@4a111b05, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
-2017-12-06 15:58:27.092 INFO  (qtp959447386-34) [   x:wp3] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\wp3\conf\elevate.xml
-2017-12-06 15:58:27.100 INFO  (qtp959447386-34) [   x:wp3] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
-2017-12-06 15:58:27.131 INFO  (searcherExecutor-12-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@38910928[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2017-12-06 15:58:27.135 INFO  (qtp959447386-34) [   x:wp3] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1586050794399989760
-2017-12-06 15:58:27.139 INFO  (qtp959447386-34) [   x:wp3] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=wp3&action=CREATE&instanceDir=wp3&wt=json} status=0 QTime=306
-2017-12-06 15:58:27.145 ERROR (searcherExecutor-12-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
+2017-12-06 17:21:41.947 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-12-06 17:21:42.728 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.1
+2017-12-06 17:21:42.728 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-12-06 17:21:42.729 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1
+2017-12-06 17:21:42.752 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-12-06T17:21:42.732Z
+2017-12-06 17:21:42.753 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-12-06 17:21:42.786 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-12-06 17:21:42.795 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\solr.xml
+2017-12-06 17:21:43.155 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-12-06 17:21:45.690 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr
+2017-12-06 17:21:45.692 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [safety, wp3]
+2017-12-06 17:21:45.787 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
+2017-12-06 17:21:45.928 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.c.SolrResourceLoader [wp3] Added 46 libs to classloader, from paths: [/C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /C:/xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
+2017-12-06 17:21:46.191 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-12-06 17:21:46.202 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
+2017-12-06 17:21:46.270 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-12-06 17:21:46.294 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
+2017-12-06 17:21:46.473 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
+2017-12-06 17:21:46.481 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.s.IndexSchema [wp3] Schema name=bir
+2017-12-06 17:21:46.538 WARN  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-12-06 17:21:46.558 INFO  (main) [   ] o.e.j.s.Server Started @5926ms
+2017-12-06 17:21:46.584 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
+2017-12-06 17:21:46.584 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
+2017-12-06 17:21:46.589 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.c.CoreContainer Creating SolrCore 'wp3' using configuration from instancedir C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\wp3, trusted=true
+2017-12-06 17:21:46.590 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
+2017-12-06 17:21:46.665 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-12-06 17:21:46.665 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-12-06 17:21:46.671 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.c.SolrCore [[wp3] ] Opening new SolrCore at [C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\wp3], dataDir=[C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\wp3\data\]
+2017-12-06 17:21:46.671 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
+2017-12-06 17:21:46.738 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-12-06 17:21:46.745 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-12-06 17:21:47.279 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-12-06 17:21:47.280 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-12-06 17:21:47.299 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-12-06 17:21:47.299 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-12-06 17:21:47.353 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-12-06 17:21:47.358 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-12-06 17:21:47.389 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-12-06 17:21:47.394 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-12-06 17:21:47.434 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.s.SolrIndexSearcher Opening [Searcher@6a672433[wp3] main]
+2017-12-06 17:21:47.450 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\wp3\conf
+2017-12-06 17:21:47.475 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-12-06 17:21:47.485 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-12-06 17:21:47.496 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-12-06 17:21:47.499 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-12-06 17:21:47.509 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@3535a371[safety] main]
+2017-12-06 17:21:47.512 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf
+2017-12-06 17:21:47.513 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-12-06 17:21:47.514 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-12-06 17:21:47.522 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-12-06 17:21:47.523 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-12-06 17:21:47.533 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-12-06 17:21:47.535 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@3e20c17f, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2017-12-06 17:21:47.536 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\elevate.xml
+2017-12-06 17:21:47.550 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-12-06 17:21:47.550 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@976b17e, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2017-12-06 17:21:47.551 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\wp3\conf\elevate.xml
+2017-12-06 17:21:47.555 INFO  (coreLoadExecutor-6-thread-1) [   x:safety] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-12-06 17:21:47.582 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-12-06 17:21:47.651 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3535a371[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_x(6.6.1):C1)))}
+2017-12-06 17:21:47.668 INFO  (coreLoadExecutor-6-thread-2) [   x:wp3] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1586056037838880768
+2017-12-06 17:21:47.680 INFO  (searcherExecutor-8-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6a672433[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-12-06 17:21:47.705 ERROR (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
 	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1328)
 	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:455)
 	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
@@ -176,69 +81,19 @@ java.lang.NullPointerException
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
 	at org.apache.solr.core.QuerySenderListener.newSearcher(QuerySenderListener.java:74)
 	at org.apache.solr.core.SolrCore.lambda$getSearcher$15(SolrCore.java:2249)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 
-2017-12-06 15:58:27.146 INFO  (searcherExecutor-12-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=13
-2017-12-06 15:58:27.146 INFO  (searcherExecutor-12-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-12-06 15:58:27.146 INFO  (searcherExecutor-12-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-12-06 15:58:27.146 INFO  (searcherExecutor-12-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2017-12-06 15:58:27.146 INFO  (searcherExecutor-12-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
-2017-12-06 15:58:27.146 INFO  (searcherExecutor-12-thread-1-processing-x:wp3) [   x:wp3] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
-2017-12-06 15:58:27.188 INFO  (searcherExecutor-12-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.SolrCore [wp3] Registered new searcher Searcher@38910928[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2017-12-06 15:58:36.320 INFO  (qtp959447386-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575268381&since=0} status=0 QTime=0
-2017-12-06 15:58:38.903 INFO  (qtp959447386-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512575918733} status=0 QTime=0
-2017-12-06 15:58:38.905 INFO  (qtp959447386-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512575918896&since=0} status=0 QTime=0
-2017-12-06 15:58:38.937 INFO  (qtp959447386-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512575918735} status=0 QTime=34
-2017-12-06 15:58:41.565 INFO  (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512575918733} status=0 QTime=0
-2017-12-06 15:58:41.580 INFO  (qtp959447386-43) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/replication params={wt=json&command=details&_=1512575921553} status=0 QTime=9
-2017-12-06 15:58:41.580 INFO  (qtp959447386-42) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1512575921552} status=0 QTime=10
-2017-12-06 15:58:41.583 INFO  (qtp959447386-34) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1512575918735&ts=1512575918735} status=503 QTime=2
-2017-12-06 15:58:41.655 INFO  (qtp959447386-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512575918735} status=0 QTime=88
-2017-12-06 15:58:41.655 INFO  (qtp959447386-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/system params={wt=json&_=1512575921552} status=0 QTime=83
-2017-12-06 15:58:59.186 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512575918733} status=0 QTime=0
-2017-12-06 15:58:59.191 INFO  (qtp959447386-44) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/file params={wt=json&_=1512575939181} status=0 QTime=1
-2017-12-06 15:58:59.231 INFO  (qtp959447386-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512575918735} status=0 QTime=44
-2017-12-06 15:59:01.437 INFO  (qtp959447386-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512575918733} status=0 QTime=0
-2017-12-06 15:59:01.439 INFO  (qtp959447386-14) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1512575921552} status=0 QTime=0
-2017-12-06 15:59:01.443 INFO  (qtp959447386-44) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/replication params={wt=json&command=details&_=1512575921553} status=0 QTime=2
-2017-12-06 15:59:01.446 INFO  (qtp959447386-21) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1512575918735&ts=1512575918735} status=503 QTime=0
-2017-12-06 15:59:01.516 INFO  (qtp959447386-16) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/system params={wt=json&_=1512575921552} status=0 QTime=72
-2017-12-06 15:59:01.516 INFO  (qtp959447386-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512575918735} status=0 QTime=78
-2017-12-06 16:00:23.309 INFO  (qtp959447386-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=28
-2017-12-06 16:00:23.339 INFO  (qtp959447386-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=safety&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=10
-2017-12-06 16:00:32.390 INFO  (qtp959447386-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=32
-2017-12-06 16:00:32.438 INFO  (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=27
-2017-12-06 16:00:32.444 INFO  (qtp959447386-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=safety&action=STATUS&wt=json} status=0 QTime=0
-2017-12-06 16:00:32.468 INFO  (qtp959447386-42) [   ] o.a.s.h.a.CoreAdminOperation core create command name=safety&action=CREATE&instanceDir=safety&wt=json
-2017-12-06 16:00:32.490 INFO  (qtp959447386-42) [   x:safety] o.a.s.c.SolrResourceLoader [safety] Added 46 libs to classloader, from paths: [/D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/extraction/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/langid/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/contrib/velocity/lib, /D:/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/dist]
-2017-12-06 16:00:32.518 INFO  (qtp959447386-42) [   x:safety] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2017-12-06 16:00:32.518 INFO  (qtp959447386-42) [   x:safety] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
-2017-12-06 16:00:32.553 INFO  (qtp959447386-42) [   x:safety] o.a.s.s.IndexSchema [safety] Schema name=bir
-2017-12-06 16:00:32.562 INFO  (qtp959447386-42) [   x:safety] o.a.s.s.IndexSchema Loaded schema bir/1.6 with uniqueid field id
-2017-12-06 16:00:32.563 INFO  (qtp959447386-42) [   x:safety] o.a.s.c.CoreContainer Creating SolrCore 'safety' using configuration from instancedir D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety, trusted=true
-2017-12-06 16:00:32.564 INFO  (qtp959447386-42) [   x:safety] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
-2017-12-06 16:00:32.564 INFO  (qtp959447386-42) [   x:safety] o.a.s.c.SolrCore [[safety] ] Opening new SolrCore at [D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety], dataDir=[D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\data\]
-2017-12-06 16:00:32.608 INFO  (qtp959447386-42) [   x:safety] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-12-06 16:00:32.647 INFO  (qtp959447386-42) [   x:safety] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-12-06 16:00:32.647 INFO  (qtp959447386-42) [   x:safety] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-12-06 16:00:32.649 INFO  (qtp959447386-42) [   x:safety] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-12-06 16:00:32.649 INFO  (qtp959447386-42) [   x:safety] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-12-06 16:00:32.654 INFO  (qtp959447386-42) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@7b54d846[safety] main]
-2017-12-06 16:00:32.656 INFO  (qtp959447386-42) [   x:safety] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf
-2017-12-06 16:00:32.656 INFO  (qtp959447386-42) [   x:safety] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-12-06 16:00:32.657 INFO  (qtp959447386-42) [   x:safety] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-12-06 16:00:32.657 INFO  (qtp959447386-42) [   x:safety] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2017-12-06 16:00:32.657 INFO  (qtp959447386-42) [   x:safety] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-12-06 16:00:32.657 INFO  (qtp959447386-42) [   x:safety] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-2017-12-06 16:00:32.657 INFO  (qtp959447386-42) [   x:safety] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@63ae071c, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
-2017-12-06 16:00:32.657 INFO  (qtp959447386-42) [   x:safety] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety\conf\elevate.xml
-2017-12-06 16:00:32.661 INFO  (qtp959447386-42) [   x:safety] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
-2017-12-06 16:00:32.664 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7b54d846[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2017-12-06 16:00:32.665 ERROR (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
+2017-12-06 17:21:47.707 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.S.Request [safety]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=52
+2017-12-06 17:21:47.707 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-12-06 17:21:47.707 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-12-06 17:21:47.707 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-12-06 17:21:47.707 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2017-12-06 17:21:47.707 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2017-12-06 17:21:47.717 ERROR (searcherExecutor-8-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Description
 	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1328)
 	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:455)
 	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
@@ -259,255 +114,45 @@ java.lang.NullPointerException
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
 	at org.apache.solr.core.QuerySenderListener.newSearcher(QuerySenderListener.java:74)
 	at org.apache.solr.core.SolrCore.lambda$getSearcher$15(SolrCore.java:2249)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 
-2017-12-06 16:00:32.665 INFO  (qtp959447386-42) [   x:safety] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1586050926027735040
-2017-12-06 16:00:32.665 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.c.S.Request [safety]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=0
-2017-12-06 16:00:32.665 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-12-06 16:00:32.665 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-12-06 16:00:32.665 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2017-12-06 16:00:32.665 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
-2017-12-06 16:00:32.665 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
-2017-12-06 16:00:32.666 INFO  (qtp959447386-42) [   x:safety] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=safety&action=CREATE&instanceDir=safety&wt=json} status=0 QTime=198
-2017-12-06 16:00:32.669 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@7b54d846[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2017-12-06 16:00:42.847 INFO  (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:42.848 INFO  (qtp959447386-42) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1512576042837} status=0 QTime=0
-2017-12-06 16:00:42.854 INFO  (qtp959447386-43) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/replication params={wt=json&command=details&_=1512576042837} status=0 QTime=2
-2017-12-06 16:00:42.854 INFO  (qtp959447386-18) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1512576042691&ts=1512576042691} status=503 QTime=0
-2017-12-06 16:00:42.925 INFO  (qtp959447386-41) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=/solr path=/admin/system params={wt=json&_=1512576042837} status=0 QTime=72
-2017-12-06 16:00:42.925 INFO  (qtp959447386-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=78
-2017-12-06 16:00:45.949 INFO  (qtp959447386-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:45.951 INFO  (qtp959447386-42) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1512576042837} status=0 QTime=0
-2017-12-06 16:00:45.954 INFO  (qtp959447386-43) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/replication params={wt=json&command=details&_=1512576042837} status=0 QTime=2
-2017-12-06 16:00:45.959 INFO  (qtp959447386-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1512576042691&ts=1512576042691} status=503 QTime=0
-2017-12-06 16:00:46.021 INFO  (qtp959447386-41) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/system params={wt=json&_=1512576042837} status=0 QTime=61
-2017-12-06 16:00:46.021 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=72
-2017-12-06 16:00:47.102 INFO  (qtp959447386-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:47.107 INFO  (qtp959447386-44) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1512576042837} status=0 QTime=2
-2017-12-06 16:00:47.142 INFO  (qtp959447386-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=39
-2017-12-06 16:00:47.753 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:47.758 INFO  (qtp959447386-43) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1512576047741} status=0 QTime=2
-2017-12-06 16:00:47.782 INFO  (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:47.784 INFO  (qtp959447386-41) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1512576047741} status=0 QTime=1
-2017-12-06 16:00:47.796 ERROR (qtp959447386-16) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solr-data-config.xml' in classpath or 'D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety'
-	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:405)
-	at org.apache.solr.handler.dataimport.DataImportHandler.handleRequestBody(DataImportHandler.java:135)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Thread.java:745)
-
-2017-12-06 16:00:47.796 INFO  (qtp959447386-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1512576047741} status=500 QTime=6
-2017-12-06 16:00:47.796 ERROR (qtp959447386-16) [   x:safety] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solr-data-config.xml' in classpath or 'D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety'
-	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:405)
-	at org.apache.solr.handler.dataimport.DataImportHandler.handleRequestBody(DataImportHandler.java:135)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Thread.java:745)
-
-2017-12-06 16:00:47.801 INFO  (qtp959447386-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=47
-2017-12-06 16:00:47.849 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=43
-2017-12-06 16:00:48.417 INFO  (qtp959447386-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:48.420 INFO  (qtp959447386-44) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1512576042837} status=0 QTime=0
-2017-12-06 16:00:48.458 INFO  (qtp959447386-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=39
-2017-12-06 16:00:49.291 INFO  (qtp959447386-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:49.292 INFO  (qtp959447386-43) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1512576047741} status=0 QTime=0
-2017-12-06 16:00:49.326 INFO  (qtp959447386-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:49.327 INFO  (qtp959447386-18) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1512576047741} status=0 QTime=0
-2017-12-06 16:00:49.334 ERROR (qtp959447386-48) [   x:safety] o.a.s.h.RequestHandlerBase org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solr-data-config.xml' in classpath or 'D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety'
-	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:405)
-	at org.apache.solr.handler.dataimport.DataImportHandler.handleRequestBody(DataImportHandler.java:135)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Thread.java:745)
-
-2017-12-06 16:00:49.335 INFO  (qtp959447386-48) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1512576047741} status=500 QTime=4
-2017-12-06 16:00:49.335 ERROR (qtp959447386-48) [   x:safety] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solr-data-config.xml' in classpath or 'D:\Programs\Xampp\htdocs\Webprosjekt3\solr-6.6.1\server\solr\safety'
-	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:405)
-	at org.apache.solr.handler.dataimport.DataImportHandler.handleRequestBody(DataImportHandler.java:135)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
-	at org.eclipse.jetty.server.Server.handle(Server.java:534)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
-	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
-	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
-	at java.lang.Thread.run(Thread.java:745)
-
-2017-12-06 16:00:49.338 INFO  (qtp959447386-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=46
-2017-12-06 16:00:49.381 INFO  (qtp959447386-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=40
-2017-12-06 16:00:49.940 INFO  (qtp959447386-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:49.944 INFO  (qtp959447386-44) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1512576042837} status=0 QTime=1
-2017-12-06 16:00:49.979 INFO  (qtp959447386-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=39
-2017-12-06 16:00:50.623 INFO  (qtp959447386-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:50.629 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/file params={wt=json&_=1512576050616} status=0 QTime=1
-2017-12-06 16:00:50.664 INFO  (qtp959447386-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=39
-2017-12-06 16:00:51.269 INFO  (qtp959447386-41) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json&_=1512576042691&ts=1512576042691} hits=0 status=0 QTime=9
-2017-12-06 16:00:51.269 INFO  (qtp959447386-41) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json&_=1512576042691&ts=1512576042691} status=0 QTime=9
-2017-12-06 16:00:51.857 INFO  (qtp959447386-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1512576042690} status=0 QTime=0
-2017-12-06 16:00:51.860 INFO  (qtp959447386-44) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1512576042837} status=0 QTime=0
-2017-12-06 16:00:51.894 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1512576042691} status=0 QTime=36
-2017-12-06 16:00:54.928 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=0 status=0 QTime=0
-2017-12-06 16:00:54.928 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-12-06 16:00:54.985 INFO  (qtp959447386-41) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={json.nl=flat&hl=true&fl=*,score&start=0&rows=10&hl.simple.pre=<element+style%3D"+padding:+2px;+background-color:+#56a2aa;+color:+#f3f3f3;"><b>&q=office&defType=dismax&hl.simple.post=</b></element>&omitHeader=true&qf=Title+Date+Author+Responsible+Operator+Attr_content&hl.fl=Attr_content,Title,Author,Responsible,Operator&wt=json} hits=0 status=0 QTime=17
-2017-12-06 16:00:57.546 INFO  (qtp959447386-41) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=0 status=0 QTime=0
-2017-12-06 16:00:57.546 INFO  (qtp959447386-41) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-12-06 16:00:57.568 INFO  (qtp959447386-44) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={json.nl=flat&hl=true&fl=*,score&start=0&rows=10&hl.simple.pre=<element+style%3D"+padding:+2px;+background-color:+#56a2aa;+color:+#f3f3f3;"><b>&q=office&defType=dismax&hl.simple.post=</b></element>&omitHeader=true&qf=Title+Date+Author+Responsible+Operator+Attr_content&hl.fl=Attr_content,Title,Author,Responsible,Operator&wt=json} hits=0 status=0 QTime=1
-2017-12-06 16:00:58.621 INFO  (qtp959447386-44) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=0 status=0 QTime=0
-2017-12-06 16:00:58.621 INFO  (qtp959447386-44) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-12-06 16:01:00.501 INFO  (qtp959447386-41) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=0 status=0 QTime=0
-2017-12-06 16:01:00.501 INFO  (qtp959447386-41) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-12-06 16:01:20.691 INFO  (qtp959447386-23) [   x:safety] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /update/extract,class = solr.extraction.ExtractingRequestHandler,attributes = {startup=lazy, name=/update/extract, class=solr.extraction.ExtractingRequestHandler},args = {defaults={lowernames=true,uprefix=ignored_,fmap.a=links,fmap.div=ignored_,fmap.content=Attr_content,captureAttr=false,df=text}}} 
-2017-12-06 16:01:21.620 INFO  (qtp959447386-23) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-12-06 16:01:21.621 INFO  (qtp959447386-23) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@5c65159d
-2017-12-06 16:01:21.955 INFO  (qtp959447386-23) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@66775592[safety] main]
-2017-12-06 16:01:21.956 INFO  (qtp959447386-23) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-12-06 16:01:21.957 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@66775592[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C1)))}
-2017-12-06 16:01:21.957 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-12-06 16:01:21.957 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@66775592[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C1)))}
-2017-12-06 16:01:21.957 INFO  (qtp959447386-23) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={commit=true}{add=[8cd6c1e4-0827-47c1-ad78-5ab54d111940 (1586050977270595584)],commit=} 0 1266
-2017-12-06 16:01:25.649 INFO  (qtp959447386-48) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=1 status=0 QTime=3
-2017-12-06 16:01:25.649 INFO  (qtp959447386-48) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=4
-2017-12-06 16:01:28.919 INFO  (qtp959447386-42) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=1 status=0 QTime=0
-2017-12-06 16:01:28.919 INFO  (qtp959447386-42) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-12-06 16:01:30.824 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=1 status=0 QTime=0
-2017-12-06 16:01:30.824 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-12-06 16:01:30.854 INFO  (qtp959447386-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=1 status=0 QTime=0
-2017-12-06 16:01:30.854 INFO  (qtp959447386-16) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-12-06 16:01:30.893 INFO  (qtp959447386-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={json.nl=flat&hl=true&fl=*,score&start=0&rows=10&hl.simple.pre=<element+style%3D"+padding:+2px;+background-color:+#56a2aa;+color:+#f3f3f3;"><b>&q=eksamen&defType=dismax&hl.simple.post=</b></element>&omitHeader=true&qf=Title+Date+Author+Responsible+Operator+Attr_content&hl.fl=Attr_content,Title,Author,Responsible,Operator&wt=json} hits=0 status=0 QTime=3
-2017-12-06 16:01:37.378 INFO  (qtp959447386-42) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=1 status=0 QTime=0
-2017-12-06 16:01:37.378 INFO  (qtp959447386-42) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-12-06 16:01:41.828 INFO  (qtp959447386-48) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=1 status=0 QTime=0
-2017-12-06 16:01:41.828 INFO  (qtp959447386-48) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-12-06 16:01:41.846 INFO  (qtp959447386-43) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=Office&defType=dismax&json.nl=flat&omitHeader=true&qf=Document+Summary+Year+Responsible+id&fl=*,score&start=0&rows=10&wt=json} hits=0 status=0 QTime=1
-2017-12-06 16:02:13.354 INFO  (qtp959447386-44) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=1 status=0 QTime=0
-2017-12-06 16:02:13.354 INFO  (qtp959447386-44) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=0
-2017-12-06 16:02:25.255 WARN  (qtp959447386-18) [   x:safety] o.a.p.p.f.FileSystemFontProvider New fonts found, font cache will be re-built
-2017-12-06 16:02:25.255 WARN  (qtp959447386-18) [   x:safety] o.a.p.p.f.FileSystemFontProvider Building on-disk font cache, this may take a while
-2017-12-06 16:02:25.394 WARN  (qtp959447386-18) [   x:safety] o.a.p.p.f.FileSystemFontProvider Finished building on-disk font cache, found 381 fonts
-2017-12-06 16:02:25.438 INFO  (qtp959447386-18) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-12-06 16:02:25.439 INFO  (qtp959447386-18) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@5c65159d
-2017-12-06 16:02:25.730 INFO  (qtp959447386-18) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@58570a85[safety] main]
-2017-12-06 16:02:25.730 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@58570a85[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C1) Uninverting(_1(6.6.1):C1)))}
-2017-12-06 16:02:25.730 INFO  (qtp959447386-18) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-12-06 16:02:25.730 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-12-06 16:02:25.731 INFO  (searcherExecutor-17-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@58570a85[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.1):C1) Uninverting(_1(6.6.1):C1)))}
-2017-12-06 16:02:25.731 INFO  (qtp959447386-18) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={commit=true}{add=[e2e37b10-747e-458d-aae9-d7349472829c (1586051044268310528)],commit=} 0 673
+2017-12-06 17:21:47.719 INFO  (searcherExecutor-8-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.S.Request [wp3]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} status=400 QTime=33
+2017-12-06 17:21:47.719 INFO  (searcherExecutor-8-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-12-06 17:21:47.720 INFO  (searcherExecutor-8-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-12-06 17:21:47.721 INFO  (searcherExecutor-8-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-12-06 17:21:47.721 INFO  (searcherExecutor-8-thread-1-processing-x:wp3) [   x:wp3] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2017-12-06 17:21:47.721 INFO  (searcherExecutor-8-thread-1-processing-x:wp3) [   x:wp3] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2017-12-06 17:21:47.773 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@3535a371[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_x(6.6.1):C1)))}
+2017-12-06 17:21:47.773 INFO  (searcherExecutor-8-thread-1-processing-x:wp3) [   x:wp3] o.a.s.c.SolrCore [wp3] Registered new searcher Searcher@6a672433[wp3] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-12-06 17:21:49.049 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=26
+2017-12-06 17:22:43.963 INFO  (qtp581374081-22) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-12-06 17:22:43.964 INFO  (qtp581374081-22) [   x:safety] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2017-12-06 17:22:43.967 INFO  (qtp581374081-22) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-12-06 17:22:43.967 INFO  (qtp581374081-22) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update params={stream.body=<delete><query>0d5ee5d8-a631-4ddd-9511-40fc9bc1fd6d</query></delete>&commit=true}{deleteByQuery=0d5ee5d8-a631-4ddd-9511-40fc9bc1fd6d (-1586056096774094848),commit=} 0 144
+2017-12-06 17:22:49.222 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=1 status=0 QTime=10
+2017-12-06 17:22:49.222 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=11
+2017-12-06 17:23:01.753 INFO  (qtp581374081-20) [   x:safety] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /update/extract,class = solr.extraction.ExtractingRequestHandler,attributes = {startup=lazy, name=/update/extract, class=solr.extraction.ExtractingRequestHandler},args = {defaults={lowernames=true,uprefix=ignored_,fmap.a=links,fmap.div=ignored_,fmap.content=text,captureAttr=true,lowernames=true,ignoreTikaException=true,df=text}}} 
+2017-12-06 17:23:03.415 INFO  (qtp581374081-20) [   x:safety] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-12-06 17:23:03.416 INFO  (qtp581374081-20) [   x:safety] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@18bd20db
+2017-12-06 17:23:03.835 INFO  (qtp581374081-20) [   x:safety] o.a.s.s.SolrIndexSearcher Opening [Searcher@d2778b9[safety] main]
+2017-12-06 17:23:03.837 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@d2778b9[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_x(6.6.1):C1) Uninverting(_y(6.6.1):C1)))}
+2017-12-06 17:23:03.837 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-12-06 17:23:03.838 INFO  (searcherExecutor-7-thread-1-processing-x:safety) [   x:safety] o.a.s.c.SolrCore [safety] Registered new searcher Searcher@d2778b9[safety] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_x(6.6.1):C1) Uninverting(_y(6.6.1):C1)))}
+2017-12-06 17:23:03.838 INFO  (qtp581374081-20) [   x:safety] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-12-06 17:23:03.839 INFO  (qtp581374081-20) [   x:safety] o.a.s.u.p.LogUpdateProcessorFactory [safety]  webapp=/solr path=/update/extract params={commit=true}{add=[feab1cca-96fc-4261-91b4-b7580115e2c7 (1586056117163655168)],commit=} 0 2086
+2017-12-06 17:23:06.675 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} hits=2 status=0 QTime=0
+2017-12-06 17:23:06.675 INFO  (qtp581374081-14) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=1
+2017-12-06 17:23:10.729 INFO  (qtp581374081-17) [   x:safety] o.a.s.c.S.Request [safety]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1512580838778} hits=2 status=0 QTime=1
+2017-12-06 17:25:00.163 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1354003114
+2017-12-06 17:25:00.163 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2017-12-06 17:25:00.164 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2017-12-06 17:25:00.164 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2017-12-06 17:25:00.165 INFO  (ShutdownMonitor) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-12-06 17:25:00.167 INFO  (coreCloseExecutor-17-thread-1) [   x:wp3] o.a.s.c.SolrCore [wp3]  CLOSING SolrCore org.apache.solr.core.SolrCore@976b17e
+2017-12-06 17:25:00.168 INFO  (coreCloseExecutor-17-thread-2) [   x:safety] o.a.s.c.SolrCore [safety]  CLOSING SolrCore org.apache.solr.core.SolrCore@3e20c17f
+2017-12-06 17:25:00.178 INFO  (coreCloseExecutor-17-thread-1) [   x:wp3] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.wp3
+2017-12-06 17:25:00.184 INFO  (coreCloseExecutor-17-thread-2) [   x:safety] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.safety
