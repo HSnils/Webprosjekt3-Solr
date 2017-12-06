@@ -806,3 +806,10 @@ Caused by: org.apache.lucene.index.IndexNotFoundException: no segments* file fou
 2017-12-06 15:37:05.203 INFO  (qtp959447386-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
 2017-12-06 15:37:15.204 INFO  (qtp959447386-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
 2017-12-06 15:37:25.203 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:37:35.205 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:37:45.205 INFO  (qtp959447386-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:37:55.206 INFO  (qtp959447386-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1512574495184&since=0} status=0 QTime=0
+2017-12-06 15:37:55.755 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=825658265
+2017-12-06 15:37:55.755 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2017-12-06 15:37:55.755 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2017-12-06 15:37:55.755 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
