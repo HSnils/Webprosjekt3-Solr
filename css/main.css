@@ -7,6 +7,7 @@
 	--grey: #d6d6d6;
 
 	--logout-red: #FE7E62;
+	
 }
 
 body{
@@ -49,7 +50,7 @@ nav{
 }
 
 #navbuttons a{
-	color: #56a2aa;
+	color: var(--main-blue);
 	text-decoration: none;
 	margin-left: 1em;
 }
@@ -174,7 +175,7 @@ nav{
 	width: 100%;
 }
 
-.red{
+#red{
 	color: var(--logout-red);
 }
 

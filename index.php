@@ -59,6 +59,7 @@
 	<div  class="navitem"><img id="logo" src="images/logo.png"></div>
 	<div id="navbuttons" class="navitem" >
 		<b>
+			<a href="">HJEM</a>
 			<a href="">COOKIES OG PERSONVERN</a>
 			<?php 
 				if($user->is_loggedin()){
