@@ -26,7 +26,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Webproject 3</title>
 
 	<!--Jquery and UI-->
@@ -85,7 +85,7 @@
 		//highlighting
 		//get highlighting component and apply settings
 		$hl = $query->getHighlighting();
-		$hl->setFields('Document, Responsible');
+		$hl->setFields('Attr_content, Title, Author, Responsible, Operator');
 		$hl->setSimplePrefix('<element style=" padding: 2px; background-color: #56a2aa; color: #f3f3f3;"><b>');
 		$hl->setSimplePostfix('</b></element>');
 
