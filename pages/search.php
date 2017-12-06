@@ -85,7 +85,7 @@
 		//highlighting
 		//get highlighting component and apply settings
 		$hl = $query->getHighlighting();
-		$hl->setFields('Attr_content, Title, Author, Responsible, Operator');
+		$hl->setFields('text, Title, Author, Responsible, Operator');
 		$hl->setSimplePrefix('<element style=" padding: 2px; background-color: #56a2aa; color: #f3f3f3;"><b>');
 		$hl->setSimplePostfix('</b></element>');
 		
@@ -97,7 +97,7 @@
 	    $dismax = $query->getDisMax();
 
 	    // Select the fields we wish to use the search for
-	    $dismax->setQueryFields('Title Date Author Responsible Operator Attr_content');
+	    $dismax->setQueryFields('Title Date Author Responsible Operator text');
 
 	    /*
 	    // Example of how you can weigh each field differently.

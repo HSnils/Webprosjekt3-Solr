@@ -11,7 +11,7 @@
 	<field name="Operator" type="string" indexed="true" stored="true" multiValued="false" />
 	<field name="date" type="date" indexed="true" stored="true" multiValued="false" />
 	<field name="Responsible" type="string" indexed="true" stored="true" />
-	<field name="Attr_content" type="text_en" indexed="true" stored="true" multiValued="false" />
+	<field name="text" type="text_en" indexed="true" stored="true" multiValued="false" />
 
 	<!-- default -->
 	<uniqueKey>id</uniqueKey>
@@ -39,5 +39,5 @@
 			<filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
 		</analyzer>
 	</fieldType>
-	<dynamicField name="ignored_*" type="text_en" indexed="false" stored="false"/>
+	<dynamicField name="ignored_*" type="text_en" indexed="false" stored="false" multiValued="true" />
 </schema>
