@@ -85,9 +85,10 @@
 		//highlighting
 		//get highlighting component and apply settings
 		$hl = $query->getHighlighting();
-		$hl->setFields('text, Title, Author, Responsible, Operator');
+		$hl->setFields('Date, text, Title, Author, Responsible, Operator');
 		$hl->setSimplePrefix('<element style=" padding: 2px; background-color: #56a2aa; color: #f3f3f3;"><b>');
 		$hl->setSimplePostfix('</b></element>');
+		$hl->setSnippets(5);
 		
 
 	    // set a query (all prices starting from 12)
@@ -97,7 +98,7 @@
 	    $dismax = $query->getDisMax();
 
 	    // Select the fields we wish to use the search for
-	    $dismax->setQueryFields('Title Date Author Responsible Operator text');
+	    $dismax->setQueryFields('title Date Author Responsible Operator text id');
 
 	    /*
 	    // Example of how you can weigh each field differently.
@@ -107,6 +108,7 @@
 	    // this executes the query and returns the result
 	    $resultset = $client->select($query);
 
+	   // var_dump($resultset->getComponet());
 	    //highlighting
 	    $highlighting = $resultset->getHighlighting();
 
@@ -125,27 +127,20 @@
 		    // show documents using the resultset iterator
 		    foreach ($resultset as $document) {
 
-		        echo '<table>';
+		        echo $document->title;
+		        echo "<h2>hey</h2>";
+		        echo $document->author;
+		        echo substr($document->date, 0,10);
+		        
+				// highlighting results can be fetched by document id (the field defined as uniquekey in this schema)
+				$highlightedDoc = $highlighting->getResult($document->id);
+				if ($highlightedDoc) {
+				    foreach ($highlightedDoc as $field => $highlight) {
+				        echo implode(' (...) ', $highlight) . '<br/><hr>';
+				    }
+				}
 
-		        // the documents are also iterable, to get all fields
-		        foreach ($document as $field => $value) {
-		            // this converts multivalue fields to a comma-separated string
-		            if (is_array($value)) {
-		                $value = implode(', ', $value);
-		            }
-
-		            echo '<tr><th>' . $field . '</th><td>' . $value . '</td></tr>';
-		        }
-
-		        echo '</table><br><b>Highlighting results:</b><br/>';
-
-    // highlighting results can be fetched by document id (the field defined as uniquekey in this schema)
-    $highlightedDoc = $highlighting->getResult($document->id);
-    if ($highlightedDoc) {
-        foreach ($highlightedDoc as $field => $highlight) {
-            echo implode(' (...) ', $highlight) . '<br/><hr>';
-        }
-    }
+				echo'<a target="_blank" href="../solr-6.6.1/uploads/assignment.pdf"><img src="../images/pdf_icon.svg" alt="CLICK TO OPEN PDF"></a>';
 		    }
 	    } else{
 	    	echo '<div class="treffbox">
