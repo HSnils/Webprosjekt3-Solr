@@ -48,7 +48,7 @@
 <?php include('partials/nav.php') ?>
 
 <div id="search_container">
-	<form id="searchfieldform" method="get">
+	<form id="searchfieldform" method="GET">
 		<input type="text" name="search" id="searchfield">
 		<input type="submit" value="Søk" id="searchSubmit">
 	</form>
@@ -69,12 +69,25 @@
 	if (!empty($_GET["search"])) {
 
 	    require('../solarium/init.php');
-
+ 
 	    // create a client instance
 	    $client = new Solarium\Client($config);
 
 	    // get a select query instance
 	    $query = $client->createSelect();
+
+	    // gets facets
+	    $facetSet = $query->getFacetSet();
+
+	   /* // create a facet query instance and set options
+		$facetSet->createFacetQuery('date')->setQuery('year');*/
+
+		//highlighting
+		//get highlighting component and apply settings
+		$hl = $query->getHighlighting();
+		$hl->setFields('Document, Responsible');
+		$hl->setSimplePrefix('<element style=" padding: 2px; background-color: #56a2aa; color: #f3f3f3;"><b>');
+		$hl->setSimplePostfix('</b></element>');
 
 	    // set a query (all prices starting from 12)
 	    $query->setQuery($_GET["search"]);
@@ -93,6 +106,13 @@
 	    // this executes the query and returns the result
 	    $resultset = $client->select($query);
 
+	    //highlighting
+	    $highlighting = $resultset->getHighlighting();
+
+	    /*// display facet query count
+		$count = $resultset->getFacetSet()->getFacet('date')->getValue();
+		echo '<hr/>Facet query count : ' . $count;*/
+
 	 	  // ----- RESULTS -----
 
 	    $antallTreff = $resultset->getNumFound();
@@ -100,7 +120,7 @@
 	  
 	    if($antallTreff != 0) {
 	    	// display the total number of documents found by solr
-	   		 echo '<div class="treffbox"> antall treff på <u>'.$_get['search'].'</u>: '.$antalltreff.'</div>';
+	   		 echo '<div class="treffbox"> Antall treff på <u>'.$_GET['search'].'</u>: '.$antallTreff.'</div>';
 		    // show documents using the resultset iterator
 		    foreach ($resultset as $document) {
 
@@ -116,11 +136,19 @@
 		            echo '<tr><th>' . $field . '</th><td>' . $value . '</td></tr>';
 		        }
 
-		        echo '</table><br><hr><br>';
+		        echo '</table><br><b>Highlighting results:</b><br/>';
+
+    // highlighting results can be fetched by document id (the field defined as uniquekey in this schema)
+    $highlightedDoc = $highlighting->getResult($document->id);
+    if ($highlightedDoc) {
+        foreach ($highlightedDoc as $field => $highlight) {
+            echo implode(' (...) ', $highlight) . '<br/><hr>';
+        }
+    }
 		    }
 	    } else{
 	    	echo '<div class="treffbox">
-	    		fant ingen treff på <u>'.$_get['search'].'</u>!
+	    		Fant ingen treff på <u>'.$_GET['search'].'</u>!
 	    	</div>';
 	    }
 }?>
