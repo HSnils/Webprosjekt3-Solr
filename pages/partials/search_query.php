@@ -3,6 +3,7 @@
 
 	if (!empty($_GET["search"])) {
 
+		$userSearch = htmlentities($_GET["search"]);
 	    require('../solarium/init.php');
  
 	    // create a client instance
@@ -27,7 +28,7 @@
 		
 
 	    // set a query (all prices starting from 12)
-	    $query->setQuery($_GET["search"]);
+	    $query->setQuery($userSearch);
 
 	    // Initiate a DisMax query (Query multiple fields)
 	    $dismax = $query->getDisMax();

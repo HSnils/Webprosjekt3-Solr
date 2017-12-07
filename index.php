@@ -24,7 +24,7 @@
 
 	if(isset($_POST['submit']) && $_POST['search'] != ''){
 
-		$search = $_POST['search'];
+		$search = htmlentities($_POST['search']);
 		$url = 'pages/search.php?search='.$search;
 		header('Location: ' . $url);
 

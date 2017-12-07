@@ -56,17 +56,14 @@
 
 </div>
 
-
 <br>
 
-
-
- <div class="contentbox">
+<div class="contentbox">
 
  	<?php require('partials/search_query.php'); ?>
 
 
- </div>
+</div>
 <?php //echo 'Antall treff: '.$antallTreff ?>
 </body>
 </html>
