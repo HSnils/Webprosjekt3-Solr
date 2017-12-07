@@ -78,24 +78,23 @@
 
 					}
 
-					echo'<div class="pdficon">
-							<a target="_blank" href="../solr-6.6.1/uploads/assignment.pdf"><img src="../images/pdf_icon.svg" alt="CLICK TO OPEN PDF"><br>Click to open</a>';
+					echo'<div class="pdficonBox">
+							<a class="pdficon" target="_blank" href="../solr-6.6.1/uploads/assignment.pdf"><img src="../images/pdf_icon.svg" alt="CLICK TO OPEN PDF"><br>Click to open</a>';
 					
 						if($user->is_loggedin()){
 		        			
 							echo '
 							<div class="adminButtonsBox">
-								<div class="test">
 
-
+									<a href="editMeta.php?id='.$document->id.'">
 			        				<div class="adminButtons editButton"> <i class="icon_size material-icons">edit
-			        				</i>Edit meta
-			        				</div>
-			        			</div>
-			        			<div>
+			        				</i>Edit metadata
+			        				</div></a>
+
 			        				
-			        				<div class="adminButtons deleteButton"><i class="icon_size material-icons">delete</i>Delete</div>
-			        			</div>
+			        				<div class="adminButtons deleteButton">
+			        				<i class="icon_size material-icons">delete</i>
+			        				Delete</div>
 		        			</div>';
 		        		}
 	        		echo '</div>';

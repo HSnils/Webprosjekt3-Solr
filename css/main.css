@@ -204,7 +204,7 @@ nav{
 	width: 75%;
 }
 
-.pdficon{
+.pdficonBox{
 	width: 20%;
 	margin-left: 5%;
 	font-size: 0.7em;
@@ -212,7 +212,7 @@ nav{
 	flex-flow: column wrap;
 }
 
-.pdficon a{
+.pdficon{
 	margin-left: 30%;
 	text-decoration: none;
 	color: var(--dark-blue);
@@ -226,22 +226,23 @@ nav{
 .adminButtonsBox{
 	
 	width: 100%;
-		justify-items: center;
+
 
 }
 
-.test{
-	width: 100%;
+.adminButtonsBox a{
+	text-decoration: none;
 }
+
 
 .adminButtons{
-	width: 100%;
+	width: 100% !IMPORTANT;
 	padding: 8px;
 	color:  var(--bg);
 	margin-bottom: 10px;
 	font-size: 1.2em;
 	align-items: center;
-
+	box-sizing: border-box;
 
 }
 
@@ -256,6 +257,10 @@ nav{
 	background-color: var(--button-blue);
 }
 
+.editButton:hover{
+	background-color: var(--main-blue);
+}
+
 .deleteButton{
 	background-color: var(--light-red);
 }
@@ -263,7 +268,6 @@ nav{
 .deleteButton:hover{
 	background-color: darkred;
 	color:  var(--bg);
-	border-color: darkred;
 }
 
 
