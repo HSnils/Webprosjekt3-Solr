@@ -213,9 +213,13 @@ nav{
 }
 
 .pdficon{
-	margin-left: 30%;
+	margin-left: 25%;
 	text-decoration: none;
 	color: var(--dark-blue);
+}
+
+.pdficon img{
+	margin-left: 7%;
 }
 
 .itemEnd{

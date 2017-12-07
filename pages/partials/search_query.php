@@ -70,10 +70,10 @@
 					if ($highlightedDoc) {
 					    foreach ($highlightedDoc as $field => $highlight) {
 					        echo '<div class="highlight">'.implode(' (...) ', $highlight) . '';
-					        echo "
-			        <div class='itemEnd'>
-	        			Skrevet av: <b>". $document->author ."</b> Dato: <b>". substr($document->date, 0,10) ."</b>
-	        		</div></div>";
+					        echo "	
+					        <div class='itemEnd'>
+			        			Skrevet av: <b>". $document->author ."</b> Dato: <b>". substr($document->date, 0,10) ."</b>
+			        		</div></div>";
 					    }
 
 					}
