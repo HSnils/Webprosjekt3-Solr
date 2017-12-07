@@ -207,7 +207,6 @@ nav{
 .pdficon{
 	width: 20%;
 	margin-left: 5%;
-	margin-top: 0.1em;
 	font-size: 0.7em;
 	display: flex;
 	flex-flow: column wrap;

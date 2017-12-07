@@ -64,6 +64,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<!--Css-->
 	<link rel="stylesheet" href="../css/main.css?<?php echo time(); ?>">
 
