@@ -20,7 +20,7 @@
 		//highlighting
 		//get highlighting component and apply settings
 		$hl = $query->getHighlighting();
-		$hl->setFields('Date, text, Title, author, Responsible, Operator');
+		$hl->setFields('date, text, title, author, Responsible, Operator');
 		$hl->setSimplePrefix('<element style="padding: 2px; background-color: #56a2aa; color: #f3f3f3;"><b>');
 		$hl->setSimplePostfix('</b></element>');
 		$hl->setSnippets(4);
