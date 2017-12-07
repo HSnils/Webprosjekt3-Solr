@@ -50,7 +50,7 @@
 		$query->setFields(array('id'));
 
 		// sort the result
-		$query->addSort('timestamp', $query::SORT_DESC);
+		$query->addSort('timestamp', $query::SORT_ASC);
 
 		// this executes the query and returns the result
 		$resultset = $client->select($query);
@@ -61,7 +61,7 @@
 		    $document->getFields();
 		}
 
-		header("Location: editmeta.php?id=" . $document['id']);
+		header("Location: upload.php?edit=" . $document['id']);
 
 	} else {
 		echo "This is not a valid pdf file.";
