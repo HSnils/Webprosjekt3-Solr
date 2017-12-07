@@ -106,43 +106,37 @@ foreach ($resultset AS $document) {
 
 echo $document['id'];
 
+ ?>
 
-	    // Initiate a DisMax query (Query multiple fields)
-	    $dismax = $query->getDisMax();
+<div class="contentbox">
+	
+	<h4>Edit pdf metadata</h4>
+	<form id="editform" action="edit.php" method="POST" enctype="multipart/form-data">
+		<div>
+			<label for="title">ID:</label>
+		    <input type="text" name="ID" disabled>
 
-	    // Select the fields we wish to use the search for
-	    $dismax->setQueryFields('Document Summary Year Responsible');
+			<label for="title">Title:</label>
+		    <input type="text" name="title">
 
-	    /*
-	    // Example of how you can weigh each field differently.
-	    $dismax->setQueryFields('title^3 cast^2 synopsis^1');
-	    */
+		    <label for="title">Author:</label>
+		    <input type="text" name="author">
 
-	    // this executes the query and returns the result
-	    $resultset = $client->select($query);
+		    <label for="title">Date:</label>
+		    <input type="text" name="date">
 
-	 	  // ----- RESULTS -----
+		    <label for="title">Operator:</label>
+		    <input type="text" name="operator">
 
-	    $antallTreff = $resultset->getNumFound();
-	    
-	  
-	    if($antallTreff != 0) {
-	    	// display the total number of documents found by solr
-	   		 echo '<div class="treffbox"> Antall treff: '.$antallTreff.'</div>';
-		    // show documents using the resultset iterator
-		    foreach ($resultset as $document) {
+		    <label for="title">Responsible:</label>
+		    <input type="text" name="responsible">
+	    </div>
 
-		        echo '<table>';
+	    <input type="submit" name="edit_btn" value="Edit Metadata" class="inputbuttons">
+	</form>
 
-		        // the documents are also iterable, to get all fields
-		        foreach ($document as $field => $value) {
-		            // this converts multivalue fields to a comma-separated string
-		            if (is_array($value)) {
-		                $value = implode(', ', $value);
-		            }
-
-		            echo '<tr><th>' . $field . '</th><td>' . $value . '</td></tr>';
-		        }
+	
+</div>
 
 <?php //echo 'Antall treff: '.$antallTreff ?>
 </body>
