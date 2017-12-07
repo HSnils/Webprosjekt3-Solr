@@ -30,7 +30,38 @@
 		$http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 		curl_close ( $ch );
 
-		echo $result;
+		
+		require('../solarium/init.php');
+
+		htmlHeader();
+
+		// create a client instance
+		$client = new Solarium\Client($config);
+
+		// get a select query instance
+		$query = $client->createSelect();
+
+		// set a query (all prices starting from 12)
+		$query->setQuery('*:*');
+
+		// set start and rows param (comparable to SQL limit) using fluent interface
+		$query->setStart(0)->setRows(1);
+
+		$query->setFields(array('id'));
+
+		// sort the result
+		$query->addSort('timestamp', $query::SORT_ASC);
+
+		// this executes the query and returns the result
+		$resultset = $client->select($query);
+
+		//print_r($resultset);
+
+		foreach ($resultset AS $document) {
+		    $document->getFields();
+		}
+
+		header("Location: upload.php?edit=" . $document['id']);
 
 	} else {
 		echo "This is not a valid pdf file.";

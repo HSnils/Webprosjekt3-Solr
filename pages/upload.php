@@ -73,34 +73,39 @@
 	</div>
 </nav>
 
-<form id="uploadform" action="upload_handler.php" method="POST" enctype="multipart/form-data">
-    <input type="file" name="userFile"><br>
-    <input type="submit" name="upload_btn" value="upload">
-</form>
+<?php 
+require('../solarium/init.php');
 
+htmlHeader();
 
-<br>
+// create a client instance
+$client = new Solarium\Client($config);
 
+// get a select query instance
+$query = $client->createSelect();
 
+// set a query (all prices starting from 12)
+$query->setQuery('*:*');
 
- <div id="searchresultsbox">
+// set start and rows param (comparable to SQL limit) using fluent interface
+$query->setStart(0)->setRows(1);
 
- 	<?php 
+$query->setFields(array('id'));
 
-	    // ----- SEARCH EXECUTION -----
+// sort the result
+$query->addSort('timestamp', $query::SORT_ASC);
 
-	if (!empty($_GET["search"])) {
+// this executes the query and returns the result
+$resultset = $client->select($query);
 
-	    require('../solarium/init.php');
+//print_r($resultset);
 
-	    // create a client instance
-	    $client = new Solarium\Client($config);
+foreach ($resultset AS $document) {
+    $document->getFields();
+}
 
-	    // get a select query instance
-	    $query = $client->createSelect();
+echo $document['id'];
 
-	    // set a query (all prices starting from 12)
-	    $query->setQuery($_GET["search"]);
 
 	    // Initiate a DisMax query (Query multiple fields)
 	    $dismax = $query->getDisMax();
@@ -139,17 +144,6 @@
 		            echo '<tr><th>' . $field . '</th><td>' . $value . '</td></tr>';
 		        }
 
-		        echo '</table><br><hr><br>';
-		    }
-	    } else{
-	    	echo '<div class="treffbox">
-	    		Fant ingen treff! :(
-	    	</div>';
-	    }
-}?>
-
-
- </div>
 <?php //echo 'Antall treff: '.$antallTreff ?>
 </body>
 </html>

@@ -185,6 +185,13 @@ nav{
 	width: 100%;
 }
 
+#editform div {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 20%;
+	margin-bottom: 10px;
+}
+
 #red{
 	color: var(--light-red);
 }
