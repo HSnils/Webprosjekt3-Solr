@@ -15,8 +15,8 @@
 	    // gets facets
 	    $facetSet = $query->getFacetSet();
 
-	   /* // create a facet query instance and set options
-		$facetSet->createFacetQuery('date')->setQuery('year');*/
+	    // create a facet query instance and set options
+		$facetSet->createFacetQuery('author');
 
 		//highlighting
 		//get highlighting component and apply settings
@@ -53,7 +53,9 @@
 		echo '<hr/>Facet query count : ' . $count;*/
 
 	 	  // ----- RESULTS -----
-
+		// display facet query count
+		$count = $resultset->getFacetSet()->getFacet('author')->getValue();
+		echo '<hr/>Facet query count : ' . $count;
 	    $antallTreff = $resultset->getNumFound();
 	    
 	  
@@ -87,15 +89,16 @@
 							echo '
 							<div class="adminButtonsBox">
 
-									<a href="editMeta.php?id='.$document->id.'">
+									<a href="editmeta.php?id='.$document->id.'">
 			        				<div class="adminButtons editButton"> <i class="icon_size material-icons">edit
 			        				</i>Edit metadata
 			        				</div></a>
 
-			        				
+			        				<a href="">
 			        				<div class="adminButtons deleteButton">
 			        				<i class="icon_size material-icons">delete</i>
 			        				Delete</div>
+			        				</a>
 		        			</div>';
 		        		}
 	        		echo '</div>';

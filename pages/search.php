@@ -58,7 +58,12 @@
 
 <br>
 
+<div>
+
+</div>
+
 <div class="contentbox">
+	<!--<form action=""><input type="text"><input type="text"></form>-->
 
  	<?php require('partials/search_query.php'); ?>
 

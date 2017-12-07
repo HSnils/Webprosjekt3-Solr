@@ -101,7 +101,7 @@
 	</div>
 	<div>
 		<img src="images/arbeidsmiljo_icon.svg" alt="ICON" class="icon">
-		<span class="icon_heading">ARIBEIDSMILJØ</span>
+		<span class="icon_heading">ARBEIDSMILJØ</span>
 		<p>Venner, Kollegaer, Sikkerhet, Luft, Område alle disse og mer bidrar på skape gode arbeidsmiljø.</p>
 		<a href="pages/search.php?search=arbeidsmiljø">Klikk for å se mer</a>
 	</div>
