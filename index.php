@@ -90,19 +90,19 @@
 		<img src="images/sikkerhet.svg" alt="ICON" class="icon">
 		<span class="icon_heading">SIKKERHET</span> 
 		<p>Sikkerhet er alltids viktig for å opprettholde en trygg og sikker hverdag på jobben.</p>
-		<a href="pages/search.php?search=sikkerhet">View collection</a>
+		<a href="pages/search.php?search=sikkerhet">Klikk for å se mer</a>
 	</div>
 	<div>
 		<img src="images/alarm_icon.svg" alt="ICON" class="icon">
 		<span class="icon_heading">KRISEFORSIKRING</span>
 		<p>Kriseforsikring hjelper alle når man havner i en krise.</p>
-		<a href="pages/search.php?search=kriseforsikring">View collection</a>
+		<a href="pages/search.php?search=kriseforsikring">Klikk for å se mer</a>
 	</div>
 	<div>
 		<img src="images/arbeidsmiljo_icon.svg" alt="ICON" class="icon">
 		<span class="icon_heading">ARIBEIDSMILJØ</span>
 		<p>Venner, Kollegaer, Sikkerhet, Luft, Område alle disse og mer bidrar på skape gode arbeidsmiljø.</p>
-		<a href="pages/search.php?search=arbeidsmiljø">View collection</a>
+		<a href="pages/search.php?search=arbeidsmiljø">Klikk for å se mer</a>
 	</div>
 </div>
 <!--

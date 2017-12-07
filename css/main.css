@@ -2,11 +2,15 @@
 	--main-blue:  #56a2aa;
 	--light-blue: #3788ae;
 	--dark-blue:  #496081;
+	--button-blue: #81bdc4;
+
+	--light-green:  #76D7C4;
 
 	--bg: #f3f3f3;
 	--grey: #d6d6d6;
 
 	--logout-red: #FE7E62;
+	--light-red:  #F08080;
 	
 }
 
@@ -73,22 +77,27 @@ nav{
 	width      :100%;
 	flex-wrap  : wrap;
 	align-items: center;
+	box-sizing: border-box;
 }
 
 #searchfield{
 	width: 88%;
-	height: 3em;
+	height: 3em !IMPORTANT;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 #searchSubmit{
 	width           :10%;
-	height          : 3.4em;
+	height          : 3em !IMPORTANT;
 	background-color: var(--main-blue);
 	border          : 0;
 	color           : white;
 	/*float         : right;*/
 	font-weight     : bold;
 	cursor          : pointer;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 
@@ -158,13 +167,14 @@ nav{
 	background-color:  var(--main-blue);
 	border          : 1px solid  var(--main-blue);
 	color           : white;
-	padding         : 15px;
+	padding         : 10px;
 	
 	/*float         : right;*/
 	font-weight     : bold;
 	cursor          : pointer;
 	box-sizing      : border-box;
 	flex-basis      : 100%;
+	margin-top:  10px;
 }
 
 .inputbuttons:hover{
@@ -176,7 +186,85 @@ nav{
 }
 
 #red{
-	color: var(--logout-red);
+	color: var(--light-red);
+}
+
+.searchItem{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	border-bottom: 1px solid var(--grey);
+}
+.searchItem h3{
+	flex-basis: 100%;
+}
+.highlight{
+	width: 75%;
+}
+
+.pdficon{
+	width: 20%;
+	margin-left: 5%;
+	margin-top: 0.1em;
+	font-size: 0.7em;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.pdficon a{
+	margin-left: 30%;
+	text-decoration: none;
+	color: var(--dark-blue);
+}
+
+.itemEnd{
+	margin-top: 15px;
+	width:  85%;
+}
+
+.adminButtonsBox{
+	
+	width: 100%;
+		justify-items: center;
+
+}
+
+.test{
+	width: 100%;
+}
+
+.adminButtons{
+	width: 100%;
+	padding: 8px;
+	color:  var(--bg);
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	align-items: center;
+
+
+}
+
+.icon_size{
+	font-size: 1.2em;
+    color: var(--bg);
+    margin-right: 5px;
+}
+
+.editButton{
+	margin-top: 5px;
+	background-color: var(--button-blue);
+}
+
+.deleteButton{
+	background-color: var(--light-red);
+}
+
+.deleteButton:hover{
+	background-color: darkred;
+	color:  var(--bg);
+	border-color: darkred;
 }
 
 

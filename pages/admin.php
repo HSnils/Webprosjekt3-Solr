@@ -95,71 +95,10 @@
 </div>
 
 <div class="contentbox">
-
- 	<?php 
-
-	    // ----- SEARCH EXECUTION -----
-
-	if (!empty($_GET["search"])) {
-
-	    require('../solarium/init.php');
-
-	    // create a client instance
-	    $client = new Solarium\Client($config);
-
-	    // get a select query instance
-	    $query = $client->createSelect();
-
-	    // set a query (all prices starting from 12)
-	    $query->setQuery($_GET["search"]);
-
-	    // Initiate a DisMax query (Query multiple fields)
-	    $dismax = $query->getDisMax();
-
-	    // Select the fields we wish to use the search for
-	    $dismax->setQueryFields('Document Summary Year Responsible id');
-
-	    /*
-	    // Example of how you can weigh each field differently.
-	    $dismax->setQueryFields('title^3 cast^2 synopsis^1');
-	    */
-
-	    // this executes the query and returns the result
-	    $resultset = $client->select($query);
-
-	 	  // ----- RESULTS -----
-
-	    $antallTreff = $resultset->getNumFound();
-	    
-	  
-	    if($antallTreff != 0) {
-	    	// display the total number of documents found by solr
-	   		 echo '<div class="treffbox"> Antall treff på <u>'.$_GET['search'].'</u>: '.$antallTreff.'</div>';
-		    // show documents using the resultset iterator
-		    foreach ($resultset as $document) {
-
-		        echo '<table>';
-
-		        // the documents are also iterable, to get all fields
-		        foreach ($document as $field => $value) {
-		            // this converts multivalue fields to a comma-separated string
-		            if (is_array($value)) {
-		                $value = implode(', ', $value);
-		            }
-
-		            echo '<tr><th>' . $field . '</th><td>' . $value . '</td></tr>';
-		        }
-
-		        echo '</table><br><div class="inputbuttons">Edit</div><hr><br>';
-		    }
-	    } else{
-	    	echo '<div class="treffbox">
-	    		Fant ingen treff på <u>'.$_GET['search'].'</u>!
-	    	</div>';
-	    }
-}?>
+	
+	<?php require('partials/search_query.php'); ?>
 
 
- </div>
+</div>
 </body>
 </html>
