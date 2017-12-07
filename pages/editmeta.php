@@ -56,22 +56,11 @@
 
 </head>
 <body>
-<nav>
-	<a href="../index.php" class="navitem"><img id="logo" src="../images/logo.png"></a>
-	<div id="navbuttons" class="navitem">
-		<b>
-			<a href="">COOKIES OG PERSONVERN</a>
-			<?php 
-				if($user->is_loggedin()){
-					echo "<a href='logout.php?logout=true'>LOGG UT</a>";
-				}else{
-					echo "<a href='login.php'>LOGG INN</a>";
-				}
 
-			?>
-		</b>
-	</div>
-</nav>
+<!--includes navigation-->
+<?php include('partials/nav.php') ?>
+
+<?php if(isset($_GET['id'])) : ?>
 
 <?php 
 require('../solarium/init.php');
@@ -85,15 +74,10 @@ $client = new Solarium\Client($config);
 $query = $client->createSelect();
 
 // set a query (all prices starting from 12)
-$query->setQuery('*:*');
+$query->setQuery('id:' . $_GET['id']);
 
 // set start and rows param (comparable to SQL limit) using fluent interface
 $query->setStart(0)->setRows(1);
-
-$query->setFields(array('id'));
-
-// sort the result
-$query->addSort('timestamp', $query::SORT_ASC);
 
 // this executes the query and returns the result
 $resultset = $client->select($query);
@@ -104,32 +88,27 @@ foreach ($resultset AS $document) {
     $document->getFields();
 }
 
-echo $document['id'];
-
  ?>
 
 <div class="contentbox">
 	
 	<h4>Edit pdf metadata</h4>
-	<form id="editform" action="edit.php" method="POST" enctype="multipart/form-data">
+	<form id="editform" action="edit_handler.php" method="POST" enctype="multipart/form-data">
 		<div>
 			<label for="title">ID:</label>
-		    <input type="text" name="ID" disabled>
+		    <input type="text" name="ID" required <?php if(isset($document['id'])) : ?> readonly="readonly" value="<?php echo $document['id']; endif; ?>">
 
 			<label for="title">Title:</label>
-		    <input type="text" name="title">
+		    <input type="text" name="title" required>
 
 		    <label for="title">Author:</label>
-		    <input type="text" name="author">
-
-		    <label for="title">Date:</label>
-		    <input type="text" name="date">
-
+		    <input type="text" name="author" required>
+		    
 		    <label for="title">Operator:</label>
-		    <input type="text" name="operator">
+		    <input type="text" name="operator" required>
 
 		    <label for="title">Responsible:</label>
-		    <input type="text" name="responsible">
+		    <input type="text" name="responsible" required>
 	    </div>
 
 	    <input type="submit" name="edit_btn" value="Edit Metadata" class="inputbuttons">
@@ -137,6 +116,8 @@ echo $document['id'];
 
 	
 </div>
+
+<?php endif; ?>
 
 <?php //echo 'Antall treff: '.$antallTreff ?>
 </body>
