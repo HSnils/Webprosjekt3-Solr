@@ -6,7 +6,7 @@
 		require('../../solarium/init.php');
 
 		$documentID = htmlentities($_GET['id']);
-		//$documentFileName = htmlentities($_GET['fileName']);
+		$documentFileName = htmlentities($_GET['fileName']);
 		htmlHeader();
 
 		// create a client instance
@@ -25,14 +25,14 @@
 		// this executes the query and returns the result
 		$result = $client->update($update);
 
-		//unlink("../../solr-6.6.1/uploads/".$documentFileName);
+		unlink("../../solr-6.6.1/uploads/".$documentFileName);
 
-		//echo $documentFileName;
+		echo $documentFileName. " has been deleted!";
 		echo '<b>Update query executed</b><br/>';
 		echo 'Query status: ' . $result->getStatus(). '<br/>';
 		echo 'Query time: ' . $result->getQueryTime();
 
-		//header("Location: ../admin.php");
+		header("Location: ../admin.php");
 
 	} else {
 		echo "This is not a valid pdf file.";

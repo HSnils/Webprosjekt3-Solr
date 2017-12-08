@@ -67,6 +67,7 @@
 		    foreach ($resultset as $document) {
 
 		    	echo "<div class='searchItem'>";
+
 			        echo "<h3>".$document->title.".</h3>";
 
 			  		// highlighting results can be fetched by document id (the field defined as uniquekey in this schema)
@@ -95,7 +96,7 @@
 			        				</i>Edit metadata
 			        				</div></a>
 
-			        				<a href="partials/delete_handler.php?id='.$document->id.'">
+			        				<a href="partials/delete_handler.php?id='.$document->id.'&fileName='. $document->filename .'" class="confirmation">
 			        				<div class="adminButtons deleteButton">
 			        				<i class="icon_size material-icons">delete</i>
 			        				Delete</div>
@@ -113,3 +114,8 @@
 	    	</div>';
 	    }
 }?>
+<script type="text/javascript">
+    $('.confirmation').on('click', function () {
+        return confirm('Er du sikker på at du vil slette denne filen?');
+    });
+</script>
