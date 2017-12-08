@@ -34,7 +34,7 @@
 	    $dismax = $query->getDisMax();
 
 	    // Select the fields we wish to use the search for
-	    $dismax->setQueryFields('title Date author Responsible Operator text id');
+	    $dismax->setQueryFields('title filename date author responsible operator text id');
 
 	    /*
 	    // Example of how you can weigh each field differently.
@@ -83,7 +83,7 @@
 					}
 
 					echo'<div class="pdficonBox">
-							<a class="pdficon" target="_blank" href="../solr-6.6.1/uploads/assignment.pdf"><img src="../images/pdf_icon.svg" alt="CLICK TO OPEN PDF"><br>Click to open</a>';
+							<a class="pdficon" target="_blank" href="../solr-6.6.1/uploads/' . $document->filename .'"><img src="../images/pdf_icon.svg" alt="CLICK TO OPEN PDF"><br>Click to open</a>';
 					
 						if($user->is_loggedin()){
 		        			
