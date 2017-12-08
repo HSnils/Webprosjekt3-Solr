@@ -21,7 +21,7 @@
 		//highlighting
 		//get highlighting component and apply settings
 		$hl = $query->getHighlighting();
-		$hl->setFields('date, text, title, author, Responsible, Operator');
+		$hl->setFields('text');
 		$hl->setSimplePrefix('<element style="padding: 2px; background-color: #56a2aa; color: #f3f3f3;"><b>');
 		$hl->setSimplePostfix('</b></element>');
 		$hl->setSnippets(4);
@@ -95,7 +95,7 @@
 			        				</i>Edit metadata
 			        				</div></a>
 
-			        				<a href="">
+			        				<a href="partials/delete_handler.php?id='.$document->id.'">
 			        				<div class="adminButtons deleteButton">
 			        				<i class="icon_size material-icons">delete</i>
 			        				Delete</div>

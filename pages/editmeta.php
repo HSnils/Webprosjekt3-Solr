@@ -51,6 +51,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
 	<!--Css-->
 	<link rel="stylesheet" href="../css/main.css?<?php echo time(); ?>">
 
@@ -95,24 +97,26 @@ foreach ($resultset AS $document) {
 	<h4>Edit pdf metadata</h4>
 	<form id="editform" action="edit_handler.php" method="POST" enctype="multipart/form-data">
 		<div>
-			<label for="title">ID:</label>
+			<label for="title">ID: <i class="fas fa-asterisk tinyIcon red"></i></label>
 		    <input type="text" name="ID" required <?php if(isset($document['id'])) : ?> readonly="readonly" value="<?php echo $document['id']; endif; ?>">
 
-			<label for="title">Title:</label>
+			<label for="title">Title: <i class="fas fa-asterisk tinyIcon red"></i></label>
 		    <input type="text" name="title" required <?php if(isset($document['title'])) : ?> value="<?php echo $document['title']; endif; ?>">
 
-		    <label for="title">Author:</label>
+		    <label for="title">Author: <i class="fas fa-asterisk tinyIcon red"></i></label>
 		    <input type="text" name="author" required <?php if(isset($document['author'])) : ?> value="<?php echo $document['author']; endif; ?>">
 		    
-		    <label for="title">Operator:</label>
+		    <label for="title">Operator: <i class="fas fa-asterisk tinyIcon red"></i></label>
 		    <input type="text" name="operator" required <?php if(isset($document['operator'])) : ?> value="<?php echo $document['operator']; endif; ?>">
 
-		    <label for="title">Responsible:</label>
+		    <label for="title">Responsible: <i class="fas fa-asterisk tinyIcon red"></i></label>
 		    <input type="text" name="responsible" required  <?php if(isset($document['responsible'])) : ?> value="<?php echo $document['responsible']; endif; ?>">
 	    </div>
 
 	    <input type="submit" name="edit_btn" value="Edit Metadata" class="inputbuttons">
 	</form>
+
+	<div>	Fields with  <i class="fas fa-asterisk tinyIcon red"></i> is required for file to be uploaded/edited!</div>
 
 	
 </div>

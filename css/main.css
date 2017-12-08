@@ -184,16 +184,40 @@ nav{
 #uploadform{
 	width: 100%;
 }
+#editform{
+
+}
 
 #editform div {
 	display: flex;
 	flex-flow: column nowrap;
-	width: 20%;
+	width: 40%;
 	margin-bottom: 10px;
+	justify-content: space-around;
 }
 
-#red{
+#editform div label{
+	margin-top: 10px;
+}
+
+#editform div input{
+	padding: 5px;
+}
+
+.blackColor{
+	color:  black;
+}
+.red{
 	color: var(--light-red);
+}
+
+.right{
+	float: right;
+}
+
+.tinyIcon{
+	font-size: 0.6em;
+	vertical-align: 25%;
 }
 
 .searchItem{
@@ -261,6 +285,7 @@ nav{
 	font-size: 1.2em;
     color: var(--bg);
     margin-right: 5px;
+    vertical-align: -15%;
 }
 
 .editButton{

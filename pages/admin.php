@@ -78,7 +78,7 @@
 <h2>Admin dashboard</h2>
 <div class="contentbox">
 	
-	<h4>Last opp en .pdf-fil</h4>
+	<h4><!--<i class=" material-icons blackColor">file_upload</i>-->Last opp en .pdf-fil </h4>
 	<form id="uploadform" action="upload_handler.php" method="POST" enctype="multipart/form-data">
 	    <input type="file" name="userFile" ><br>
 	    <input type="submit" name="upload_btn" value="Last opp" class="inputbuttons">
