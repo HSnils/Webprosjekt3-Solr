@@ -10,7 +10,7 @@
         move_uploaded_file($tmp_name, "$uploads_dir/$name");
 
 
-		$target_url = "http://localhost:8983/solr/safety/update/extract?commit=true";
+		$target_url = "http://localhost:8983/solr/safety/update/extract?literal.filename=" . $name . "&commit=true";
 		$file = file_get_contents($uploads_dir . $name);
 
 

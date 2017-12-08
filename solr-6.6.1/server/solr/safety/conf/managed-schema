@@ -7,6 +7,7 @@
 	
 	<!-- fields -->
 	<field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
+	<field name="filename" type="string" indexed="true" stored="true" multiValued="false" />
 	<field name="timestamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
 	<field name="title" type="text_en" indexed="true" stored="true" multiValued="false" />
 	<field name="author" type="text_en" indexed="true" stored="true" multiValued="false" />
