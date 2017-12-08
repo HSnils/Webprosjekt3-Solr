@@ -12,11 +12,11 @@
 	    // get a select query instance
 	    $query = $client->createSelect();
 
-	    // gets facets
+	   /* // gets facets
 	    $facetSet = $query->getFacetSet();
 
 	    // create a facet query instance and set options
-		$facetSet->createFacetQuery('author');
+		$facetSet->createFacetQuery('author');*/
 
 		//highlighting
 		//get highlighting component and apply settings
@@ -53,9 +53,10 @@
 		echo '<hr/>Facet query count : ' . $count;*/
 
 	 	  // ----- RESULTS -----
-		// display facet query count
+		/*// display facet query count
 		$count = $resultset->getFacetSet()->getFacet('author')->getValue();
-		echo '<hr/>Facet query count : ' . $count;
+		echo '<hr/>Facet query count : ' . $count;*/
+		
 	    $antallTreff = $resultset->getNumFound();
 	    
 	  
