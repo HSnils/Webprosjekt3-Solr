@@ -6,9 +6,11 @@
 
 		$uploads_dir = '../solr-6.6.1/uploads/';
         $tmp_name = $_FILES["userFile"]["tmp_name"];
-        $name = basename($_FILES["userFile"]["name"]);
+        $filename = basename($_FILES["userFile"]["name"]);
+        $name = preg_replace('/\s/', '', $filename);
         move_uploaded_file($tmp_name, "$uploads_dir/$name");
 
+        echo $name;
 
 		$target_url = "http://localhost:8983/solr/safety/update/extract?literal.filename=" . $name . "&commit=true";
 		$file = file_get_contents($uploads_dir . $name);
