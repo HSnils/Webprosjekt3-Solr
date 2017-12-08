@@ -25,29 +25,6 @@
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
 
 		echo curl_exec($ch);
-/*
-
-
-		$target_url = "http://localhost:8983/solr/safety/update/extract?commit=true";
-		$file = file_get_contents($uploads_dir . $name);
-
-
-		$ch = curl_init ();
-		curl_setopt ( $ch, CURLOPT_URL, $target_url );
-		curl_setopt ( $ch, CURLOPT_POST, 1 );
-		curl_setopt ( $ch, CURLOPT_POSTFIELDS, $file );
-		curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, 1 );
-		$headers = array();
-		$headers[] = 'Accept: application/pdf';
-		$headers[] = 'Content-Type: application/pdf';
-
-		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-
-		$result = curl_exec ( $ch );
-		$http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-		curl_close ( $ch );
-*/
 
 	} else {
 		echo "This is not a valid pdf file.";

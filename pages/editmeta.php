@@ -99,16 +99,16 @@ foreach ($resultset AS $document) {
 		    <input type="text" name="ID" required <?php if(isset($document['id'])) : ?> readonly="readonly" value="<?php echo $document['id']; endif; ?>">
 
 			<label for="title">Title:</label>
-		    <input type="text" name="title" required>
+		    <input type="text" name="title" required <?php if(isset($document['title'])) : ?> value="<?php echo $document['title']; endif; ?>">
 
 		    <label for="title">Author:</label>
-		    <input type="text" name="author" required>
+		    <input type="text" name="author" required <?php if(isset($document['author'])) : ?> value="<?php echo $document['author']; endif; ?>">
 		    
 		    <label for="title">Operator:</label>
-		    <input type="text" name="operator" required>
+		    <input type="text" name="operator" required <?php if(isset($document['operator'])) : ?> value="<?php echo $document['operator']; endif; ?>">
 
 		    <label for="title">Responsible:</label>
-		    <input type="text" name="responsible" required>
+		    <input type="text" name="responsible" required  <?php if(isset($document['responsible'])) : ?> value="<?php echo $document['responsible']; endif; ?>">
 	    </div>
 
 	    <input type="submit" name="edit_btn" value="Edit Metadata" class="inputbuttons">
