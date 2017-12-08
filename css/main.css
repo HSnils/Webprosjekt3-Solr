@@ -306,4 +306,11 @@ nav{
 	color:  var(--bg);
 }
 
+.facet{
+	position: absolute;
+	left: 15%;
+}
 
+.mainColor{
+	color: var(--main-blue);
+}

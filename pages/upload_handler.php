@@ -43,7 +43,7 @@
 		// get a select query instance
 		$query = $client->createSelect();
 
-		// set a query (all prices starting from 12)
+		// set a query
 		$query->setQuery('*:*');
 
 		// set start and rows param (comparable to SQL limit) using fluent interface

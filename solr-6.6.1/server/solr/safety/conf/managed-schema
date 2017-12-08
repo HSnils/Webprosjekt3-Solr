@@ -13,6 +13,7 @@
 	<field name="author" type="text_en" indexed="true" stored="true" multiValued="false" />
 	<field name="operator" type="string" indexed="true" stored="true" multiValued="false" />
 	<field name="date" type="date" indexed="true" stored="true" multiValued="false" />
+	<field name="year" type="text_en" indexed="true" stored="true" multiValued="false" />
 	<field name="responsible" type="string" indexed="true" stored="true" />
 	<field name="text" type="text_en" indexed="true" stored="true" multiValued="false" />
 

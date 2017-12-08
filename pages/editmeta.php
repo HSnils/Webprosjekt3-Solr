@@ -111,6 +111,9 @@ foreach ($resultset AS $document) {
 
 		    <label for="title">Responsible: <i class="fas fa-asterisk tinyIcon red"></i></label>
 		    <input type="text" name="responsible" required  <?php if(isset($document['responsible'])) : ?> value="<?php echo $document['responsible']; endif; ?>">
+
+		    <label for="title">Year: <i class="fas fa-asterisk tinyIcon red"></i></label>
+		    <input type="text" name="year" required  <?php if(isset($document['year'])) : ?> value="<?php echo $document['year']; endif; ?>" maxlength="4">
 	    </div>
 
 	    <input type="submit" name="edit_btn" value="Edit Metadata" class="inputbuttons">

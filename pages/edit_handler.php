@@ -14,7 +14,9 @@
 		          "operator" => array(
 		          	"set" => $_POST['operator']),
 		          "responsible" => array(
-		          	"set" => $_POST['responsible'])
+		          	"set" => $_POST['responsible']),
+		          "year" =>array(
+		          	"set" => $_POST['year'])
 		          );
 
 		$data_string = json_encode(array($data));          
@@ -25,6 +27,7 @@
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
 
 		echo curl_exec($ch);
+		header("Location: admin.php");
 
 	} else {
 		echo "This is not a valid pdf file.";

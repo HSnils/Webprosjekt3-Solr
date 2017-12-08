@@ -12,16 +12,17 @@
 	    // get a select query instance
 	    $query = $client->createSelect();
 
-	   /* // gets facets
+	   /// gets facets
 	    $facetSet = $query->getFacetSet();
 
 	    // create a facet query instance and set options
-		$facetSet->createFacetQuery('author');*/
+		$facetSet->createFacetField('year')
+    		->setField('year');
 
 		//highlighting
 		//get highlighting component and apply settings
 		$hl = $query->getHighlighting();
-		$hl->setFields('text');
+		$hl->setFields('title, text');
 		$hl->setSimplePrefix('<element style="padding: 2px; background-color: #56a2aa; color: #f3f3f3;"><b>');
 		$hl->setSimplePostfix('</b></element>');
 		$hl->setSnippets(4);
@@ -34,28 +35,27 @@
 	    $dismax = $query->getDisMax();
 
 	    // Select the fields we wish to use the search for
-	    $dismax->setQueryFields('title filename date author responsible operator text id');
+	    $dismax->setQueryFields('title filename year author responsible operator text id');
 
-	    /*
-	    // Example of how you can weigh each field differently.
-	    $dismax->setQueryFields('title^3 cast^2 synopsis^1');
-	    */
 
 	    // this executes the query and returns the result
 	    $resultset = $client->select($query);
 
-	   // var_dump($resultset->getComponet());
+
 	    //highlighting
 	    $highlighting = $resultset->getHighlighting();
 
-	    /*// display facet query count
-		$count = $resultset->getFacetSet()->getFacet('date')->getValue();
-		echo '<hr/>Facet query count : ' . $count;*/
 
 	 	  // ----- RESULTS -----
-		/*// display facet query count
-		$count = $resultset->getFacetSet()->getFacet('author')->getValue();
-		echo '<hr/>Facet query count : ' . $count;*/
+		// display facet query count
+		$facet = $resultset->getFacetSet()->getFacet('year');
+		echo '<div class="facet">';
+		echo '<h5>Treff skrevet i:</h5>';
+			foreach($facet as $value => $count) { 
+
+			    echo $value . ' ( <span class="mainColor">' . $count . '</span> )<br/>';
+		}
+		echo '</div>';
 		
 	    $antallTreff = $resultset->getNumFound();
 	    
@@ -73,17 +73,30 @@
 			  		// highlighting results can be fetched by document id (the field defined as uniquekey in this schema)
 					$highlightedDoc = $highlighting->getResult($document->id);
 					if ($highlightedDoc) {
-					    foreach ($highlightedDoc as $field => $highlight) {
-					        echo '<div class="highlight">'.implode(' (...) ', $highlight) . '';
-					        echo "	
-					        <div class='itemEnd'>
-			        			Skrevet av: <b>". $document->author ."</b> Dato: <b>". substr($document->date, 0,10) ."</b>
-			        		</div></div>";
-					    }
 
-					}
+						echo '<div class="highlight">';
 
-					echo'<div class="pdficonBox">
+							//if there is things to highlight do this
+							if ($highlightedDoc->count() == true){
+								foreach ($highlightedDoc as $field => $highlight) {
+							    	if(!empty($highlight)){
+							    		echo implode(' (...) ', $highlight);
+							    	}
+							    } 
+							//if nothing to highlight do this
+							}else {
+						    	echo substr($document->text, 0, 700) ;
+							}
+							//new using set year
+							echo "<div class='itemEnd'> Skrevet av: <b>". $document->author ."</b><span style='margin-left: 20px;'>År: <b>". $document->year ."</b></span>
+			        		</div>";
+
+			        		//Old using the date from file
+							/*echo "<div class='itemEnd'> Skrevet av: <b>". $document->author ."</b> Dato: <b>". substr($document->date, 0,10) ."</b>
+			        		</div>";*/
+					  	echo '</div>';
+
+						echo'<div class="pdficonBox">
 							<a class="pdficon" target="_blank" href="../solr-6.6.1/uploads/' . $document->filename .'"><img src="../images/pdf_icon.svg" alt="CLICK TO OPEN PDF"><br>Click to open</a>';
 					
 						if($user->is_loggedin()){
@@ -106,9 +119,10 @@
 	        		echo '</div>';
 					echo "<br>";
 
-				echo "</div>";
-		    }
-	    } else{
+					echo "</div>";
+		   		}
+	   		}
+		} else{
 	    	echo '<div class="treffbox">
 	    		Fant ingen treff på <u>'.$_GET['search'].'</u>!
 	    	</div>';
