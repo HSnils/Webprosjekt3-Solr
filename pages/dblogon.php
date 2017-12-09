@@ -1,6 +1,6 @@
 <?php
-	$db_host = 'localhost';
-	$db_database = 'webproj3_db';
-	$db_user = 'root';
-	$db_pass = '';
+	$db_host = 'mysql.stud.ntnu.no';
+	$db_database = 'anderath_ptildb';
+	$db_user = 'anderath_ptil';
+	$db_pass = 'vanilla';
 ?>

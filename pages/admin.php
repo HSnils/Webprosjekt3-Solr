@@ -11,7 +11,7 @@
 		$printableUsername = strtoupper($userID);
 	}
 		
-	$curl = curl_init("http://localhost:8983/solr/safety/admin/ping?wt=json");
+	$curl = curl_init("http://user:fD1iCHTnCVY4@35.195.94.200/solr/safety/admin/ping?wt=json");
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 	$output = curl_exec($curl);
 	$data = json_decode($output, true);

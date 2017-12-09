@@ -12,7 +12,7 @@
 
         echo $name;
 
-		$target_url = "http://localhost:8983/solr/safety/update/extract?literal.filename=" . $name . "&commit=true";
+		$target_url = "http://user:fD1iCHTnCVY4@35.195.94.200/solr/safety/update/extract?literal.filename=" . $name . "&commit=true";
 		$file = file_get_contents($uploads_dir . $name);
 
 

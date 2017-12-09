@@ -3,7 +3,7 @@
 	if (!empty($_POST['edit_btn'])) {
 
 
-		$ch = curl_init("http://localhost:8983/solr/safety/update?commit=true");
+		$ch = curl_init("http://user:fD1iCHTnCVY4@35.195.94.200/solr/safety/update?commit=true");
 
 		$data = array(
 		          "id" => $_POST['ID'],
