@@ -7,6 +7,8 @@
 
 		//changes the username to allways appear in uppercase when printed (and using th e variable)
 		$printableUsername = strtoupper($userID);
+	} else {
+		header("Location: login.php");
 	}
 ?>
 
