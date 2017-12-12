@@ -27,7 +27,6 @@
 		$hl->setSimplePostfix('</b></element>');
 		$hl->setSnippets(4);
 		
-
 	    // set a query (all prices starting from 12)
 	    $query->setQuery($userSearch);
 
@@ -37,16 +36,13 @@
 	    // Select the fields we wish to use the search for
 	    $dismax->setQueryFields('title filename year author responsible operator text id');
 
-
 	    // this executes the query and returns the result
 	    $resultset = $client->select($query);
-
 
 	    //highlighting
 	    $highlighting = $resultset->getHighlighting();
 
-
-	 	  // ----- RESULTS -----
+	 	// ----- RESULTS -----
 		// display facet query count
 		$facet = $resultset->getFacetSet()->getFacet('year');
 		echo '<div class="facet">';
@@ -59,7 +55,6 @@
 		
 	    $antallTreff = $resultset->getNumFound();
 	    
-	  
 	    if($antallTreff != 0) {
 	    	// display the total number of documents found by solr
 	   		 echo '<div class="treffbox"> Antall treff på <u>'.$_GET['search'].'</u>: '.$antallTreff.'</div>';
@@ -76,29 +71,27 @@
 
 						echo '<div class="highlight">';
 
-							//if there is things to highlight do this
-							if ($highlightedDoc->count() == true){
-								foreach ($highlightedDoc as $field => $highlight) {
-							    	if(!empty($highlight)){
-							    		echo implode(' (...) ', $highlight);
-							    	}
-							    } 
-							//if nothing to highlight do this
-							}else {
-						    	echo substr($document->text, 0, 700) ;
-							}
-							//new using set year
-							echo "<div class='itemEnd'> Skrevet av: <b>". $document->author ."</b><span style='margin-left: 20px;'>År: <b>". $document->year ."</b></span>
-			        		</div>";
+						//if there is things to highlight do this
+						if ($highlightedDoc->count() == true){
+							foreach ($highlightedDoc as $field => $highlight) {
+						    	if(!empty($highlight)){
+						    		echo implode(' (...) ', $highlight);
+						    	}
+						    } 
+						//if nothing to highlight do this
+						} else {
+					    	echo substr($document->text, 0, 700) ;
+						}
+						//new using set year
+						echo "<div class='itemEnd'> Skrevet av: <b>". $document->author ."</b><span style='margin-left: 20px;'>År: <b>". $document->year ."</b></span>
+		        		</div>";
 
-			        		//Old using the date from file
-							/*echo "<div class='itemEnd'> Skrevet av: <b>". $document->author ."</b> Dato: <b>". substr($document->date, 0,10) ."</b>
-			        		</div>";*/
 					  	echo '</div>';
 
 						echo'<div class="pdficonBox">
 							<a class="pdficon" target="_blank" href="../solr-6.6.1/uploads/' . $document->filename .'"><img src="../images/pdf_icon.svg" alt="CLICK TO OPEN PDF"><br>Click to open</a>';
-					
+							
+						//Admin buttons for each document
 						if($user->is_loggedin()){
 		        			
 							echo '
@@ -127,7 +120,8 @@
 	    		Fant ingen treff på <u>'.$_GET['search'].'</u>!
 	    	</div>';
 	    }
-}?>
+	}
+?>
 <script type="text/javascript">
     $('.confirmation').on('click', function () {
         return confirm('Er du sikker på at du vil slette denne filen?');
