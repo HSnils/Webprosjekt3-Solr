@@ -3,11 +3,9 @@
 $config = array(
     'endpoint' => array(
         'localhost' => array(
-            'host' => '35.195.94.200',
-            'port' => '',
+            'host' => '127.0.0.1',
+            'port' => '8983',
             'path' => '/solr/safety/',
-            'username' => 'user',
-            'password' => 'fD1iCHTnCVY4',
         )
     )
 );

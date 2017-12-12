@@ -9,10 +9,9 @@
 					echo "
 					<a href='admin.php'>ADMIN DASHBOARD</a>
 					<a href='logout.php?logout=true' class='red'>LOGG UT</a>";
-				}else{
+				} else {
 					echo "<a href='login.php'>LOGG INN</a>";
 				}
-
 			?>
 		</b>
 	</div>

@@ -2,7 +2,6 @@
 	
 	if (isset($_GET['id'])) {
 
-		
 		require('../../solarium/init.php');
 
 		$documentID = htmlentities($_GET['id']);
@@ -25,6 +24,7 @@
 		// this executes the query and returns the result
 		$result = $client->update($update);
 
+		// deletes the uploaded pdf file
 		unlink("../../solr-6.6.1/uploads/".$documentFileName);
 
 		echo $documentFileName. " has been deleted!";
